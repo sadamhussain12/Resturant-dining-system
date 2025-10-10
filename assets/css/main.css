@@ -94,3 +94,127 @@
 @keyframes fadeInLeft { from {opacity:0; transform: translateX(-30px);} to {opacity:1; transform: translateX(0);} }
 @keyframes fadeInRight { from {opacity:0; transform: translateX(30px);} to {opacity:1; transform: translateX(0);} }
 @keyframes zoomIn { from {opacity:0; transform: scale(0.8);} to {opacity:1; transform: scale(1);} }
+
+.timeline-container {
+  position: relative;
+  padding: 40px 10px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 50%;
+  height: 4px;
+  background: var(--primary-color);
+  transform: translateY(-50%);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  min-height: 280px; /* taller cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.timeline-content {
+  width: 100%;
+  max-width: 320px;
+  z-index: 3;
+  height: 200px; /* increased height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Positioning cards above/below the line */
+.timeline-content.above {
+  transform: translateY(calc(-50% - 20px));
+}
+
+.timeline-content.below {
+  transform: translateY(calc(50% + 20px));
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 767px) {
+  .timeline-line {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    height: auto;
+    transform: translateX(-50%);
+  }
+  .timeline-item {
+    min-height: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .timeline-dot {
+    top: 8px;
+  }
+  .timeline-content.above,
+  .timeline-content.below {
+    transform: translateY(0);
+  }
+  .timeline-content {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* overall clean background for inner page */
+.contact-modern { background: #fff; color: #111; }
+
+/* glass form */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* info cards */
+.info-card { background: #fff; border: 1px solid rgba(0,0,0,0.04); }
+.icon-box { color: var(--primary-color); width:44px; height:44px; display:flex; align-items:center; justify-content:center; border-radius:8px; background: rgba(212,166,79,0.08); }
+
+/* call-to-action */
+.btn-outline-primary { color: var(--primary-color); border-color: var(--primary-color); }
+.btn-outline-primary:hover { background: var(--primary-color); color: #111; border-color: var(--primary-color); }
+
+/* map card */
+.map-card img { display:block; width:100%; height:100%; }
+
+/* appear animation */
+.glass, .info-card, .map-card { opacity: 0; transform: translateY(18px); transition: all 600ms cubic-bezier(.22,.9,.39,1); }
+.glass.in-view, .info-card.in-view, .map-card.in-view { opacity:1; transform:none; }
+
+/* inputs focus */
+.glass .form-control:focus { box-shadow: 0 6px 22px rgba(212,166,79,0.12); border-color: var(--primary-color); }
+
+/* responsive tweaks */
+@media (max-width: 991px) {
+  .map-card img { height:180px; object-fit:cover; }
+  .glass { padding: 1.25rem; } /* slightly smaller */
+}

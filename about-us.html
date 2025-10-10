@@ -33,7 +33,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav text-uppercase fw-semibold">
         <li class="nav-item mx-2">
-          <a class="nav-link active" href="#" style="transition: color 0.3s;">Home</a>
+          <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
@@ -45,10 +45,10 @@
           <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#about" style="transition: color 0.3s;">About</a>
+          <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#contact" style="transition: color 0.3s;">Contact</a>
+          <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
         </li>
       </ul>
     </div>
@@ -101,7 +101,7 @@
       </div>
       <!-- Image -->
       <div class="col-lg-6 text-center" style="animation: fadeInRight 1s;">
-        <img src="assets/img/story.jpg" class="img-fluid rounded-4 shadow-lg"
+        <img src="assets/img/GDDeliveroo-08.jpg" class="img-fluid rounded-4 shadow-lg"
              alt="Our Story" style="transition: transform 0.4s; cursor: pointer;"
              onmouseover="this.style.transform='scale(1.05)'"
              onmouseout="this.style.transform='scale(1)'">
@@ -113,7 +113,7 @@
 <!-- Mission & Vision -->
 <section class="py-5 text-white position-relative"
          style="background: url('assets/img/mission-bg.jpg') center/cover no-repeat;">
-  <div style="background: rgba(0,0,0,0.75); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div style="background: rgb(0, 0, 0); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
   <div class="container position-relative text-center">
     <h2 class="fw-bold mb-5" style="color: var(--primary-color);">Our Mission & Vision</h2>
     <div class="row justify-content-center">
@@ -131,7 +131,7 @@
       <!-- Vision -->
       <div class="col-md-5 mb-4" style="animation: zoomIn 1.2s;">
         <div class="p-4 rounded-4 shadow-lg"
-             style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); transition: 0.3s;"
+             style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255,255,255,0.2); transition: 0.3s;"
              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px var(--primary-color)';"
              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
           <h4 class="fw-bold mb-3" style="color: var(--primary-color);">Our Vision</h4>
@@ -141,44 +141,68 @@
     </div>
   </div>
 </section>
-
-<!-- Our Values -->
-<section class="py-5 bg-white text-center text-dark">
+<!-- ===== OUR VALUES (Horizontal Timeline Clean Style) ===== -->
+<section class="values-section py-5 bg-white text-dark">
   <div class="container">
-    <h2 class="fw-bold mb-4" style="color: var(--primary-color); animation: fadeInUp 1s;">Our Values</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4" style="animation: fadeInUp 1s;">
-        <div class="p-4 rounded shadow-sm border">
-          <h5 class="fw-bold mb-3">Authenticity</h5>
-          <p>We celebrate Lebanese traditions through real ingredients, honest cooking, and genuine care.</p>
+    <h2 class="fw-bold text-center mb-5" style="color: var(--primary-color);">Our Values</h2>
+
+    <div class="timeline-container position-relative mx-auto" style="max-width:1200px;">
+      <!-- center horizontal line -->
+      <div class="timeline-line"></div>
+
+      <div class="row gx-4 justify-content-center">
+        <!-- Item 1 (above) -->
+        <div class="col-md-3 timeline-item">
+          <div class="timeline-content above card p-4 shadow-sm text-center">
+            <h5 class="fw-bold mb-3" style="color:var(--primary-color)">Authenticity</h5>
+            <p>We celebrate Lebanese traditions through real ingredients and honest cooking.</p>
+          </div>
+          <div class="timeline-dot"></div>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" style="animation: fadeInUp 1.2s;">
-        <div class="p-4 rounded shadow-sm border">
-          <h5 class="fw-bold mb-3">Passion</h5>
-          <p>Every dish is an artwork made with devotion and love for food, flavor, and presentation.</p>
+
+        <!-- Item 2 (below) -->
+        <div class="col-md-3 timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content below card p-4 shadow-sm text-center">
+            <h5 class="fw-bold mb-3" style="color:var(--primary-color)">Passion</h5>
+            <p>Every dish is crafted with devotion and love for flavor and presentation.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" style="animation: fadeInUp 1.4s;">
-        <div class="p-4 rounded shadow-sm border">
-          <h5 class="fw-bold mb-3">Excellence</h5>
-          <p>We go beyond expectations, crafting a premium dining experience for every guest, every time.</p>
+
+        <!-- Item 3 (above) -->
+        <div class="col-md-3 timeline-item">
+          <div class="timeline-content above card p-4 shadow-sm text-center">
+            <h5 class="fw-bold mb-3" style="color:var(--primary-color)">Excellence</h5>
+            <p>We go beyond expectations, ensuring a premium dining experience for all.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- Item 4 (below) -->
+        <div class="col-md-3 timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content below card p-4 shadow-sm text-center">
+            <h5 class="fw-bold mb-3" style="color:var(--primary-color)">Innovation</h5>
+            <p>We mix creativity and tradition to keep our dishes inspiring and modern.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Meet Our Team -->
-<section class="py-5 text-center" style="background-color: #f9f9f9;">
+<section class="py-5 text-center bg-light">
   <div class="container">
-    <h2 class="fw-bold mb-5" style="color: var(--primary-color); animation: fadeInUp 1s;">Meet Our Team</h2>
+    <h2 class="fw-bold mb-5" style="color: var(--primary-color);">Meet Our Team</h2>
     <div class="row justify-content-center">
-      <div class="col-md-4 mb-4" style="animation: zoomIn 1s;">
-        <div class="card border-0 shadow-lg" style="transition: 0.4s;">
-          <img src="assets/img/chef1.jpg" class="card-img-top" alt="Chef" 
-               onmouseover="this.style.transform='scale(1.05)'"
-               onmouseout="this.style.transform='scale(1)'">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card team-card border-0 shadow-lg">
+          <div class="img-wrapper">
+            <img src="assets/img/chef-cooking-kitchen-while-wearing-professional-attire_23-2151208316.jpg"
+                 class="card-img-top team-img" alt="Chef">
+          </div>
           <div class="card-body">
             <h5 class="fw-bold">Chef Rami</h5>
             <p class="text-muted">Head Chef</p>
@@ -186,11 +210,13 @@
         </div>
       </div>
 
-      <div class="col-md-4 mb-4" style="animation: zoomIn 1.2s;">
-        <div class="card border-0 shadow-lg">
-          <img src="assets/img/manager.jpg" class="card-img-top" alt="Manager"
-               onmouseover="this.style.transform='scale(1.05)'"
-               onmouseout="this.style.transform='scale(1)'">
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card team-card border-0 shadow-lg">
+          <div class="img-wrapper">
+            <img src="assets/img/istockphoto-1415123613-612x612.jpg"
+                 class="card-img-top team-img" alt="Manager">
+          </div>
           <div class="card-body">
             <h5 class="fw-bold">Lina Kareem</h5>
             <p class="text-muted">Restaurant Manager</p>
@@ -198,20 +224,24 @@
         </div>
       </div>
 
-      <div class="col-md-4 mb-4" style="animation: zoomIn 1.4s;">
-        <div class="card border-0 shadow-lg">
-          <img src="assets/img/assistant.jpg" class="card-img-top" alt="Assistant"
-               onmouseover="this.style.transform='scale(1.05)'"
-               onmouseout="this.style.transform='scale(1)'">
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card team-card border-0 shadow-lg">
+          <div class="img-wrapper">
+            <img src="assets/img/Wesley-Smith.jpg" class="card-img-top team-img" alt="Assistant">
+          </div>
           <div class="card-body">
             <h5 class="fw-bold">Ahmed Hassan</h5>
             <p class="text-muted">Sous Chef</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 <!-- Quote Section -->
 <section class="text-center text-white py-5" 
