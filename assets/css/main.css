@@ -1,0 +1,90 @@
+    /* Root colors */
+    :root {
+      --primary-color: #f26e25;  
+      --secondary-color: #c45418;
+      --text-primary-color: #2a2b3f; 
+      --text-secondary-color: #ffffff;        
+      --background-color: #ffffff; 
+      --background-new-bg-color: #f26d2524; 
+    }
+
+    body {
+      font-family: "Poppins", Sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-btn {
+      background-color: var(--primary-color);
+      color: var(--text-secondary-color);
+      font-weight: 700;
+
+    }
+
+    .main-btn:hover {
+      background-color: var(--secondary-color);
+      color: var(--text-secondary-color);
+    }
+
+    .secondary-btn {
+      
+      color: var(--primary-color);
+      font-weight: 700;
+      border: solid 1px var(--primary-color);
+    }
+
+    .secondary-btn:hover {
+      background-color: var(--primary-color);
+      color: var(--text-secondary-color);
+    }
+
+    .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.social-link {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  .social-link:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+  }
+
+  .footer-link {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+  }
+  .footer-link:hover {
+    color: var(--primary-color);
+    transform: translateX(4px);
+  }
+
+  /* Animation Styles */
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+  }
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
