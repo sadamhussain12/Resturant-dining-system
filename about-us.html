@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dining at Alumination</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="text-white">
+<!-- ===== Transparent Modern Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
+  <div class="container-fluid px-5">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-uppercase fw-semibold">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" href="#" style="transition: color 0.3s;">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#about" style="transition: color 0.3s;">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#contact" style="transition: color 0.3s;">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Button -->
+    <div class="d-none d-lg-flex align-items-center">
+      <a href="#" 
+         class="btn fw-bold text-white px-4 py-2" 
+         style="
+           border: 2px solid var(--primary-color); 
+           border-radius: 50px; 
+           transition: all 0.3s;
+         "
+         onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
+         onmouseout="this.style.background='transparent'; this.style.color='white';">
+        ORDER BY PHONE
+      </a>
+    </div>
+
+  </div>
+</nav>
+<!-- ===== ABOUT US PAGE ===== -->
+
+<!-- Hero Section -->
+<section class="d-flex align-items-center justify-content-center text-center text-white position-relative"
+  style="background: url('assets/img/2151182554.jpg') center/cover no-repeat; height: 100vh;">
+  <div style="background: rgba(0,0,0,0.6); width: 100%; height: 100%; position: absolute; top:0; left:0;"></div>
+  <div class="container position-relative">
+    <h1 class="display-4 fw-bold mb-3" style="color: var(--primary-color); animation: fadeInDown 1s;">
+      About Alumination
+    </h1>
+    <p class="lead" style="animation: fadeInUp 1.2s;">
+      Where passion meets perfection — crafting memorable dining experiences inspired by authentic Lebanese cuisine.
+    </p>
+  </div>
+</section>
+
+<!-- Our Story -->
+<section class="py-5 bg-white text-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text -->
+      <div class="col-lg-6 mb-4 mb-lg-0" style="animation: fadeInLeft 1s;">
+        <h2 class="fw-bold mb-3" style="color: var(--primary-color);">Our Story</h2>
+        <p style="line-height: 1.8;">
+          Founded with love for culinary artistry and warm hospitality, Alumination began as a small kitchen dream and
+          evolved into a place where people come to enjoy authentic flavors, meaningful conversations, and lasting memories.
+          Every dish we serve reflects tradition, creativity, and care — all presented with a modern twist.
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="col-lg-6 text-center" style="animation: fadeInRight 1s;">
+        <img src="assets/img/story.jpg" class="img-fluid rounded-4 shadow-lg"
+             alt="Our Story" style="transition: transform 0.4s; cursor: pointer;"
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="py-5 text-white position-relative"
+         style="background: url('assets/img/mission-bg.jpg') center/cover no-repeat;">
+  <div style="background: rgba(0,0,0,0.75); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div class="container position-relative text-center">
+    <h2 class="fw-bold mb-5" style="color: var(--primary-color);">Our Mission & Vision</h2>
+    <div class="row justify-content-center">
+      <!-- Mission -->
+      <div class="col-md-5 mb-4" style="animation: zoomIn 1s;">
+        <div class="p-4 rounded-4 shadow-lg"
+             style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); transition: 0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px var(--primary-color)';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <h4 class="fw-bold mb-3" style="color: var(--primary-color);">Our Mission</h4>
+          <p>To unite people through authentic Lebanese flavors — made with passion, served with heart, and enjoyed in a space that feels like home.</p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-5 mb-4" style="animation: zoomIn 1.2s;">
+        <div class="p-4 rounded-4 shadow-lg"
+             style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); transition: 0.3s;"
+             onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px var(--primary-color)';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <h4 class="fw-bold mb-3" style="color: var(--primary-color);">Our Vision</h4>
+          <p>To be the most beloved destination for culinary artistry and hospitality — creating experiences that linger beyond the table.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Values -->
+<section class="py-5 bg-white text-center text-dark">
+  <div class="container">
+    <h2 class="fw-bold mb-4" style="color: var(--primary-color); animation: fadeInUp 1s;">Our Values</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" style="animation: fadeInUp 1s;">
+        <div class="p-4 rounded shadow-sm border">
+          <h5 class="fw-bold mb-3">Authenticity</h5>
+          <p>We celebrate Lebanese traditions through real ingredients, honest cooking, and genuine care.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" style="animation: fadeInUp 1.2s;">
+        <div class="p-4 rounded shadow-sm border">
+          <h5 class="fw-bold mb-3">Passion</h5>
+          <p>Every dish is an artwork made with devotion and love for food, flavor, and presentation.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" style="animation: fadeInUp 1.4s;">
+        <div class="p-4 rounded shadow-sm border">
+          <h5 class="fw-bold mb-3">Excellence</h5>
+          <p>We go beyond expectations, crafting a premium dining experience for every guest, every time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet Our Team -->
+<section class="py-5 text-center" style="background-color: #f9f9f9;">
+  <div class="container">
+    <h2 class="fw-bold mb-5" style="color: var(--primary-color); animation: fadeInUp 1s;">Meet Our Team</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4" style="animation: zoomIn 1s;">
+        <div class="card border-0 shadow-lg" style="transition: 0.4s;">
+          <img src="assets/img/chef1.jpg" class="card-img-top" alt="Chef" 
+               onmouseover="this.style.transform='scale(1.05)'"
+               onmouseout="this.style.transform='scale(1)'">
+          <div class="card-body">
+            <h5 class="fw-bold">Chef Rami</h5>
+            <p class="text-muted">Head Chef</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4" style="animation: zoomIn 1.2s;">
+        <div class="card border-0 shadow-lg">
+          <img src="assets/img/manager.jpg" class="card-img-top" alt="Manager"
+               onmouseover="this.style.transform='scale(1.05)'"
+               onmouseout="this.style.transform='scale(1)'">
+          <div class="card-body">
+            <h5 class="fw-bold">Lina Kareem</h5>
+            <p class="text-muted">Restaurant Manager</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4" style="animation: zoomIn 1.4s;">
+        <div class="card border-0 shadow-lg">
+          <img src="assets/img/assistant.jpg" class="card-img-top" alt="Assistant"
+               onmouseover="this.style.transform='scale(1.05)'"
+               onmouseout="this.style.transform='scale(1)'">
+          <div class="card-body">
+            <h5 class="fw-bold">Ahmed Hassan</h5>
+            <p class="text-muted">Sous Chef</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section class="text-center text-white py-5" 
+         style="background: url('assets/img/quote-bg.jpg') center/cover no-repeat; position: relative;">
+  <div style="background: rgba(0,0,0,0.7); position: absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div class="container position-relative" style="animation: fadeInUp 1s;">
+    <blockquote class="blockquote mb-0">
+      <p class="fs-4 fw-light">“Good food and great company — that’s the recipe for a perfect day.”</p>
+      <footer class="blockquote-footer text-white mt-2">The Alumination Team</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Inline Animations -->
+<style>
+@keyframes fadeInUp { from {opacity:0; transform: translateY(30px);} to {opacity:1; transform: translateY(0);} }
+@keyframes fadeInDown { from {opacity:0; transform: translateY(-30px);} to {opacity:1; transform: translateY(0);} }
+@keyframes fadeInLeft { from {opacity:0; transform: translateX(-30px);} to {opacity:1; transform: translateX(0);} }
+@keyframes fadeInRight { from {opacity:0; transform: translateX(30px);} to {opacity:1; transform: translateX(0);} }
+@keyframes zoomIn { from {opacity:0; transform: scale(0.8);} to {opacity:1; transform: scale(1);} }
+</style>
+
+<!-- ====== Footer Section (Alumination) ====== -->
+<footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+  <div class="container px-4 px-lg-5 pb-5">
+    <div class="row gy-5 justify-content-between align-items-start">
+
+      <!-- Brand / About -->
+      <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+        <h3 class="fw-bold mb-3" 
+            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+          Alumination
+        </h3>
+        <p class="text-white-50 mb-4">
+          Immerse yourself in a dining experience where taste, tradition, and atmosphere unite. 
+          At Alumination, every meal is a story — crafted with passion and served with pride.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+          <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+          <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+          <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
+        <ul class="list-unstyled small text-white-50">
+          <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+          <li>Saturday: 1:00 PM – 12:00 AM</li>
+          <li>Sunday: 1:00 PM – 10:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-12 col-lg-3 animate-fade-up delay-3">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
+        <p class="text-white-50 small mb-3">
+          Join our community and receive exclusive news, recipes, and event updates.
+        </p>
+        <form class="d-flex">
+          <input type="email" class="form-control bg-transparent border-light text-white me-2" placeholder="Enter email">
+          <button class="btn fw-bold px-3" 
+                  style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+                  onmouseover="this.style.transform='scale(1.1)'"
+                  onmouseout="this.style.transform='scale(1)'">
+            Go
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-top border-light mt-4">
+    <div class="container text-center py-3 small text-white-50">
+      © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span style="color: var(--primary-color);">Alumination Team</span>.
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  
+<!-- Navbar Hover/Active Script -->
+<script>
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
+    link.addEventListener('mouseleave', () => {
+      if (!link.classList.contains('active')) link.style.color = 'white';
+    });
+  });
+</script>
+</html>
