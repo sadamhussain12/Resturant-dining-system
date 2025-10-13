@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dining at Alumination</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="text-white">
+<!-- ===== Transparent Modern Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
+  <div class="container-fluid px-5">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-uppercase fw-semibold">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Button -->
+    <div class="d-none d-lg-flex align-items-center">
+      <a href="#" 
+         class="btn fw-bold text-white px-4 py-2" 
+         style="
+           border: 2px solid var(--primary-color); 
+           border-radius: 50px; 
+           transition: all 0.3s;
+         "
+         onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
+         onmouseout="this.style.background='transparent'; this.style.color='white';">
+        ORDER BY PHONE
+      </a>
+    </div>
+
+  </div>
+</nav>
+<!-- ===== BLOG SINGLE PAGE ===== -->
+<section class="blog-single-hero d-flex align-items-end" style="height: 38vh; position: relative;">
+  <div style="background: rgb(0, 0, 0); position: absolute; inset:0;"></div>
+  <div class="container position-relative py-4">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center text-white">
+        <small class="d-block mb-2">From the Kitchen</small>
+        <h1 class="fw-bold display-6" style="color:var(--primary-color);">Unveiling Our New Seasonal Menu</h1>
+        <p class="small text-white-50 mb-0">Oct 10, 2025 · Culinary · <em>By</em> Chef Amir</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-single py-5">
+  <div class="container">
+    <div class="row gx-5">
+      <!-- Main content -->
+      <div class="col-lg-8">
+        <article class="mb-5">
+          <figure class="mb-4 rounded-4 overflow-hidden shadow-sm">
+            <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" alt="Seasonal Menu" class="w-100" style="height:360px; object-fit:cover;">
+          </figure>
+
+          <div class="post-meta mb-3 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-2">
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar rounded-circle" style="width:48px; height:48px; overflow:hidden;">
+                <img src="assets/img/pexels-miquel-ferran-gomez-figueroa-2172703-3814446.jpg" alt="Chef Amir" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div>
+                <div class="fw-bold">Chef Amir</div>
+                <div class="small text-muted">Head Chef · Alumination</div>
+              </div>
+            </div>
+
+            <div class="small text-muted">Reading time: ~4 min</div>
+          </div>
+
+          <h2 class="h4 fw-bold mb-3">A fresh chapter for autumn</h2>
+          <p class="text-muted">This autumn we’re celebrating seasonal produce and local growers. The menu focuses on warm textures, smoked notes, and bright finishes — all designed to pair with our curated wine list.</p>
+
+          <h3 class="h5 fw-semibold mt-4">Local sourcing & inspiration</h3>
+          <p class="text-muted">We visited nearby farms and hand-selected produce that inspired the dishes you’ll see. Expect root vegetables, preserved citrus, and a renewed emphasis on balanced savoury-sweet combinations.</p>
+
+          <blockquote class="blockquote px-4 py-3 rounded-3 text-muted bg-light">
+            <p class="mb-0">“We design dishes that make our guests linger — not just because of taste, but because of memory.”</p>
+            <footer class="blockquote-footer mt-2">Chef Amir</footer>
+          </blockquote>
+
+          <h3 class="h5 fw-semibold mt-4">Signature dishes to watch</h3>
+          <ul class="text-muted">
+            <li>Charred autumn squash with smoked pecan crumble</li>
+            <li>Seared seabass, saffron velouté and braised fennel</li>
+            <li>Pear & blue cheese tart with honeyed walnut</li>
+          </ul>
+
+          <p class="text-muted">We rotate items monthly — follow our journal for announcements, tasting nights, and behind-the-scenes menus.</p>
+
+          <!-- Tags + Share -->
+          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mt-4">
+            <div>
+              <small class="text-muted me-2">Tags:</small>
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Seasonal</a>
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Menu</a>
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Chef's Notes</a>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <small class="text-muted">Share</small>
+              <button class="btn btn-outline-secondary btn-sm" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank')">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button class="btn btn-outline-secondary btn-sm" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href),'_blank')">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button class="btn btn-outline-secondary btn-sm" onclick="navigator.clipboard?.writeText(location.href).then(()=>alert('Link copied'))">
+                <i class="fas fa-link"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Author box -->
+        <div class="author-box d-flex gap-3 align-items-center p-3 rounded-4 shadow-sm mb-5">
+          <div style="width:72px; height:72px; overflow:hidden; border-radius:12px;">
+            <img src="assets/img/pexels-miquel-ferran-gomez-figueroa-2172703-3814446.jpg" alt="Chef Amir" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div>
+            <h6 class="mb-1 fw-bold" style="color: var(--primary-color);">Chef Amir</h6>
+            <p class="mb-0 text-muted small">Head Chef at Alumination. Passionate about seasonal cooking, fermentation, and live-cooking experiences for private events.</p>
+          </div>
+        </div>
+
+        <!-- Related posts -->
+        <div class="related-posts mb-5">
+          <h5 class="fw-bold mb-3">Related Posts</h5>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100 rounded-3">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="assets/img/pexels-minan1398-1482803.jpg" alt="Wine Pairing" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body p-3">
+                      <small class="text-muted">Sep 25, 2025 · Events</small>
+                      <h6 class="mb-1">An Evening of Wine Pairing & Music</h6>
+                      <a href="blog-single.html" class="stretched-link small text-decoration-none">Read more →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100 rounded-3">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="assets/img/pexels-sebastian-coman-photography-1598188-3437689.jpg" alt="Chef Interview" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body p-3">
+                      <small class="text-muted">Sep 5, 2025 · Behind the Scenes</small>
+                      <h6 class="mb-1">In Conversation with Our Head Chef</h6>
+                      <a href="blog-single.html" class="stretched-link small text-decoration-none">Read more →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <div id="comments" class="mb-5">
+          <h5 class="fw-bold mb-3">Comments (3)</h5>
+
+          <div class="comment mb-3 p-3 rounded-3 shadow-sm">
+            <div class="d-flex gap-3">
+              <div style="width:48px; height:48px; overflow:hidden; border-radius:50%;">
+                <img src="assets/img/profile_12901975.png" alt="user" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div>
+                <div class="fw-bold">Sofia</div>
+                <div class="small text-muted mb-1">Oct 11, 2025</div>
+                <div class="small text-muted">Absolutely loved the squash — came last week and it was perfect.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment mb-3 p-3 rounded-3 shadow-sm">
+            <div class="d-flex gap-3">
+              <div style="width:48px; height:48px; overflow:hidden; border-radius:50%;">
+                <img src="assets/img/profile_12901975.png" alt="user" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div>
+                <div class="fw-bold">Omar</div>
+                <div class="small text-muted mb-1">Oct 12, 2025</div>
+                <div class="small text-muted">Great write-up — excited to try the tasting menu.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment mb-3 p-3 rounded-3 shadow-sm">
+            <div class="d-flex gap-3">
+              <div style="width:48px; height:48px; overflow:hidden; border-radius:50%;">
+                <img src="assets/img/profile_12901975.png" alt="user" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div>
+                <div class="fw-bold">Layla</div>
+                <div class="small text-muted mb-1">Oct 12, 2025</div>
+                <div class="small text-muted">Booked a table for the wine night — thanks for the heads-up!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comment form -->
+        <div class="comment-form p-4 rounded-4 shadow-sm">
+          <h5 class="fw-bold mb-3">Leave a comment</h5>
+          <form id="commentForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" id="c-name" class="form-control form-control-lg" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" id="c-email" class="form-control form-control-lg" placeholder="Email (not published)" required>
+              </div>
+              <div class="col-12">
+                <textarea id="c-message" class="form-control" rows="4" placeholder="Write your comment" required></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button class="btn main-btn btn-lg" type="submit">Post comment</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="col-lg-4">
+        <div class="position-sticky" style="top:100px;">
+          <!-- Search -->
+          <div class="mb-4">
+            <div class="input-group rounded-3 overflow-hidden shadow-sm">
+              <input class="form-control" placeholder="Search posts..." aria-label="Search">
+              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Recent posts -->
+          <div class="mb-4 p-3 rounded-4 shadow-sm bg-white">
+            <h6 class="fw-bold mb-3">Recent posts</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex mb-3">
+                <img src="assets/img/pexels-elevate-1267320.jpg" alt="" style="width:64px; height:64px; object-fit:cover; border-radius:8px;" class="me-3">
+                <div>
+                  <a href="blog-single.html" class="fw-semibold text-dark small">In Conversation with Our Head Chef</a>
+                  <div class="small text-muted">Sep 5, 2025</div>
+                </div>
+              </li>
+              <li class="d-flex mb-3">
+                <img src="assets/img/pexels-pietrozj-671956.jpg" alt="" style="width:64px; height:64px; object-fit:cover; border-radius:8px;" class="me-3">
+                <div>
+                  <a href="blog-single.html" class="fw-semibold text-dark small">An Evening of Wine Pairing & Music</a>
+                  <div class="small text-muted">Sep 25, 2025</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="mb-4 p-3 rounded-4 shadow-sm bg-white text-center">
+            <h6 class="fw-bold">Join our newsletter</h6>
+            <p class="small text-muted mb-2">Special menus & tasting nights — once a month.</p>
+            <form id="newsForm" class="d-flex gap-2">
+              <input type="email" class="form-control form-control-sm" placeholder="Your email" required>
+              <button class="btn main-btn btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Categories -->
+          <div class="mb-4 p-3 rounded-4 shadow-sm bg-white">
+            <h6 class="fw-bold mb-3">Categories</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Culinary</a>
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Events</a>
+              <a href="#" class="badge rounded-pill bg-light text-dark small text-decoration-none">Behind the Scenes</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Minimal JS: fake comment + newsletter handling -->
+<script>
+  document.getElementById('commentForm')?.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('c-name').value || 'Guest';
+    alert('Thanks for your comment, ' + name + ' — it will appear after moderation.');
+    this.reset();
+  });
+
+  document.getElementById('newsForm')?.addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thanks — you\'re subscribed!');
+    this.reset();
+  });
+</script>
+
+<!-- Small styles matching site look -->
+<style>
+  .blog-single-hero { background-position: center; background-size: cover; }
+  .post-meta .avatar img { display:block; }
+  .comment .fw-bold { font-size: 0.95rem; }
+  .author-box img { display:block; }
+  @media (max-width:991px){ .position-sticky { position: static !important; top: auto; } }
+</style>
+
+
+<!-- ====== Footer Section (Alumination) ====== -->
+<footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+  <div class="container px-4 px-lg-5 pb-5">
+    <div class="row gy-5 justify-content-between align-items-start">
+
+      <!-- Brand / About -->
+      <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+        <h3 class="fw-bold mb-3" 
+            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+          Alumination
+        </h3>
+        <p class="text-white-50 mb-4">
+          Immerse yourself in a dining experience where taste, tradition, and atmosphere unite. 
+          At Alumination, every meal is a story — crafted with passion and served with pride.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+          <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+          <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+          <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
+        <ul class="list-unstyled small text-white-50">
+          <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+          <li>Saturday: 1:00 PM – 12:00 AM</li>
+          <li>Sunday: 1:00 PM – 10:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-12 col-lg-3 animate-fade-up delay-3">
+        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
+        <p class="text-white-50 small mb-3">
+          Join our community and receive exclusive news, recipes, and event updates.
+        </p>
+        <form class="d-flex">
+          <input type="email" class="form-control bg-transparent border-light text-white me-2" placeholder="Enter email">
+          <button class="btn fw-bold px-3" 
+                  style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+                  onmouseover="this.style.transform='scale(1.1)'"
+                  onmouseout="this.style.transform='scale(1)'">
+            Go
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-top border-light mt-4">
+    <div class="container text-center py-3 small text-white-50">
+      © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span style="color: var(--primary-color);">Alumination Team</span>.
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  
+<!-- Navbar Hover/Active Script -->
+<script>
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
+    link.addEventListener('mouseleave', () => {
+      if (!link.classList.contains('active')) link.style.color = 'white';
+    });
+  });
+</script>
+</html>
