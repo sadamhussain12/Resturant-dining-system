@@ -81,15 +81,6 @@
             </div>
         </section>
 
-        <!-- ===== INTRO ===== -->
-        <section class="py-4">
-            <div class="container text-center">
-                <p class="mx-auto text-muted" style="max-width:900px;">
-                    Explore our menu by category — click a section in the sidebar to jump straight to the dishes you
-                    want.
-                </p>
-            </div>
-        </section>
 
         <!-- ===== SIDEBAR + CONTENT ===== -->
         <section class="pb-5">
@@ -177,74 +168,159 @@
                         <div class="tab-content" id="v-pills-tabContent">
 
                             <!-- Reusable dish-card pattern used across panes -->
-                            <!-- Starters -->
-                            <div class="tab-pane fade show active" id="p-starters" role="tabpanel">
-                                <div class="row g-4 mb-4" id="list-starters">
-                                    <!-- sample item -->
-                                    <div class="col-md-6 col-lg-4 dish-item">
-                                        <article
-                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                                            <div class="ratio ratio-4x3">
-                                                <img src="assets/img/pexels-chevanon-323682.jpg" alt="Charred Octopus"
-                                                    class="card-img-top object-cover">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="mb-1">Charred Octopus</h6>
-                                                <p class="small text-muted mb-2">Smoky paprika, lemon aioli</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="fw-bold">£12</div>
-                                                    <div class="ms-auto">
-                                                        <button class="btn btn-sm btn-outline-primary">Details</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
+                           <!-- Starters -->
+<div class="tab-pane fade show active" id="p-starters" role="tabpanel">
+  <div class="row g-4 mb-4" id="list-starters">
 
-                                    <!-- more items -->
-                                    <div class="col-md-6 col-lg-4 dish-item">
-                                        <article
-                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                                            <div class="ratio ratio-4x3">
-                                                <img src="assets/img/GDDeliveroo-04.jpg" alt="Roasted Beet Salad"
-                                                    class="card-img-top object-cover">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="mb-1">Roasted Beet Salad</h6>
-                                                <p class="small text-muted mb-2">Goat cheese, candied walnuts</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="fw-bold">£9</div>
-                                                    <div class="ms-auto">
-                                                        <button class="btn btn-sm btn-outline-primary">Details</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
+    <!-- Charred Octopus -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-chevanon-323682.jpg" alt="Charred Octopus" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Charred Octopus</h6>
+            <span class="fw-semibold text-dark">£12</span>
+          </div>
+          <p class="small text-muted mb-0">Smoky paprika, lemon aioli</p>
+        </div>
+      </article>
+    </div>
 
-                                    <!-- added items -->
-                                    <div class="col-md-6 col-lg-4 dish-item">
-                                        <article
-                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                                            <div class="ratio ratio-4x3">
-                                                <img src="assets/img/GDDeliveroo-08.jpg" alt="Crispy Calamari"
-                                                    class="card-img-top object-cover">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="mb-1">Crispy Calamari</h6>
-                                                <p class="small text-muted mb-2">Tarragon aioli</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="fw-bold">£11</div>
-                                                    <div class="ms-auto">
-                                                        <button class="btn btn-sm btn-outline-primary">Details</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
+    <!-- Roasted Beet Salad -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/GDDeliveroo-04.jpg" alt="Roasted Beet Salad" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Roasted Beet Salad</h6>
+            <span class="fw-semibold text-dark">£9</span>
+          </div>
+          <p class="small text-muted mb-0">Goat cheese, candied walnuts</p>
+        </div>
+      </article>
+    </div>
 
-                                </div>
-                            </div>
+    <!-- Crispy Calamari -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/GDDeliveroo-08.jpg" alt="Crispy Calamari" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Crispy Calamari</h6>
+            <span class="fw-semibold text-dark">£11</span>
+          </div>
+          <p class="small text-muted mb-0">Tarragon aioli</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Burrata with Heirloom Tomatoes -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-foodie-2021956.jpg" alt="Burrata with Heirloom Tomatoes" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Burrata with Heirloom Tomatoes</h6>
+            <span class="fw-semibold text-dark">£10</span>
+          </div>
+          <p class="small text-muted mb-0">Basil oil, balsamic glaze</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Smoked Salmon Tartine -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-eiliv-aceron-689590.jpg" alt="Smoked Salmon Tartine" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Smoked Salmon Tartine</h6>
+            <span class="fw-semibold text-dark">£13</span>
+          </div>
+          <p class="small text-muted mb-0">Avocado, dill crème fraîche</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Truffle Mushroom Soup -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-valeria-boltneva-1639563.jpg" alt="Truffle Mushroom Soup" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Truffle Mushroom Soup</h6>
+            <span class="fw-semibold text-dark">£8</span>
+          </div>
+          <p class="small text-muted mb-0">Creamy porcini, truffle oil</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- New Row -->
+
+    <!-- Duck Liver Parfait -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-nadin-sh-19268790.jpg" alt="Duck Liver Parfait" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Duck Liver Parfait</h6>
+            <span class="fw-semibold text-dark">£14</span>
+          </div>
+          <p class="small text-muted mb-0">Toasted brioche, onion chutney</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Garlic Prawns -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-ella-olsson-1640774.jpg" alt="Garlic Prawns" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Garlic Prawns</h6>
+            <span class="fw-semibold text-dark">£15</span>
+          </div>
+          <p class="small text-muted mb-0">Chilli butter, lemon drizzle</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Grilled Halloumi -->
+    <div class="col-md-6 col-lg-4 dish-item">
+      <article class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img src="assets/img/pexels-nerfee-mirandilla-3186654.jpg" alt="Grilled Halloumi" class="card-img-top object-cover">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h6 class="mb-0">Grilled Halloumi</h6>
+            <span class="fw-semibold text-dark">£9</span>
+          </div>
+          <p class="small text-muted mb-0">Honey glaze, pomegranate</p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</div>
+
 
                             <!-- Small Plates -->
                             <div class="tab-pane fade" id="p-smallplates" role="tabpanel">
@@ -386,8 +462,9 @@
 
             /* Black Sidebar Container */
             .category-box {
-                background-color: #000;
-                border: none;
+                background-color: #000; /* keeps black background */
+  min-height: 650px; /* increased height */
+  padding: 2rem 1rem; /* more breathing space */
             }
 
             /* Sidebar Buttons */
