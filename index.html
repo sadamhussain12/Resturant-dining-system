@@ -15,10 +15,11 @@
 </head>
 <body class="text-white">
 <!-- ===== Transparent Modern Navbar ===== -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
   <div class="container-fluid px-5">
 
-    <!-- Logo -->
+    <!-- Logo (Left) -->
     <a class="navbar-brand" href="#">
       <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
     </a>
@@ -29,241 +30,240 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu -->
+    <!-- Menu (Center, fixed while scrolling) -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav text-uppercase fw-semibold">
-        <li class="nav-item mx-2">
-          <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
-        </li>
-      </ul>
+      <div class="fixed-center-menu">
+        <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#reservation">Reservation</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Right Button -->
     <div class="d-none d-lg-flex align-items-center">
-      <a href="#" 
-         class="btn fw-bold text-white px-4 py-2" 
-         style="
-           border: 2px solid var(--primary-color); 
-           border-radius: 50px; 
-           transition: all 0.3s;
-         "
-         onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
-         onmouseout="this.style.background='transparent'; this.style.color='white';">
+      <a href="#"
+         class="btn fw-bold main-btn px-4 py-2"
+         style="border: 2px solid var(--primary-color); border-radius: 50px; transition: all 0.3s;">
         ORDER BY PHONE
       </a>
     </div>
 
   </div>
 </nav>
+<!-- Hero Section -->
+<header class="d-flex align-items-center justify-content-end"
+        style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
 
-<!-- Navbar Hover/Active Script -->
-<script>
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
-    link.addEventListener('mouseleave', () => {
-      if (!link.classList.contains('active')) link.style.color = 'white';
-    });
-  });
-</script>
+  <!-- Optional overlay -->
+  <div style="position: absolute; inset: 0;"></div>
 
+  <!-- Right-side content -->
+  <div class="container position-relative px-3 px-lg-5"
+       style="max-width: 600px; margin-right: 5%; z-index: 1;">
 
-<!-- Hero Section with Black Overlay -->
-<header class="text-white text-center d-flex align-items-center"
-        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/bg1.jpg') center/cover no-repeat; min-height: 100vh;">
-
-  <div class="container px-3 px-lg-5">
-    <!-- Desktop large heading -->
-    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block" style="font-family: 'Playfair Display', serif;">
+    <!-- Large heading -->
+    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
+        style="font-family: 'Playfair Display', serif; color: #000;">
       Dining at<br>Alumination
     </h1>
 
-    <!-- Smaller heading for tablets/phones -->
-    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none" style="font-family: 'Playfair Display', serif;">
+    <!-- Small heading (mobile) -->
+    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
+        style="font-family: 'Playfair Display', serif; color: #000;">
       Dining at Alumination
     </h1>
 
-    <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif;">
+    <p class="lead fw-semibold mt-3"
+       style="font-family: 'Poppins', sans-serif; color: #000;">
       Discover and enjoy our delicious and authentic food
     </p>
 
-    <a href="#welcome" class="btn secondary-btn btn-lg mt-4">Book A Table</a>
+    <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
   </div>
 </header>
 
-<!-- New Section: Welcome To Lebanese Village -->
-<section id="welcome" class="py-5 bg-white text-dark">
-  <div class="container-fluid px-3 px-lg-5">
-    <div class="row g-0 align-items-center">
-      <!-- Left text column -->
-      <div class="col-lg-6 d-flex justify-content-center">
-        <div class="p-4 p-lg-5 w-100" style="max-width:780px;">
-          <p class="mb-2 fw-semibold" style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color:var(--primary-color);">
+<!-- Welcome To Alumination Section -->
+<section id="welcome" class="py-5 bg-light text-dark">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="border-start border-3 ps-4" style="border-color: var(--primary-color);">
+          <p class="mb-2" style="
+              font-family: 'Allura', cursive;
+              font-size: 2.7rem;
+              color: var(--primary-color);
+              line-height: 1;">
             Welcome To
           </p>
 
-          <h2 class="display-5 display-lg-4 fw-normal mb-4" style="font-family: 'Playfair Display', serif;">
+          <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif; font-size: 2.8rem;">
             Alumination
           </h2>
 
-          <p class="lead" style="font-family: 'Poppins', sans-serif;">
-            Looking for authentic Lebanese cuisine in Chesham? Lebanese Village is your go-to destination! With traditional dishes like hummus, shawarma, and falafel, our skilled chefs prepare each dish with love and precision. Experience the essence of Lebanon in picturesque Chesham. Also, check out our branch in Reading!
+          <p class="lead mb-4" style="font-family: 'Poppins', sans-serif; color:#555;">
+            Discover the art of refined living at Alumination — where timeless elegance meets
+            modern innovation. Each space we design embodies craftsmanship, creativity, and a
+            touch of brilliance, making every experience truly exceptional.
           </p>
+
+          <a href="#projects" class="btn main-btn rounded-0 px-4 py-2 text-uppercase" 
+             style="font-size: 0.9rem; letter-spacing: 1px;">
+            Discover More
+          </a>
         </div>
       </div>
 
-      <!-- Right image column: swap tall image for lg, ratio for smaller screens -->
-      <div class="col-lg-6">
-        <!-- large desktop image -->
-        <img src="assets/img/img2.jpg" alt="Restaurant interior" class="img-fluid w-100 d-none d-lg-block"
-             style="object-fit: cover; height: 680px;">
-
-        <!-- mobile/tablet ratio image -->
-        <div class="ratio ratio-4x3 d-block d-lg-none">
-          <img src="assets/img/img2.jpg" alt="Restaurant interior" class="img-fluid" style="object-fit: cover;">
+      <!-- Right Image -->
+      <div class="col-lg-6 position-relative">
+        <div class="position-relative rounded-3 overflow-hidden shadow-lg">
+          <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" alt="Elegant interior lighting design" class="img-fluid rounded-3"
+               style="object-fit: cover; height: 420px; width: 100%;">
+          <div class="position-absolute top-0 start-0 w-100 h-100"></div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-
-<!-- Featured Menu Highlights Section -->
-<section id="featured-menu" class="py-5 bg-white text-dark text-center">
-  <div class="container px-3 px-lg-5">
-    <p class="text-secondary mb-1 fw-semibold">Dishes</p>
-    <h2 class="h3 h-lg-2 fw-bold mb-4 mb-lg-5">FEATURED MENU HIGHLIGHTS</h2>
+<!-- Compact UK-Style Featured Menu -->
+<section id="featured-menu" class="py-5 bg-white text-dark">
+  <div class="container px-4 px-lg-5">
+    <div class="text-center mb-5">
+      <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+        Signature Dishes
+      </p>
+      <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+        Featured Menu Highlights
+      </h2>
+      <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+    </div>
 
     <div class="row g-4 justify-content-center">
-      <!-- Card 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 text-white overflow-hidden" style="transition: transform 0.4s;">
-          <!-- desktop tall image -->
-          <img src="assets/img/GDDeliveroo-04.jpg" class="card-img d-none d-lg-block" alt="King Prawn Jalfrezi"
-               style="height: 500px; object-fit: cover; transition: transform 0.5s;">
-          <!-- mobile ratio -->
-          <div class="ratio ratio-4x3 d-block d-lg-none">
-            <img src="assets/img/GDDeliveroo-04.jpg" alt="King Prawn Jalfrezi" class="img-fluid" style="object-fit: cover; transition: transform 0.5s;">
-          </div>
-
-          <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3 p-lg-4">
-            <h4 class="fw-bold fs-5 fs-lg-4">KING PRAWN JALFREZI</h4>
-            <p class="mb-3 small mb-lg-3">Juicy king prawns cooked with peppers and onions in a tangy, spiced tomato sauce.</p>
-            <a href="#" class="btn main-btn text-dark fw-semibold" style="transition: transform 0.3s;">Order Now!</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 text-white overflow-hidden" style="transition: transform 0.4s;">
-          <img src="assets/img/GDDeliveroo-08.jpg" class="card-img d-none d-lg-block" alt="Paneer Tikka Masala"
-               style="height: 500px; object-fit: cover; transition: transform 0.5s;">
-          <div class="ratio ratio-4x3 d-block d-lg-none">
-            <img src="assets/img/GDDeliveroo-08.jpg" alt="Paneer Tikka Masala" class="img-fluid" style="object-fit: cover; transition: transform 0.5s;">
-          </div>
-
-          <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3 p-lg-4">
-            <h4 class="fw-bold fs-5 fs-lg-4">PANEER TIKKA MASALA</h4>
-            <p class="mb-3 small mb-lg-3">Soft, grilled paneer simmered in a creamy and delicately spiced masala sauce.</p>
-            <a href="#" class="btn main-btn text-dark fw-semibold" style="transition: transform 0.3s;">Order Now!</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card border-0 text-white overflow-hidden" style="transition: transform 0.4s;">
-          <img src="assets/img/GDDeliveroo-23-1-1.jpg" class="card-img d-none d-lg-block" alt="Butter Chicken"
-               style="height: 500px; object-fit: cover; transition: transform 0.5s;">
-          <div class="ratio ratio-4x3 d-block d-lg-none">
-            <img src="assets/img/GDDeliveroo-23-1-1.jpg" alt="Butter Chicken" class="img-fluid" style="object-fit: cover; transition: transform 0.5s;">
-          </div>
-
-          <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3 p-lg-4">
-            <h4 class="fw-bold fs-5 fs-lg-4">BUTTER CHICKEN</h4>
-            <p class="mb-3 small mb-lg-3">Tender chicken in a velvety, mildly spiced butter curry – a true classic.</p>
-            <a href="#" class="btn main-btn text-dark fw-semibold" style="transition: transform 0.3s;">Order Now!</a>
-          </div>
-        </div>
-      </div>
+     <!-- Dish 1 -->
+<div class="col-12 col-sm-6 col-lg-4">
+  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+    <div class="menu-img-wrapper">
+      <img src="assets/img/Louisiana-style-chicken-burger.jpg" alt="Louisiana Chicken Burger" class="img-fluid menu-img">
+    </div>
+    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Louisiana Chicken Burger</h5>
+      <p class="small mb-3">Crispy fried chicken layered with lettuce, pickles, and creamy mayo in a toasted brioche bun.</p>
+      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
     </div>
   </div>
+</div>
+
+<!-- Dish 2 -->
+<div class="col-12 col-sm-6 col-lg-4">
+  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+    <div class="menu-img-wrapper">
+      <img src="assets/img/HF_Y24_R48_W42_UK_R23391-3_Main_5_low_2-68cbd2c0.webp" alt="Creamy Tuscan Pasta" class="img-fluid menu-img">
+    </div>
+    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Creamy Tuscan Pasta</h5>
+      <p class="small mb-3">Freshly cooked pasta tossed in a rich, creamy sauce with sun-dried tomatoes and baby spinach.</p>
+      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Dish 3 -->
+<div class="col-12 col-sm-6 col-lg-4">
+  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+    <div class="menu-img-wrapper">
+      <img src="assets/img/gluten-free-buttermilk-fried-chicken-recipe-4.jpg" alt="Buttermilk Fried Chicken" class="img-fluid menu-img">
+    </div>
+    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Buttermilk Fried Chicken</h5>
+      <p class="small mb-3">Golden, crispy chicken marinated in buttermilk and herbs — juicy inside, perfectly crunchy outside.</p>
+      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
 </section>
-<!-- Takeaway Special Section -->
-<section id="takeaway" class="py-5">
-  <div class="position-relative" 
-       style="background: url('assets/img/GDDeliveroo-14.jpg') center/cover no-repeat; min-height: 420px;">
-       
-    <!-- Black overlay for readability -->
-    <div style="position:absolute; inset:0; background: rgba(0,0,0,0.5);"></div>
+<!-- Takeaway Special Section (Modern UK Style) -->
+<section id="takeaway" class="py-5" 
+         style="background-color: #f8f8f8; overflow: hidden;">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
 
-    <div class="container h-100 position-relative">
-      <div class="row h-100 align-items-center justify-content-start">
-        
-        <!-- Text Overlay Panel -->
-        <div class="col-12 col-md-6 col-lg-5">
-          <div class="bg-dark bg-opacity-75 rounded-3 p-4 p-md-5 text-white mx-2 mx-md-0 text-center text-md-start"
-               style="backdrop-filter: none;">
-            
-            <p class="text-muted mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 0.9rem;">
-              Takeaway Special
-            </p>
-
-            <h3 class="fw-bold text-uppercase mb-3" 
-                style="font-size: clamp(1.4rem, 4.5vw, 3.4rem); line-height: 1.1;">
-              Enjoy free home<br class="d-none d-sm-block"> delivery within 5<br class="d-none d-sm-block"> miles radius
-            </h3>
-
-            <h4 class="fw-bold text-uppercase mb-4" 
-                style="font-size: clamp(1.2rem, 3.5vw, 2.2rem); line-height: 1.1;">
-              on orders over £20
-            </h4>
-
-            <!-- Yellow Button with Zoom Effect -->
-            <a href="#" 
-               class="btn btn-lg text-dark main-btn w-100 w-md-auto" 
-               style="-transition: transform 0.3s ease; display: inline-block;"
-               onmouseover="this.style.transform='scale(1.08)'" 
-               onmouseout="this.style.transform='scale(1)'">
-              Order Now!
-            </a>
-
-          </div>
+      <!-- Left Side - Image -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0 position-relative">
+        <div class="rounded-4 overflow-hidden shadow-sm" 
+             style="max-width: 800px; height:350px;">
+          <img src="assets/img/pexels-elevate-1267320.jpg" 
+               alt="Takeaway Delivery" 
+               class="img-fluid" 
+               style="object-fit: cover; height: 100%; width: 100%;">
         </div>
 
-        <!-- Empty space on desktop only -->
-        <div class="col-12 col-md-6 d-none d-md-block"></div>
+        <!-- Floating tag -->
+        <div class="position-absolute top-0 start-0 bg-warning text-dark fw-semibold px-3 py-1 rounded-end-2"
+             style="transform: translate(0, -50%); font-size: 0.85rem;">
+          TAKEAWAY SPECIAL
+        </div>
       </div>
+
+      <!-- Right Side - Text -->
+      <div class="col-12 col-md-6 ps-md-5 text-center text-md-start">
+        <h2 class="fw-bold text-uppercase mb-3"
+            style="font-size: clamp(1.8rem, 4vw, 2.6rem); color: #222;">
+          Enjoy Free Home Delivery<br>
+          <span style="color: var(--primary-color);">Within 5 Miles</span>
+        </h2>
+
+        <p class="text-muted mb-4" style="font-size: 1rem;">
+          Order your favourites today and have them delivered hot & fresh to your doorstep —
+          absolutely free on all orders over <strong>£20</strong>. Fast, friendly, and always on time.
+        </p>
+
+        <a href="#" 
+           class="btn btn-lg main-btn rounded-pill px-4 py-2"
+           style="transition: all 0.3s ease;">
+          Order Now →
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- Discover Slider Section -->
 <section id="discover" class="py-5 bg-white text-dark">
-  <div class="container px-3 mb-4 px-lg-5">
-    <!-- Heading -->
-    <div class="text-center mb-4">
-      <p class="mb-2 fw-semibold" style="font-family: 'Great Vibes', cursive; font-size: 2.2rem; color:var(--primary-color);">
-            Discover
-          </p>
-      <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">Our Unique Atmosphere</h2>
-      <p class="mx-auto" style="max-width:900px;">
-        Indulge in authentic Lebanese cuisine and experience a relaxed, friendly ambience that lifts your mood and brightens your day or evening.
+  <div class="container px-4 px-lg-5">
+    <div class="text-center mb-5">
+      <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+        Discover
+      </p>
+      <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+        Our Unique Atmosphere
+      </h2>
+      <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+      <p class="mx-auto mt-2" style="max-width:900px;">
+       Experience Lebanese dining at its finest — where exquisite flavours meet timeless elegance and warm hospitality.
       </p>
     </div>
 
@@ -276,17 +276,17 @@
           <div class="row gx-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-04.jpg" class="d-block w-100 h-100" alt="gallery1" style="object-fit: cover;">
+                <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" class="d-block w-100 h-100" alt="gallery1" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-08.jpg" class="d-block w-100 h-100" alt="gallery2" style="object-fit: cover;">
+                <img src="assets/img/Louisiana-style-chicken-burger.jpg" class="d-block w-100 h-100" alt="gallery2" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-14.jpg" class="d-block w-100 h-100" alt="gallery3" style="object-fit: cover;">
+                <img src="assets/img/pexels-pietrozj-671956.jpg" class="d-block w-100 h-100" alt="gallery3" style="object-fit: cover;">
               </div>
             </div>
           </div>
@@ -297,17 +297,17 @@
           <div class="row gx-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-04.jpg" class="d-block w-100 h-100" alt="gallery4" style="object-fit: cover;">
+                <img src="assets/img/pexels-chevanon-323682.jpg" class="d-block w-100 h-100" alt="gallery4" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-08.jpg" class="d-block w-100 h-100" alt="gallery5" style="object-fit: cover;">
+                <img src="assets/img/pexels-narda-yescas-724842-1566837.jpg" class="d-block w-100 h-100" alt="gallery5" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-14.jpg" class="d-block w-100 h-100" alt="gallery6" style="object-fit: cover;">
+                <img src="assets/img/pexels-felicity-tai-7966522.jpg" class="d-block w-100 h-100" alt="gallery6" style="object-fit: cover;">
               </div>
             </div>
           </div>
@@ -318,17 +318,17 @@
           <div class="row gx-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-23-1-1.jpg" class="d-block w-100 h-100" alt="gallery7" style="object-fit: cover;">
+                <img src="assets/img/pexels-reneterp-3217156.jpg" class="d-block w-100 h-100" alt="gallery7" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-04.jpg" class="d-block w-100 h-100" alt="gallery8" style="object-fit: cover;">
+                <img src="assets/img/pexels-minan1398-1482803.jpg" class="d-block w-100 h-100" alt="gallery8" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
               <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/GDDeliveroo-08.jpg" class="d-block w-100 h-100" alt="gallery9" style="object-fit: cover;">
+                <img src="assets/img/pexels-elevate-1267320.jpg" class="d-block w-100 h-100" alt="gallery9" style="object-fit: cover;">
               </div>
             </div>
           </div>
@@ -743,6 +743,9 @@
 </footer>
 
 <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
   <!-- Inline Hover Zoom Script (works on desktop; no change on touch devices) -->
