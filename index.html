@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet">
+  
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -71,34 +72,122 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <header class="d-flex align-items-center justify-content-end"
-    style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
+<header class="d-flex align-items-center justify-content-end"
+  style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
 
-    <!-- Optional overlay -->
-    <div style="position: absolute; inset: 0;"></div>
+  <!-- Optional overlay -->
+  <div style="position: absolute; inset: 0;"></div>
 
-    <!-- Right-side content -->
-    <div class="container position-relative px-3 px-lg-5" style="max-width: 600px; margin-right: 5%; z-index: 1;">
+  <!-- Right-side content -->
+  <div class="container position-relative px-3 px-lg-5 hero-content"
+    style="max-width: 600px; margin-right: 5%; z-index: 1;">
 
-      <!-- Large heading -->
-      <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
-        style="font-family: 'Playfair Display', serif; color: #000;">
-        Dining at<br>Alumination
-      </h1>
+    <!-- Large heading -->
+    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
+      style="font-family: 'Antonio', sans-serif; color: #000;">
+      Dining at<br>Alumination
+    </h1>
 
-      <!-- Small heading (mobile) -->
-      <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
-        style="font-family: 'Playfair Display', serif; color: #000;">
-        Dining at Alumination
-      </h1>
+    <!-- Small heading (mobile) -->
+    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
+      style="font-family: 'Antonio', sans-serif; color: #000;">
+      Dining at Alumination
+    </h1>
 
-      <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
-        Discover and enjoy our delicious and authentic food
-      </p>
+    <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
+      Discover and enjoy our delicious and authentic food
+    </p>
 
-      <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
-    </div>
-  </header>
+    <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
+  </div>
+</header>
+
+<!-- Responsive Styles -->
+<style>
+  /* --- Mobile Only Adjustments --- */
+  @media (max-width: 991px) {
+    header {
+      background-size: 130% auto !important;
+      background-position: right center !important;
+      min-height: 75vh !important;
+    }
+
+    .hero-content {
+      text-align: right !important;
+      margin-right: 4% !important;
+      width: 100%;
+    }
+
+    header h1.display-4 {
+      font-size: 3.2rem !important;
+      line-height: 1.1 !important;
+      margin-bottom: 1rem !important;
+    }
+
+    header p {
+      font-size: 1.3rem !important;
+      max-width: 90%;
+      margin-left: auto;
+      color: #000 !important;
+    }
+
+    header .btn {
+      font-size: 1.1rem !important;
+      padding: 12px 30px !important;
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-right: 0 !important;
+    }
+  }
+
+  /* Remove unwanted space after hero section */
+header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile specific */
+@media (max-width: 576px) {
+  header {
+    background-size: 150% auto !important;
+    background-position: right top !important;
+    min-height: 70vh !important; /* reduce more */
+    margin-bottom: 0 !important; /* kill extra gap */
+    padding-bottom: 0 !important;
+  }
+
+  .hero-content {
+    margin-right: 3% !important;
+    text-align: right !important;
+  }
+
+  header h1.display-4 {
+    font-size: 3.8rem !important;
+  }
+
+  header p {
+    font-size: 1.2rem !important;
+  }
+
+  header .btn {
+    font-size: 1rem !important;
+    padding: 10px 25px !important;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-right: 0 !important;
+  }
+}
+
+/* Ensure next section doesn't start too low */
+section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+</style>
+
 
   <!-- Welcome To Alumination Section -->
   <section id="welcome" class="py-5 bg-light text-dark">
@@ -116,7 +205,7 @@
               Welcome To
             </p>
 
-            <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif; font-size: 2.8rem;">
+            <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif; font-size: 2.8rem;">
               Alumination
             </h2>
 
@@ -153,7 +242,7 @@
         <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
           Signature Dishes
         </p>
-        <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+        <h2 class="display-6 fw-bold" style="font-family: 'Antonio', sans-serif;">
           Featured Menu Highlights
         </h2>
         <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
@@ -261,12 +350,12 @@
         <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
           Discover
         </p>
-        <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+        <h2 class="display-6 fw-bold" style="font-family: 'Antonio', sans-serif;">
           Our Unique Atmosphere
         </h2>
         <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
         <p class="mx-auto mt-2" style="max-width:900px;">
-          Experience Lebanese dining at its finest — where exquisite flavours meet timeless elegance and warm
+          Experience Alumination dining at its finest — where exquisite flavours meet timeless elegance and warm
           hospitality.
         </p>
       </div>
@@ -371,140 +460,185 @@
   </section>
 
 
+<!-- Book a Table Section: Modern Card Grid (Antonio + Poppins) -->
+<section id="book-table" class="py-5 bg-light text-dark" style="font-family: 'Poppins', sans-serif;">
+  <div class="container px-3 px-lg-5 text-center">
 
+    <!-- Heading -->
+    <p class="text-uppercase mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 1.1rem; color: var(--primary-color);">
+      Dining
+    </p>
+    <h2 class="fw-bold text-uppercase mb-3" 
+        style="font-family: 'Antonio', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: 1px;">
+      Book a Table
+    </h2>
+    <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+    <p class="lead mx-auto mb-3" style="max-width: 700px; font-size: 1rem;">
+      Whether you’re joining us for a casual meal, an elegant evening, or a private gathering, 
+      Alumination offers the perfect setting to dine, relax, and celebrate great taste.
+    </p>
 
-  <!-- Book a Table Section -->
-  <section id="book-table" class="py-5" style="background: #000;">
-    <div class="container">
-      <div class="row align-items-center bg-black text-white rounded-3 p-4 p-md-5"
-        style="border: 1px solid rgba(255,255,255,0.1);">
+    <!-- Cards Grid -->
+    <div class="row g-4 justify-content-center">
 
-        <!-- Image -->
-        <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <img src="assets/img/chairs-tables-restaurant_1048944-1779387.jpg" alt="Dining Table"
-            class="img-fluid rounded-3 w-100" style="object-fit: cover;">
+      <!-- Lunch Card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+          <img src="assets/img/lunch.png" alt="Lunch Dining" 
+               class="card-img-top" style="height: 280px; object-fit: cover;">
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-2" 
+                style="font-family:'Antonio', sans-serif; letter-spacing: .5px;">Lunch</h5>
+            <p class="small mb-4">A relaxed midday dining experience with fresh, seasonal dishes and signature flavours.</p>
+            <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Reserve</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Text Content -->
-        <div class="col-12 col-md-6">
-          <p class="text-uppercase text-muted mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 1rem;">
-            Dining
-          </p>
+      <!-- Dinner Card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+          <img src="assets/img/dinner.png" alt="Dinner Dining" 
+               class="card-img-top" style="height: 280px; object-fit: cover;">
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-2" 
+                style="font-family:'Antonio', sans-serif; letter-spacing: .5px;">Dinner</h5>
+            <p class="small mb-4">Join us for an evening of vibrant flavours, fine ambiance, and warm hospitality.</p>
+            <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Reserve</a>
+          </div>
+        </div>
+      </div>
 
-          <h2 class="fw-bold text-uppercase mb-3" style="font-size: clamp(1.8rem, 4vw, 3rem);">
-            Book a Table
-          </h2>
+      <!-- Private Dining Card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+          <img src="assets/img/private.png" alt="Private Dining" 
+               class="card-img-top" style="height: 280px; object-fit: cover;">
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-2" 
+                style="font-family:'Antonio', sans-serif; letter-spacing: .5px;">Private Dining</h5>
+            <p class="small mb-4">Host your intimate gatherings or special celebrations in our private dining space.</p>
+            <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Enquire</a>
+          </div>
+        </div>
+      </div>
 
-          <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">
-            Whether it’s a casual meal, a romantic dinner, a family celebration, or a special event,
-            we’re here to make your experience unforgettable. Please provide your details below,
-            and we’ll confirm your reservation as soon as possible.
-          </p>
+    </div>
+  </div>
+</section>
 
-          <!-- Button with Zoom Hover -->
-          <a href="#" class="btn btn-lg main-btn fw-bold text-dark"
-            style="transition: transform 0.3s ease; display: inline-block;"
-            onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
-            Book Now!
-          </a>
+<!-- Hover Effects -->
+<style>
+  #book-table .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  #book-table .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  }
+  #book-table .card img {
+    transition: transform 0.6s ease;
+  }
+  #book-table .card:hover img {
+    transform: scale(1.05);
+  }
+</style>
+
+
+
+ <!-- Blog Section -->
+<section id="blog" class="py-5 bg-white text-dark">
+  <div class="container px-4 px-lg-5">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <p class="mb-1 fw-semibold" style="color: var(--primary-color);">Our Stories</p>
+      <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif;">From the Heart of Alumination</h2>
+      <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+      <p class="mx-auto" style="max-width: 700px; font-size: 1rem;">
+        Explore the world of Alumination Restaurant — where fine dining meets timeless elegance.
+        Discover the passion, artistry, and inspiration behind every experience we create.
+      </p>
+    </div>
+
+    <!-- Blog Cards -->
+    <div class="row g-4">
+      <!-- Blog 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100 blog-card"
+          style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+          <div class="position-relative overflow-hidden">
+            <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" class="card-img-top" alt="Blog 1"
+              style="object-fit: cover; height: 280px;">
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+              style="transition: opacity 0.3s;">
+              <a href="blog.html" class="btn main-btn fw-bold">Read More</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Crafting Flavors with Elegance</h5>
+            <p class="card-text text-muted small">
+              At Alumination, every dish tells a story — blending refined technique with authentic flavor to create a truly unforgettable dining experience.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 text-muted small">
+            <i class="far fa-calendar-alt me-1"></i> September 22, 2025
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100 blog-card"
+          style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+          <div class="position-relative overflow-hidden">
+            <img src="assets/img/pexels-chan-walrus-958545-768x432.jpg" class="card-img-top" alt="Blog 2"
+              style="object-fit: cover; height: 280px;">
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+              style="transition: opacity 0.3s;">
+              <a href="#" class="btn main-btn fw-bold">Read More</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Signature Creations You Must Try</h5>
+            <p class="card-text text-muted small">
+              From our chef’s favorites to seasonal delicacies, these are the dishes that define the soul of Alumination Restaurant — exquisite, bold, and full of character.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 text-muted small">
+            <i class="far fa-calendar-alt me-1"></i> October 5, 2025
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100 blog-card"
+          style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+          <div class="position-relative overflow-hidden">
+            <img src="assets/img/royals.png" class="card-img-top" alt="Blog 3"
+              style="object-fit: cover; height: 280px;">
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+              style="transition: opacity 0.3s;">
+              <a href="#" class="btn main-btn fw-bold">Read More</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Inside the Art of Fine Dining</h5>
+            <p class="card-text text-muted small">
+              Step behind the scenes and see how Alumination’s culinary team turns ingredients into experiences — where every detail glows with perfection.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 text-muted small">
+            <i class="far fa-calendar-alt me-1"></i> October 8, 2025
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-  <!-- Blog Section -->
-  <section id="blog" class="py-5 bg-white text-dark">
-    <div class="container px-4 px-lg-5">
-      <!-- Section Heading -->
-      <div class="text-center mb-5">
-        <p class="text-secondary mb-1 fw-semibold">Latest News</p>
-        <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">From Our Blog</h2>
-        <p class="mx-auto" style="max-width: 800px;">
-          Stay updated with the latest stories, culinary tips, and special events from Lebanese Village.
-          Explore our journey and discover the passion behind every dish.
-        </p>
-      </div>
-
-      <!-- Blog Cards -->
-      <div class="row g-4">
-        <!-- Blog 1 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card border-0 shadow-sm h-100 blog-card"
-            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-            <div class="position-relative overflow-hidden">
-              <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" class="card-img-top" alt="Blog 1"
-                style="object-fit: cover; height: 280px;">
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
-                style="transition: opacity 0.3s;">
-                <a href="blog.html" class="btn main-btn fw-bold">Read More</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">The Secrets Behind
-                Authentic Lebanese Spices</h5>
-              <p class="card-text text-muted">Discover how we bring centuries-old flavors to life with fresh, aromatic
-                spices and traditional cooking techniques.</p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-muted small">
-              <i class="far fa-calendar-alt me-1"></i> September 22, 2025
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog 2 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card border-0 shadow-sm h-100 blog-card"
-            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-            <div class="position-relative overflow-hidden">
-              <img src="assets/img/pexels-chan-walrus-958545-768x432.jpg" class="card-img-top" alt="Blog 2"
-                style="object-fit: cover; height: 280px;">
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
-                style="transition: opacity 0.3s;">
-                <a href="#" class="btn main-btn fw-bold">Read More</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">5 Must-Try Dishes at
-                Lebanese Village</h5>
-              <p class="card-text text-muted">From mezze to shawarma, here are our top recommendations that showcase the
-                heart of Lebanese cuisine.</p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-muted small">
-              <i class="far fa-calendar-alt me-1"></i> October 5, 2025
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog 3 -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card border-0 shadow-sm h-100 blog-card"
-            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-            <div class="position-relative overflow-hidden">
-              <img src="assets/img/royals.png" class="card-img-top" alt="Blog 3"
-                style="object-fit: cover; height: 280px;">
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
-                style="transition: opacity 0.3s;">
-                <a href="#" class="btn main-btn fw-bold">Read More</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">Behind the Scenes: A Day in
-                Our Kitchen</h5>
-              <p class="card-text text-muted">Take a peek into our kitchen and see how our chefs craft delicious dishes
-                with passion and precision.</p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-muted small">
-              <i class="far fa-calendar-alt me-1"></i> October 8, 2025
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Hover Effects -->
   <style>
@@ -530,101 +664,96 @@
     });
   </script>
 
+<!-- Contact / Get in Touch Section -->
+<section id="contact" class="position-relative text-white py-5"
+  style="background: url('assets/img/pexels-reneterp-3217156.jpg') center/cover no-repeat; min-height: 650px;">
 
-  <!-- Get in Touch Section -->
-  <section id="contact" class="position-relative text-white py-5"
-    style="background: url('assets/img/2151182554.jpg') center/cover no-repeat; min-height: 600px;">
+  <!-- Subtle Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.55);"></div>
 
-    <!-- Black Overlay (more transparent for sharp colors) -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.5;"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
 
-    <div class="container position-relative">
-      <div class="row align-items-center">
-
-        <!-- LEFT SIDE HEADING -->
-        <div class="col-12 col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
-          <h1 class="fw-bold display-4 text-white text-uppercase"
-            style="letter-spacing: 2px; border-left: 4px solid #f26e25; padding-left: 15px;">
-            Get in Touch
-          </h1>
-        </div>
-
-        <!-- RIGHT SIDE FORM -->
-        <div class="col-12 col-lg-6">
-          <div class="p-4 p-md-5 rounded-4 shadow-lg" style="
-                background: rgba(0, 0, 0, 0.327); 
-                backdrop-filter: blur(14px); 
-                -webkit-backdrop-filter: blur(14px); 
-                border: 1px solid rgba(255,255,255,0.4);
-             ">
-
-            <!-- Heading Text -->
-            <p class="mb-4" style="font-size: 0.95rem; line-height: 1.6;">
-              <strong>Thank you for reaching out to Karwan!</strong> If you’re looking to book a party or organise a
-              large event, or if you have any general enquiries about any of our branches, please complete the form
-              below, and a member of our team will get back to you promptly.
-              <br><br>
-              <strong>Important Note:</strong> This form is not for table bookings. For table reservations, please
-              contact the specific branch directly.
-              <br><br>
-              We look forward to assisting you!
-            </p>
-
-            <!-- Contact Form -->
-            <form>
-              <!-- Name & Contact Row -->
-              <div class="row mb-3">
-                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                  <label for="name" class="form-label text-white">Name</label>
-                  <input type="text" class="form-control bg-transparent text-white border-light" id="name"
-                    placeholder="Enter your name">
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="contact" class="form-label text-white">Contact Number</label>
-                  <input type="tel" class="form-control bg-transparent text-white border-light" id="contact"
-                    placeholder="Enter your contact number">
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="mb-3">
-                <label for="email" class="form-label text-white">Email</label>
-                <input type="email" class="form-control bg-transparent text-white border-light" id="email"
-                  placeholder="Enter your email">
-              </div>
-
-              <!-- Message -->
-              <div class="mb-3">
-                <label for="message" class="form-label text-white">Message</label>
-                <textarea class="form-control bg-transparent text-white border-light" id="message" rows="4"
-                  placeholder="Write your message"></textarea>
-              </div>
-
-              <!-- Send Button -->
-              <button type="submit" class="btn main-btn fw-bold w-100" style="transition: transform 0.3s;"
-                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                Send
-              </button>
-            </form>
-
-          </div>
-        </div>
-
+      <!-- LEFT SIDE CONTENT -->
+      <div class="col-12 col-lg-6 text-center text-lg-start">
+        <h1 class="fw-bold display-5 text-uppercase mb-3"
+          style="letter-spacing: 2px; color: #ffffff; font-family: 'Antonio', sans-serif;">
+          Let’s Connect
+        </h1>
+        <div class="mb-4" style="width: 90px; height: 3px; background-color: var(--primary-color);"></div>
+        <p class="lead text-white-50" style="max-width: 500px; line-height: 1.8;">
+          Whether it’s an intimate dinner, a private event, or a simple inquiry — the Alumination team is here to make your experience exceptional. 
+          Share your thoughts below, and we’ll reach out soon.
+        </p>
       </div>
-    </div>
-  </section>
 
+      <!-- RIGHT SIDE FORM -->
+      <div class="col-12 col-lg-6">
+        <div class="p-4 p-md-5 rounded-4 shadow-lg" style="
+              background: rgba(255, 255, 255, 0.08);
+              backdrop-filter: blur(14px);
+              -webkit-backdrop-filter: blur(14px);
+              border: 1px solid rgba(255,255,255,0.3);
+            ">
+
+          <h4 class="fw-semibold mb-4 text-white text-center">Get in Touch with Alumination</h4>
+
+          <form>
+            <!-- Name & Contact Row -->
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label for="name" class="form-label text-white-50">Name</label>
+                <input type="text" class="form-control bg-transparent text-white border-light rounded-3" id="name"
+                  placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <label for="contact" class="form-label text-white-50">Phone</label>
+                <input type="tel" class="form-control bg-transparent text-white border-light rounded-3" id="contact"
+                  placeholder="+92 300 1234567">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label text-white-50">Email</label>
+              <input type="email" class="form-control bg-transparent text-white border-light rounded-3" id="email"
+                placeholder="example@email.com">
+            </div>
+
+            <!-- Message -->
+            <div class="mb-4">
+              <label for="message" class="form-label text-white-50">Message</label>
+              <textarea class="form-control bg-transparent text-white border-light rounded-3" id="message" rows="4"
+                placeholder="How can we assist you?"></textarea>
+            </div>
+
+            <!-- Send Button -->
+            <div class="text-center">
+              <button type="submit" class="btn main-btn fw-bold px-5 py-2"
+                style="transition: all 0.3s; border-radius: 30px;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- ====== Testimonials Section ====== -->
   <section id="testimonials" class="py-5" style="background-color: #fff;">
     <div class="container text-center">
 
       <!-- Heading -->
       <div class="mb-5">
-        <p class="fw-semibold text-secondary mb-1">Our Happy Guests</p>
-        <h2 class="fw-bold" style="color: var(--primary-color); font-family: 'Playfair Display', serif;">
+        <p class="fw-semibold mb-1" style="color: var(--primary-color);">Our Happy Guests</p>
+        <h2 class="fw-bold" style="font-family: 'Antonio', sans-serif;">
           What People Say About Alumination
         </h2>
-        <p class="text-muted mx-auto" style="max-width: 700px;">
+        <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+        <p class="text-muted mx-auto" style="max-width: 700px; font-size: 1rem;">
           We take pride in creating unforgettable dining experiences. Here’s what our valued guests have to say about
           us.
         </p>
