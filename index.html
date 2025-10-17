@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,765 +12,802 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<!-- ===== Transparent Modern Navbar ===== -->
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
-  <div class="container-fluid px-5">
+  <!-- ===== Transparent Modern Navbar ===== -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
+    <div class="container-fluid px-5">
 
-    <!-- Logo (Left) -->
-    <a class="navbar-brand" href="#">
-      <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
-    </a>
-
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu (Center, fixed while scrolling) -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <div class="fixed-center-menu">
-        <ul class="navbar-nav text-uppercase fw-semibold mb-0">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#reservation">Reservation</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="about-us.html">About</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="contact-us.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Right Button -->
-    <div class="d-none d-lg-flex align-items-center">
-      <a href="#"
-         class="btn fw-bold main-btn px-4 py-2"
-         style="border: 2px solid var(--primary-color); border-radius: 50px; transition: all 0.3s;">
-        ORDER BY PHONE
+      <!-- Logo (Left) -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
       </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu (Center, fixed while scrolling) -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="fixed-center-menu">
+          <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#reservation">Reservation</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Button -->
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="#" class="btn fw-bold main-btn px-4 py-2"
+          style="border: 2px solid var(--primary-color); border-radius: 50px; transition: all 0.3s;">
+          ORDER BY PHONE
+        </a>
+      </div>
+
     </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="d-flex align-items-center justify-content-end"
+    style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
 
-  </div>
-</nav>
-<!-- Hero Section -->
-<header class="d-flex align-items-center justify-content-end"
-        style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
+    <!-- Optional overlay -->
+    <div style="position: absolute; inset: 0;"></div>
 
-  <!-- Optional overlay -->
-  <div style="position: absolute; inset: 0;"></div>
+    <!-- Right-side content -->
+    <div class="container position-relative px-3 px-lg-5" style="max-width: 600px; margin-right: 5%; z-index: 1;">
 
-  <!-- Right-side content -->
-  <div class="container position-relative px-3 px-lg-5"
-       style="max-width: 600px; margin-right: 5%; z-index: 1;">
-
-    <!-- Large heading -->
-    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
+      <!-- Large heading -->
+      <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
         style="font-family: 'Playfair Display', serif; color: #000;">
-      Dining at<br>Alumination
-    </h1>
+        Dining at<br>Alumination
+      </h1>
 
-    <!-- Small heading (mobile) -->
-    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
+      <!-- Small heading (mobile) -->
+      <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
         style="font-family: 'Playfair Display', serif; color: #000;">
-      Dining at Alumination
-    </h1>
+        Dining at Alumination
+      </h1>
 
-    <p class="lead fw-semibold mt-3"
-       style="font-family: 'Poppins', sans-serif; color: #000;">
-      Discover and enjoy our delicious and authentic food
-    </p>
+      <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
+        Discover and enjoy our delicious and authentic food
+      </p>
 
-    <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
-  </div>
-</header>
+      <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
+    </div>
+  </header>
 
-<!-- Welcome To Alumination Section -->
-<section id="welcome" class="py-5 bg-light text-dark">
-  <div class="container py-5">
-    <div class="row align-items-center g-5">
+  <!-- Welcome To Alumination Section -->
+  <section id="welcome" class="py-5 bg-light text-dark">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
 
-      <!-- Left Content -->
-      <div class="col-lg-6">
-        <div class="border-start border-3 ps-4" style="border-color: var(--primary-color);">
-          <p class="mb-2" style="
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="border-start border-3 ps-4" style="border-color: var(--primary-color);">
+            <p class="mb-2" style="
               font-family: 'Allura', cursive;
               font-size: 2.7rem;
               color: var(--primary-color);
               line-height: 1;">
-            Welcome To
-          </p>
+              Welcome To
+            </p>
 
-          <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif; font-size: 2.8rem;">
-            Alumination
+            <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif; font-size: 2.8rem;">
+              Alumination
+            </h2>
+
+            <p class="lead mb-4" style="font-family: 'Poppins', sans-serif; color:#555;">
+              Discover the art of refined living at Alumination — where timeless elegance meets
+              modern innovation. Each space we design embodies craftsmanship, creativity, and a
+              touch of brilliance, making every experience truly exceptional.
+            </p>
+
+            <a href="#projects" class="btn main-btn rounded-0 px-4 py-2 text-uppercase"
+              style="font-size: 0.9rem; letter-spacing: 1px;">
+              Discover More
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-6 position-relative">
+          <div class="position-relative rounded-3 overflow-hidden shadow-lg">
+            <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" alt="Elegant interior lighting design"
+              class="img-fluid rounded-3" style="object-fit: cover; height: 420px; width: 100%;">
+            <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Compact UK-Style Featured Menu -->
+  <section id="featured-menu" class="py-5 bg-white text-dark">
+    <div class="container px-4 px-lg-5">
+      <div class="text-center mb-5">
+        <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+          Signature Dishes
+        </p>
+        <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+          Featured Menu Highlights
+        </h2>
+        <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Dish 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+            <div class="menu-img-wrapper">
+              <img src="assets/img/Louisiana-style-chicken-burger.jpg" alt="Louisiana Chicken Burger"
+                class="img-fluid menu-img">
+            </div>
+            <div
+              class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+              <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Louisiana Chicken Burger</h5>
+              <p class="small mb-3">Crispy fried chicken layered with lettuce, pickles, and creamy mayo in a toasted
+                brioche bun.</p>
+              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+            <div class="menu-img-wrapper">
+              <img src="assets/img/HF_Y24_R48_W42_UK_R23391-3_Main_5_low_2-68cbd2c0.webp" alt="Creamy Tuscan Pasta"
+                class="img-fluid menu-img">
+            </div>
+            <div
+              class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+              <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Creamy Tuscan Pasta</h5>
+              <p class="small mb-3">Freshly cooked pasta tossed in a rich, creamy sauce with sun-dried tomatoes and baby
+                spinach.</p>
+              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
+            <div class="menu-img-wrapper">
+              <img src="assets/img/gluten-free-buttermilk-fried-chicken-recipe-4.jpg" alt="Buttermilk Fried Chicken"
+                class="img-fluid menu-img">
+            </div>
+            <div
+              class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+              <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Buttermilk Fried Chicken</h5>
+              <p class="small mb-3">Golden, crispy chicken marinated in buttermilk and herbs — juicy inside, perfectly
+                crunchy outside.</p>
+              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+  <!-- Takeaway Special Section (Modern UK Style) -->
+  <section id="takeaway" class="py-5" style="background-color: #f8f8f8; overflow: hidden;">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+
+        <!-- Left Side - Image -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0 position-relative">
+          <div class="rounded-4 overflow-hidden shadow-sm" style="max-width: 800px; height:350px;">
+            <img src="assets/img/pexels-elevate-1267320.jpg" alt="Takeaway Delivery" class="img-fluid"
+              style="object-fit: cover; height: 100%; width: 100%;">
+          </div>
+
+          <!-- Floating tag -->
+          <div class="position-absolute top-0 start-0 bg-warning text-dark fw-semibold px-3 py-1 rounded-end-2"
+            style="transform: translate(0, -50%); font-size: 0.85rem;">
+            TAKEAWAY SPECIAL
+          </div>
+        </div>
+
+        <!-- Right Side - Text -->
+        <div class="col-12 col-md-6 ps-md-5 text-center text-md-start">
+          <h2 class="fw-bold text-uppercase mb-3" style="font-size: clamp(1.8rem, 4vw, 2.6rem); color: #222;">
+            Enjoy Free Home Delivery<br>
+            <span style="color: var(--primary-color);">Within 5 Miles</span>
           </h2>
 
-          <p class="lead mb-4" style="font-family: 'Poppins', sans-serif; color:#555;">
-            Discover the art of refined living at Alumination — where timeless elegance meets
-            modern innovation. Each space we design embodies craftsmanship, creativity, and a
-            touch of brilliance, making every experience truly exceptional.
+          <p class="text-muted mb-4" style="font-size: 1rem;">
+            Order your favourites today and have them delivered hot & fresh to your doorstep —
+            absolutely free on all orders over <strong>£20</strong>. Fast, friendly, and always on time.
           </p>
 
-          <a href="#projects" class="btn main-btn rounded-0 px-4 py-2 text-uppercase" 
-             style="font-size: 0.9rem; letter-spacing: 1px;">
-            Discover More
+          <a href="#" class="btn btn-lg main-btn rounded-pill px-4 py-2" style="transition: all 0.3s ease;">
+            Order Now →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover Slider Section -->
+  <section id="discover" class="py-5 bg-white text-dark">
+    <div class="container px-4 px-lg-5">
+      <div class="text-center mb-5">
+        <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+          Discover
+        </p>
+        <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+          Our Unique Atmosphere
+        </h2>
+        <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
+        <p class="mx-auto mt-2" style="max-width:900px;">
+          Experience Lebanese dining at its finest — where exquisite flavours meet timeless elegance and warm
+          hospitality.
+        </p>
+      </div>
+
+      <!-- Carousel: shows 3 items per slide on lg, 2 on md, 1 on sm -->
+      <div id="discoverCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row gx-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" class="d-block w-100 h-100"
+                    alt="gallery1" style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/Louisiana-style-chicken-burger.jpg" class="d-block w-100 h-100" alt="gallery2"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-pietrozj-671956.jpg" class="d-block w-100 h-100" alt="gallery3"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row gx-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-chevanon-323682.jpg" class="d-block w-100 h-100" alt="gallery4"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-narda-yescas-724842-1566837.jpg" class="d-block w-100 h-100"
+                    alt="gallery5" style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-felicity-tai-7966522.jpg" class="d-block w-100 h-100" alt="gallery6"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 (duplicate or more images) -->
+          <div class="carousel-item">
+            <div class="row gx-3">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-reneterp-3217156.jpg" class="d-block w-100 h-100" alt="gallery7"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-minan1398-1482803.jpg" class="d-block w-100 h-100" alt="gallery8"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <div class="ratio ratio-4x3 overflow-hidden rounded-3">
+                  <img src="assets/img/pexels-elevate-1267320.jpg" class="d-block w-100 h-100" alt="gallery9"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#discoverCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#discoverCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Indicators (optional) -->
+        <div class="carousel-indicators mt-4">
+          <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Book a Table Section -->
+  <section id="book-table" class="py-5" style="background: #000;">
+    <div class="container">
+      <div class="row align-items-center bg-black text-white rounded-3 p-4 p-md-5"
+        style="border: 1px solid rgba(255,255,255,0.1);">
+
+        <!-- Image -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <img src="assets/img/chairs-tables-restaurant_1048944-1779387.jpg" alt="Dining Table"
+            class="img-fluid rounded-3 w-100" style="object-fit: cover;">
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-12 col-md-6">
+          <p class="text-uppercase text-muted mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 1rem;">
+            Dining
+          </p>
+
+          <h2 class="fw-bold text-uppercase mb-3" style="font-size: clamp(1.8rem, 4vw, 3rem);">
+            Book a Table
+          </h2>
+
+          <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+            Whether it’s a casual meal, a romantic dinner, a family celebration, or a special event,
+            we’re here to make your experience unforgettable. Please provide your details below,
+            and we’ll confirm your reservation as soon as possible.
+          </p>
+
+          <!-- Button with Zoom Hover -->
+          <a href="#" class="btn btn-lg main-btn fw-bold text-dark"
+            style="transition: transform 0.3s ease; display: inline-block;"
+            onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+            Book Now!
           </a>
         </div>
       </div>
-
-      <!-- Right Image -->
-      <div class="col-lg-6 position-relative">
-        <div class="position-relative rounded-3 overflow-hidden shadow-lg">
-          <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" alt="Elegant interior lighting design" class="img-fluid rounded-3"
-               style="object-fit: cover; height: 420px; width: 100%;">
-          <div class="position-absolute top-0 start-0 w-100 h-100"></div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<!-- Compact UK-Style Featured Menu -->
-<section id="featured-menu" class="py-5 bg-white text-dark">
-  <div class="container px-4 px-lg-5">
-    <div class="text-center mb-5">
-      <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
-        Signature Dishes
-      </p>
-      <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
-        Featured Menu Highlights
-      </h2>
-      <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-     <!-- Dish 1 -->
-<div class="col-12 col-sm-6 col-lg-4">
-  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
-    <div class="menu-img-wrapper">
-      <img src="assets/img/Louisiana-style-chicken-burger.jpg" alt="Louisiana Chicken Burger" class="img-fluid menu-img">
-    </div>
-    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
-      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Louisiana Chicken Burger</h5>
-      <p class="small mb-3">Crispy fried chicken layered with lettuce, pickles, and creamy mayo in a toasted brioche bun.</p>
-      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
-    </div>
-  </div>
-</div>
-
-<!-- Dish 2 -->
-<div class="col-12 col-sm-6 col-lg-4">
-  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
-    <div class="menu-img-wrapper">
-      <img src="assets/img/HF_Y24_R48_W42_UK_R23391-3_Main_5_low_2-68cbd2c0.webp" alt="Creamy Tuscan Pasta" class="img-fluid menu-img">
-    </div>
-    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
-      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Creamy Tuscan Pasta</h5>
-      <p class="small mb-3">Freshly cooked pasta tossed in a rich, creamy sauce with sun-dried tomatoes and baby spinach.</p>
-      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
-    </div>
-  </div>
-</div>
-
-<!-- Dish 3 -->
-<div class="col-12 col-sm-6 col-lg-4">
-  <div class="menu-card position-relative overflow-hidden rounded-4 shadow-sm">
-    <div class="menu-img-wrapper">
-      <img src="assets/img/gluten-free-buttermilk-fried-chicken-recipe-4.jpg" alt="Buttermilk Fried Chicken" class="img-fluid menu-img">
-    </div>
-    <div class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
-      <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Buttermilk Fried Chicken</h5>
-      <p class="small mb-3">Golden, crispy chicken marinated in buttermilk and herbs — juicy inside, perfectly crunchy outside.</p>
-      <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
-    </div>
-  </div>
-</div>
+  </section>
 
 
-    </div>
-</section>
-<!-- Takeaway Special Section (Modern UK Style) -->
-<section id="takeaway" class="py-5" 
-         style="background-color: #f8f8f8; overflow: hidden;">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-
-      <!-- Left Side - Image -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0 position-relative">
-        <div class="rounded-4 overflow-hidden shadow-sm" 
-             style="max-width: 800px; height:350px;">
-          <img src="assets/img/pexels-elevate-1267320.jpg" 
-               alt="Takeaway Delivery" 
-               class="img-fluid" 
-               style="object-fit: cover; height: 100%; width: 100%;">
-        </div>
-
-        <!-- Floating tag -->
-        <div class="position-absolute top-0 start-0 bg-warning text-dark fw-semibold px-3 py-1 rounded-end-2"
-             style="transform: translate(0, -50%); font-size: 0.85rem;">
-          TAKEAWAY SPECIAL
-        </div>
-      </div>
-
-      <!-- Right Side - Text -->
-      <div class="col-12 col-md-6 ps-md-5 text-center text-md-start">
-        <h2 class="fw-bold text-uppercase mb-3"
-            style="font-size: clamp(1.8rem, 4vw, 2.6rem); color: #222;">
-          Enjoy Free Home Delivery<br>
-          <span style="color: var(--primary-color);">Within 5 Miles</span>
-        </h2>
-
-        <p class="text-muted mb-4" style="font-size: 1rem;">
-          Order your favourites today and have them delivered hot & fresh to your doorstep —
-          absolutely free on all orders over <strong>£20</strong>. Fast, friendly, and always on time.
+  <!-- Blog Section -->
+  <section id="blog" class="py-5 bg-white text-dark">
+    <div class="container px-4 px-lg-5">
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <p class="text-secondary mb-1 fw-semibold">Latest News</p>
+        <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">From Our Blog</h2>
+        <p class="mx-auto" style="max-width: 800px;">
+          Stay updated with the latest stories, culinary tips, and special events from Lebanese Village.
+          Explore our journey and discover the passion behind every dish.
         </p>
-
-        <a href="#" 
-           class="btn btn-lg main-btn rounded-pill px-4 py-2"
-           style="transition: all 0.3s ease;">
-          Order Now →
-        </a>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- Discover Slider Section -->
-<section id="discover" class="py-5 bg-white text-dark">
-  <div class="container px-4 px-lg-5">
-    <div class="text-center mb-5">
-      <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
-        Discover
-      </p>
-      <h2 class="display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
-        Our Unique Atmosphere
-      </h2>
-      <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
-      <p class="mx-auto mt-2" style="max-width:900px;">
-       Experience Lebanese dining at its finest — where exquisite flavours meet timeless elegance and warm hospitality.
-      </p>
-    </div>
-
-    <!-- Carousel: shows 3 items per slide on lg, 2 on md, 1 on sm -->
-    <div id="discoverCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row gx-3">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/906bf90a-0d2b-4f95-b878-490a4ea53d31.jpg" class="d-block w-100 h-100" alt="gallery1" style="object-fit: cover;">
+      <!-- Blog Cards -->
+      <div class="row g-4">
+        <!-- Blog 1 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 shadow-sm h-100 blog-card"
+            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" class="card-img-top" alt="Blog 1"
+                style="object-fit: cover; height: 280px;">
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s;">
+                <a href="blog.html" class="btn main-btn fw-bold">Read More</a>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/Louisiana-style-chicken-burger.jpg" class="d-block w-100 h-100" alt="gallery2" style="object-fit: cover;">
-              </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">The Secrets Behind
+                Authentic Lebanese Spices</h5>
+              <p class="card-text text-muted">Discover how we bring centuries-old flavors to life with fresh, aromatic
+                spices and traditional cooking techniques.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-pietrozj-671956.jpg" class="d-block w-100 h-100" alt="gallery3" style="object-fit: cover;">
-              </div>
+            <div class="card-footer bg-transparent border-0 text-muted small">
+              <i class="far fa-calendar-alt me-1"></i> September 22, 2025
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row gx-3">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-chevanon-323682.jpg" class="d-block w-100 h-100" alt="gallery4" style="object-fit: cover;">
+        <!-- Blog 2 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 shadow-sm h-100 blog-card"
+            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/pexels-chan-walrus-958545-768x432.jpg" class="card-img-top" alt="Blog 2"
+                style="object-fit: cover; height: 280px;">
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s;">
+                <a href="#" class="btn main-btn fw-bold">Read More</a>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-narda-yescas-724842-1566837.jpg" class="d-block w-100 h-100" alt="gallery5" style="object-fit: cover;">
-              </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">5 Must-Try Dishes at
+                Lebanese Village</h5>
+              <p class="card-text text-muted">From mezze to shawarma, here are our top recommendations that showcase the
+                heart of Lebanese cuisine.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-felicity-tai-7966522.jpg" class="d-block w-100 h-100" alt="gallery6" style="object-fit: cover;">
-              </div>
+            <div class="card-footer bg-transparent border-0 text-muted small">
+              <i class="far fa-calendar-alt me-1"></i> October 5, 2025
             </div>
           </div>
         </div>
 
-        <!-- Slide 3 (duplicate or more images) -->
-        <div class="carousel-item">
-          <div class="row gx-3">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-reneterp-3217156.jpg" class="d-block w-100 h-100" alt="gallery7" style="object-fit: cover;">
+        <!-- Blog 3 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card border-0 shadow-sm h-100 blog-card"
+            style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/royals.png" class="card-img-top" alt="Blog 3"
+                style="object-fit: cover; height: 280px;">
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center"
+                style="transition: opacity 0.3s;">
+                <a href="#" class="btn main-btn fw-bold">Read More</a>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-minan1398-1482803.jpg" class="d-block w-100 h-100" alt="gallery8" style="object-fit: cover;">
-              </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">Behind the Scenes: A Day in
+                Our Kitchen</h5>
+              <p class="card-text text-muted">Take a peek into our kitchen and see how our chefs craft delicious dishes
+                with passion and precision.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-              <div class="ratio ratio-4x3 overflow-hidden rounded-3">
-                <img src="assets/img/pexels-elevate-1267320.jpg" class="d-block w-100 h-100" alt="gallery9" style="object-fit: cover;">
-              </div>
+            <div class="card-footer bg-transparent border-0 text-muted small">
+              <i class="far fa-calendar-alt me-1"></i> October 8, 2025
             </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#discoverCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#discoverCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-      <!-- Indicators (optional) -->
-      <div class="carousel-indicators mt-4">
-        <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#discoverCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Book a Table Section -->
-<section id="book-table" class="py-5" style="background: #000;">
-  <div class="container">
-    <div class="row align-items-center bg-black text-white rounded-3 p-4 p-md-5" style="border: 1px solid rgba(255,255,255,0.1);">
-      
-      <!-- Image -->
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <img src="assets/img/chairs-tables-restaurant_1048944-1779387.jpg" alt="Dining Table" class="img-fluid rounded-3 w-100" style="object-fit: cover;">
-      </div>
-
-      <!-- Text Content -->
-      <div class="col-12 col-md-6">
-        <p class="text-uppercase text-muted mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 1rem;">
-          Dining
-        </p>
-
-        <h2 class="fw-bold text-uppercase mb-3" style="font-size: clamp(1.8rem, 4vw, 3rem);">
-          Book a Table
-        </h2>
-
-        <p class="mb-4" style="font-size: 1.1rem; line-height: 1.6;">
-          Whether it’s a casual meal, a romantic dinner, a family celebration, or a special event, 
-          we’re here to make your experience unforgettable. Please provide your details below, 
-          and we’ll confirm your reservation as soon as possible.
-        </p>
-
-        <!-- Button with Zoom Hover -->
-        <a href="#" 
-           class="btn btn-lg main-btn fw-bold text-dark" 
-           style="transition: transform 0.3s ease; display: inline-block;"
-           onmouseover="this.style.transform='scale(1.08)'" 
-           onmouseout="this.style.transform='scale(1)'">
-          Book Now!
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Blog Section -->
-<section id="blog" class="py-5 bg-white text-dark">
-  <div class="container px-4 px-lg-5">
-    <!-- Section Heading -->
-    <div class="text-center mb-5">
-      <p class="text-secondary mb-1 fw-semibold">Latest News</p>
-      <h2 class="fw-bold mb-3" style="font-family: 'Playfair Display', serif;">From Our Blog</h2>
-      <p class="mx-auto" style="max-width: 800px;">
-        Stay updated with the latest stories, culinary tips, and special events from Lebanese Village. 
-        Explore our journey and discover the passion behind every dish.
-      </p>
-    </div>
-
-    <!-- Blog Cards -->
-    <div class="row g-4">
-      <!-- Blog 1 -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="card border-0 shadow-sm h-100 blog-card" 
-             style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-          <div class="position-relative overflow-hidden">
-            <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" class="card-img-top" alt="Blog 1" style="object-fit: cover; height: 280px;">
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center" style="transition: opacity 0.3s;">
-              <a href="blog.html" class="btn main-btn fw-bold">Read More</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">The Secrets Behind Authentic Lebanese Spices</h5>
-            <p class="card-text text-muted">Discover how we bring centuries-old flavors to life with fresh, aromatic spices and traditional cooking techniques.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0 text-muted small">
-            <i class="far fa-calendar-alt me-1"></i> September 22, 2025
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog 2 -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="card border-0 shadow-sm h-100 blog-card" 
-             style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-          <div class="position-relative overflow-hidden">
-            <img src="assets/img/pexels-chan-walrus-958545-768x432.jpg" class="card-img-top" alt="Blog 2" style="object-fit: cover; height: 280px;">
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center" style="transition: opacity 0.3s;">
-              <a href="#" class="btn main-btn fw-bold">Read More</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">5 Must-Try Dishes at Lebanese Village</h5>
-            <p class="card-text text-muted">From mezze to shawarma, here are our top recommendations that showcase the heart of Lebanese cuisine.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0 text-muted small">
-            <i class="far fa-calendar-alt me-1"></i> October 5, 2025
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog 3 -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="card border-0 shadow-sm h-100 blog-card" 
-             style="border: 1px solid rgba(0,0,0,0.1); transition: all 0.3s ease; min-height: 500px;">
-          <div class="position-relative overflow-hidden">
-            <img src="assets/img/royals.png" class="card-img-top" alt="Blog 3" style="object-fit: cover; height: 280px;">
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 opacity-0 d-flex align-items-center justify-content-center" style="transition: opacity 0.3s;">
-              <a href="#" class="btn main-btn fw-bold">Read More</a>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title fw-bold" style="font-family: 'Playfair Display', serif;">Behind the Scenes: A Day in Our Kitchen</h5>
-            <p class="card-text text-muted">Take a peek into our kitchen and see how our chefs craft delicious dishes with passion and precision.</p>
-          </div>
-          <div class="card-footer bg-transparent border-0 text-muted small">
-            <i class="far fa-calendar-alt me-1"></i> October 8, 2025
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Hover Effects -->
-<style>
-  /* Hover: Card lift */
-  .blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border-color: rgba(0,0,0,0.2);
-  }
+  <!-- Hover Effects -->
+  <style>
+    /* Hover: Card lift */
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-color: rgba(0, 0, 0, 0.2);
+    }
 
-  /* Hover: Image Overlay Fade */
-  #blog .position-relative:hover .bg-dark {
-    opacity: 1 !important;
-  }
-</style>
+    /* Hover: Image Overlay Fade */
+    #blog .position-relative:hover .bg-dark {
+      opacity: 1 !important;
+    }
+  </style>
 
-<!-- Hover Effect Script -->
-<script>
-  document.querySelectorAll('#blog .position-relative').forEach(card => {
-    const overlay = card.querySelector('.bg-dark');
-    card.addEventListener('mouseenter', () => overlay.style.opacity = '1');
-    card.addEventListener('mouseleave', () => overlay.style.opacity = '0');
-  });
-</script>
+  <!-- Hover Effect Script -->
+  <script>
+    document.querySelectorAll('#blog .position-relative').forEach(card => {
+      const overlay = card.querySelector('.bg-dark');
+      card.addEventListener('mouseenter', () => overlay.style.opacity = '1');
+      card.addEventListener('mouseleave', () => overlay.style.opacity = '0');
+    });
+  </script>
 
 
-<!-- Get in Touch Section -->
-<section id="contact" class="position-relative text-white py-5" 
-         style="background: url('assets/img/2151182554.jpg') center/cover no-repeat; min-height: 600px;">
-  
-  <!-- Black Overlay (more transparent for sharp colors) -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.5;"></div>
+  <!-- Get in Touch Section -->
+  <section id="contact" class="position-relative text-white py-5"
+    style="background: url('assets/img/2151182554.jpg') center/cover no-repeat; min-height: 600px;">
 
-  <div class="container position-relative">
-    <div class="row align-items-center">
-      
-      <!-- LEFT SIDE HEADING -->
-      <div class="col-12 col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
-        <h1 class="fw-bold display-4 text-white text-uppercase" 
+    <!-- Black Overlay (more transparent for sharp colors) -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.5;"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center">
+
+        <!-- LEFT SIDE HEADING -->
+        <div class="col-12 col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+          <h1 class="fw-bold display-4 text-white text-uppercase"
             style="letter-spacing: 2px; border-left: 4px solid #f26e25; padding-left: 15px;">
-          Get in Touch
-        </h1>
-      </div>
+            Get in Touch
+          </h1>
+        </div>
 
-      <!-- RIGHT SIDE FORM -->
-      <div class="col-12 col-lg-6">
-        <div class="p-4 p-md-5 rounded-4 shadow-lg" 
-             style="
+        <!-- RIGHT SIDE FORM -->
+        <div class="col-12 col-lg-6">
+          <div class="p-4 p-md-5 rounded-4 shadow-lg" style="
                 background: rgba(0, 0, 0, 0.327); 
                 backdrop-filter: blur(14px); 
                 -webkit-backdrop-filter: blur(14px); 
                 border: 1px solid rgba(255,255,255,0.4);
              ">
-          
-          <!-- Heading Text -->
-          <p class="mb-4" style="font-size: 0.95rem; line-height: 1.6;">
-            <strong>Thank you for reaching out to Karwan!</strong> If you’re looking to book a party or organise a large event, or if you have any general enquiries about any of our branches, please complete the form below, and a member of our team will get back to you promptly.
-            <br><br>
-            <strong>Important Note:</strong> This form is not for table bookings. For table reservations, please contact the specific branch directly.
-            <br><br>
-            We look forward to assisting you!
+
+            <!-- Heading Text -->
+            <p class="mb-4" style="font-size: 0.95rem; line-height: 1.6;">
+              <strong>Thank you for reaching out to Karwan!</strong> If you’re looking to book a party or organise a
+              large event, or if you have any general enquiries about any of our branches, please complete the form
+              below, and a member of our team will get back to you promptly.
+              <br><br>
+              <strong>Important Note:</strong> This form is not for table bookings. For table reservations, please
+              contact the specific branch directly.
+              <br><br>
+              We look forward to assisting you!
+            </p>
+
+            <!-- Contact Form -->
+            <form>
+              <!-- Name & Contact Row -->
+              <div class="row mb-3">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <label for="name" class="form-label text-white">Name</label>
+                  <input type="text" class="form-control bg-transparent text-white border-light" id="name"
+                    placeholder="Enter your name">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="contact" class="form-label text-white">Contact Number</label>
+                  <input type="tel" class="form-control bg-transparent text-white border-light" id="contact"
+                    placeholder="Enter your contact number">
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control bg-transparent text-white border-light" id="email"
+                  placeholder="Enter your email">
+              </div>
+
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label text-white">Message</label>
+                <textarea class="form-control bg-transparent text-white border-light" id="message" rows="4"
+                  placeholder="Write your message"></textarea>
+              </div>
+
+              <!-- Send Button -->
+              <button type="submit" class="btn main-btn fw-bold w-100" style="transition: transform 0.3s;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Send
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Testimonials Section ====== -->
+  <section id="testimonials" class="py-5" style="background-color: #fff;">
+    <div class="container text-center">
+
+      <!-- Heading -->
+      <div class="mb-5">
+        <p class="fw-semibold text-secondary mb-1">Our Happy Guests</p>
+        <h2 class="fw-bold" style="color: var(--primary-color); font-family: 'Playfair Display', serif;">
+          What People Say About Alumination
+        </h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">
+          We take pride in creating unforgettable dining experiences. Here’s what our valued guests have to say about
+          us.
+        </p>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-lg rounded-4 p-4" style="transition: transform 0.4s, box-shadow 0.4s;">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <p class="fst-italic text-muted mb-4">
+                “Alumination has a magical atmosphere — the lighting, the aroma, and the taste are all top-tier. A
+                must-visit dining spot!”
+              </p>
+              <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Sarah Malik</h5>
+              <p class="text-secondary small">Food Enthusiast</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-lg rounded-4 p-4" style="transition: transform 0.4s, box-shadow 0.4s;">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <p class="fst-italic text-muted mb-4">
+                “The staff is so welcoming, and every dish looks like art. Alumination is my go-to place for
+                celebrations.”
+              </p>
+              <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Ahmed Raza</h5>
+              <p class="text-secondary small">Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-lg rounded-4 p-4" style="transition: transform 0.4s, box-shadow 0.4s;">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
+              </div>
+              <p class="fst-italic text-muted mb-4">
+                “Every visit feels special — elegant design, authentic flavors, and truly warm service. Alumination
+                never disappoints.”
+              </p>
+              <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Fatima Khan</h5>
+              <p class="text-secondary small">Regular Guest</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hover Animation Script -->
+  <script>
+    document.querySelectorAll('#testimonials .card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-8px)';
+        card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+      });
+    });
+  </script>
+
+
+  <!-- ====== Footer Section (Alumination) ====== -->
+  <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+    <div class="container px-4 px-lg-5 pb-5">
+      <div class="row gy-5 justify-content-between align-items-start">
+
+        <!-- Brand / About -->
+        <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+          <h3 class="fw-bold mb-3"
+            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+            Alumination
+          </h3>
+          <p class="text-white-50 mb-4">
+            Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+            At Alumination, every meal is a story — crafted with passion and served with pride.
           </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
 
-          <!-- Contact Form -->
-          <form>
-            <!-- Name & Contact Row -->
-            <div class="row mb-3">
-              <div class="col-12 col-md-6 mb-3 mb-md-0">
-                <label for="name" class="form-label text-white">Name</label>
-                <input type="text" class="form-control bg-transparent text-white border-light" id="name" placeholder="Enter your name">
-              </div>
-              <div class="col-12 col-md-6">
-                <label for="contact" class="form-label text-white">Contact Number</label>
-                <input type="tel" class="form-control bg-transparent text-white border-light" id="contact" placeholder="Enter your contact number">
-              </div>
-            </div>
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links
+          </h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+            <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
 
-            <!-- Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label text-white">Email</label>
-              <input type="email" class="form-control bg-transparent text-white border-light" id="email" placeholder="Enter your email">
-            </div>
+        <!-- Opening Hours -->
+        <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening
+            Hours</h6>
+          <ul class="list-unstyled small text-white-50">
+            <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+            <li>Saturday: 1:00 PM – 12:00 AM</li>
+            <li>Sunday: 1:00 PM – 10:00 PM</li>
+          </ul>
+        </div>
 
-            <!-- Message -->
-            <div class="mb-3">
-              <label for="message" class="form-label text-white">Message</label>
-              <textarea class="form-control bg-transparent text-white border-light" id="message" rows="4" placeholder="Write your message"></textarea>
-            </div>
-
-            <!-- Send Button -->
-            <button type="submit" 
-              class="btn main-btn fw-bold w-100" 
-              style="transition: transform 0.3s;"
-              onmouseover="this.style.transform='scale(1.05)'"
-              onmouseout="this.style.transform='scale(1)'">
-              Send
+        <!-- Newsletter -->
+        <div class="col-12 col-lg-3 animate-fade-up delay-3">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe
+          </h6>
+          <p class="text-white-50 small mb-3">
+            Join our community and receive exclusive news, recipes, and event updates.
+          </p>
+          <form class="d-flex">
+            <input type="email" class="form-control bg-transparent border-light text-white me-2"
+              placeholder="Enter email">
+            <button class="btn fw-bold px-3"
+              style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+              onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              Go
             </button>
           </form>
-
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ====== Testimonials Section ====== -->
-<section id="testimonials" class="py-5" style="background-color: #fff;">
-  <div class="container text-center">
-    
-    <!-- Heading -->
-    <div class="mb-5">
-      <p class="fw-semibold text-secondary mb-1">Our Happy Guests</p>
-      <h2 class="fw-bold" style="color: var(--primary-color); font-family: 'Playfair Display', serif;">
-        What People Say About Alumination
-      </h2>
-      <p class="text-muted mx-auto" style="max-width: 700px;">
-        We take pride in creating unforgettable dining experiences. Here’s what our valued guests have to say about us.
-      </p>
     </div>
 
-    <!-- Testimonial Cards -->
-    <div class="row g-4 justify-content-center">
-
-      <!-- Card 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-lg rounded-4 p-4" 
-             style="transition: transform 0.4s, box-shadow 0.4s;">
-          <div class="card-body">
-            <div class="mb-3">
-              <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
-            </div>
-            <p class="fst-italic text-muted mb-4">
-              “Alumination has a magical atmosphere — the lighting, the aroma, and the taste are all top-tier. A must-visit dining spot!”
-            </p>
-            <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Sarah Malik</h5>
-            <p class="text-secondary small">Food Enthusiast</p>
-          </div>
-        </div>
+    <!-- Bottom Bar -->
+    <div class="border-top border-light mt-4">
+      <div class="container text-center py-3 small text-white-50">
+        © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span
+          style="color: var(--primary-color);">Alumination Team</span>.
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-lg rounded-4 p-4" 
-             style="transition: transform 0.4s, box-shadow 0.4s;">
-          <div class="card-body">
-            <div class="mb-3">
-              <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
-            </div>
-            <p class="fst-italic text-muted mb-4">
-              “The staff is so welcoming, and every dish looks like art. Alumination is my go-to place for celebrations.”
-            </p>
-            <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Ahmed Raza</h5>
-            <p class="text-secondary small">Customer</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-lg rounded-4 p-4" 
-             style="transition: transform 0.4s, box-shadow 0.4s;">
-          <div class="card-body">
-            <div class="mb-3">
-              <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
-            </div>
-            <p class="fst-italic text-muted mb-4">
-              “Every visit feels special — elegant design, authentic flavors, and truly warm service. Alumination never disappoints.”
-            </p>
-            <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Fatima Khan</h5>
-            <p class="text-secondary small">Regular Guest</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- Hover Animation Script -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- Inline Hover Zoom Script (works on desktop; no change on touch devices) -->
 <script>
-  document.querySelectorAll('#testimonials .card').forEach(card => {
+  document.querySelectorAll('#featured-menu .card').forEach(card => {
+    const imgDesktop = card.querySelector('.card-img'); // may be null on small
+    const imgRatio = card.querySelector('.ratio img'); // may be null on large
+    const btn = card.querySelector('.btn');
+
+    // Image zoom on hover (desktop)
     card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-8px)';
-      card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+      if (imgDesktop) imgDesktop.style.transform = 'scale(1.08)';
+      if (imgRatio) imgRatio.style.transform = 'scale(1.08)';
     });
     card.addEventListener('mouseleave', () => {
-      card.style.transform = 'translateY(0)';
-      card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+      if (imgDesktop) imgDesktop.style.transform = 'scale(1)';
+      if (imgRatio) imgRatio.style.transform = 'scale(1)';
     });
+
+    // Button zoom
+    if (btn) {
+      btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.08)');
+      btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+    }
   });
 </script>
 
-
-<!-- ====== Footer Section (Alumination) ====== -->
-<footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
-  <div class="container px-4 px-lg-5 pb-5">
-    <div class="row gy-5 justify-content-between align-items-start">
-
-      <!-- Brand / About -->
-      <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
-        <h3 class="fw-bold mb-3" 
-            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
-          Alumination
-        </h3>
-        <p class="text-white-50 mb-4">
-          Immerse yourself in a dining experience where taste, tradition, and atmosphere unite. 
-          At Alumination, every meal is a story — crafted with passion and served with pride.
-        </p>
-        <div class="d-flex gap-3">
-          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
-        <ul class="list-unstyled small">
-          <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
-          <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
-          <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
-          <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
-          <li><a href="#contact" class="footer-link">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Opening Hours -->
-      <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
-        <ul class="list-unstyled small text-white-50">
-          <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
-          <li>Saturday: 1:00 PM – 12:00 AM</li>
-          <li>Sunday: 1:00 PM – 10:00 PM</li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-12 col-lg-3 animate-fade-up delay-3">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
-        <p class="text-white-50 small mb-3">
-          Join our community and receive exclusive news, recipes, and event updates.
-        </p>
-        <form class="d-flex">
-          <input type="email" class="form-control bg-transparent border-light text-white me-2" placeholder="Enter email">
-          <button class="btn fw-bold px-3" 
-                  style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
-                  onmouseover="this.style.transform='scale(1.1)'"
-                  onmouseout="this.style.transform='scale(1)'">
-            Go
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="border-top border-light mt-4">
-    <div class="container text-center py-3 small text-white-50">
-      © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span style="color: var(--primary-color);">Alumination Team</span>.
-    </div>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-  <!-- Inline Hover Zoom Script (works on desktop; no change on touch devices) -->
-  <script>
-    document.querySelectorAll('#featured-menu .card').forEach(card => {
-      const imgDesktop = card.querySelector('.card-img'); // may be null on small
-      const imgRatio = card.querySelector('.ratio img'); // may be null on large
-      const btn = card.querySelector('.btn');
-
-      // Image zoom on hover (desktop)
-      card.addEventListener('mouseenter', () => {
-        if (imgDesktop) imgDesktop.style.transform = 'scale(1.08)';
-        if (imgRatio) imgRatio.style.transform = 'scale(1.08)';
-      });
-      card.addEventListener('mouseleave', () => {
-        if (imgDesktop) imgDesktop.style.transform = 'scale(1)';
-        if (imgRatio) imgRatio.style.transform = 'scale(1)';
-      });
-
-      // Button zoom
-      if (btn) {
-        btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.08)');
-        btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
-      }
-    });
-  </script>
 </html>
