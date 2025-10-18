@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,305 +12,280 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
 </head>
-<body class="text-white">
-<!-- ===== Transparent Modern Navbar ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
-  <div class="container-fluid px-5">
 
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
-    </a>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
+    <div class="container-fluid px-5">
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav text-uppercase fw-semibold">
-        <li class="nav-item mx-2">
-          <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Right Button -->
-    <div class="d-none d-lg-flex align-items-center">
-      <a href="#" 
-         class="btn fw-bold text-white px-4 py-2" 
-         style="
-           border: 2px solid var(--primary-color); 
-           border-radius: 50px; 
-           transition: all 0.3s;
-         "
-         onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
-         onmouseout="this.style.background='transparent'; this.style.color='white';">
-        ORDER BY PHONE
+      <!-- Logo (Left) -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Alumination_AACE_Final_Logo-300x274_org.png" alt="Logo" height="60">
       </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu (Center, fixed while scrolling) -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="fixed-center-menu">
+          <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#reservation">Reservation</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Button -->
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="#" class="btn fw-bold main-btn px-4 py-2"
+          style="border: 2px solid var(--primary-color); border-radius: 50px; transition: all 0.3s;">
+          ORDER BY PHONE
+        </a>
+      </div>
+
     </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="contact-hero d-flex align-items-center"
+  style="background: url('assets/img/contact-bg.jpg') center/cover no-repeat; height: 80vh; position: relative;">
 
-  </div>
-</nav>
-
-<!-- ===== CONTACT US PAGE ===== -->
-
-<!-- Hero Section -->
-<section class="contact-hero d-flex align-items-center justify-content-center text-center text-white"
-  style="background: url('assets/img/restaurant-with-green-wall-wooden-table-with-row-tables-planter-with-plant-background.jpg') center/cover no-repeat; height: 80vh; position: relative;">
-  <div style="background: rgba(0,0,0,0.6); position: absolute; top:0; left:0; width:100%; height:100%;"></div>
-  <div class="container position-relative">
-    <h1 class="display-4 fw-bold mb-3" style="color: var(--primary-color); animation: fadeInDown 1s;">
-      Contact Us
-    </h1>
-    <p class="lead" style="animation: fadeInUp 1.2s;">
-      We’d love to hear from you — your thoughts, feedback, or event inquiries mean the world to us.
-    </p>
-  </div>
-</section>
-
-<!-- ===== MODERN CONTACT INNER PAGE (use with your header & footer) ===== -->
-<section class="contact-modern py-5">
   <div class="container">
-    <!-- Narrow hero / intro -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-8 text-center">
-        <small class="d-block text-muted mb-2">Contact</small>
-        <h1 class="fw-bold display-6" style="color:var(--primary-color)">Get in touch with Alumination</h1>
-        <p class="text-muted mx-auto" style="max-width:780px;">
-          Have a question, event enquiry or feedback? Send us a message and our team will respond promptly.
+    <div class="row">
+      <div class="col-lg-6 col-md-8">
+        <h1 class="display-4 fw-bold mb-3" style="color: var(--primary-color); animation: fadeInDown 1s;">
+          Contact Us
+        </h1>
+        <p class="lead" style="animation: fadeInUp 1.2s;">
+          We’d love to hear from you — your thoughts, feedback, or event inquiries mean the world to us.
         </p>
       </div>
     </div>
+  </div>
 
-    <!-- Main area: stacked info above form, form left, events+map right -->
-    <div class="row gx-4 gy-4 align-items-start mb-4">
+</section>
 
-      <!-- Full-width info strip above the form (Visit / Call / Hours) -->
-      <div class="col-12">
-        <div class="d-flex gap-3 flex-column flex-md-row justify-content-between align-items-stretch">
-          <!-- Card: Visit -->
-          <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
-            <div class="d-flex align-items-start gap-3">
-              <div class="icon-box fs-4"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <h6 class="mb-1 fw-bold">Visit Us</h6>
-                <p class="mb-0 text-muted">12 Cedar Street, Chesham, HP5 1AA</p>
+
+  <!-- ===== MODERN CONTACT INNER PAGE (use with your header & footer) ===== -->
+  <section class="contact-modern py-5">
+    <div class="container">
+      <!-- Narrow hero / intro -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <small class="d-block text-muted mb-2">Contact</small>
+          <h1 class="fw-bold display-6" style="color:var(--primary-color)">Get in touch with Alumination</h1>
+          <p class="text-muted mx-auto" style="max-width:780px;">
+            Have a question, event enquiry or feedback? Send us a message and our team will respond promptly.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main area: stacked info above form, form left, events+map right -->
+      <div class="row gx-4 gy-4 align-items-start mb-4">
+
+        <!-- Full-width info strip above the form (Visit / Call / Hours) -->
+        <div class="col-12">
+          <div class="d-flex gap-3 flex-column flex-md-row justify-content-between align-items-stretch">
+            <!-- Card: Visit -->
+            <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box fs-4"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <h6 class="mb-1 fw-bold">Visit Us</h6>
+                  <p class="mb-0 text-muted">12 Cedar Street, Chesham, HP5 1AA</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card: Call -->
-          <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
-            <div class="d-flex align-items-start gap-3">
-              <div class="icon-box fs-4"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <h6 class="mb-1 fw-bold">Call</h6>
-                <p class="mb-0 text-muted"><a href="tel:+441234567890" class="link-dark">+44 1234 567 890</a></p>
+            <!-- Card: Call -->
+            <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box fs-4"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <h6 class="mb-1 fw-bold">Call</h6>
+                  <p class="mb-0 text-muted"><a href="tel:+441234567890" class="link-dark">+44 1234 567 890</a></p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Card: Hours -->
-          <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
-            <div class="d-flex align-items-start gap-3">
-              <div class="icon-box fs-4"><i class="far fa-clock"></i></div>
-              <div>
-                <h6 class="mb-1 fw-bold">Hours</h6>
-                <p class="mb-0 text-muted">Mon–Fri 12:00–23:00 · Sat 13:00–00:00 · Sun 13:00–22:00</p>
+            <!-- Card: Hours -->
+            <div class="info-card p-3 rounded-3 shadow-sm flex-fill">
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box fs-4"><i class="far fa-clock"></i></div>
+                <div>
+                  <h6 class="mb-1 fw-bold">Hours</h6>
+                  <p class="mb-0 text-muted">Mon–Fri 12:00–23:00 · Sat 13:00–00:00 · Sun 13:00–22:00</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Form (left) -->
-      <div class="col-lg-7">
-        <div class="glass p-4 p-md-5 rounded-4 shadow">
-          <h4 class="fw-bold mb-3">Send a message</h4>
-          <p class="text-muted mb-4">Prefer a quick reply? Add best time to call in the message.</p>
+        <!-- Form (left) -->
+        <div class="col-lg-7">
+          <div class="glass p-4 p-md-5 rounded-4 shadow">
+            <h4 class="fw-bold mb-3">Send a message</h4>
+            <p class="text-muted mb-4">Prefer a quick reply? Add best time to call in the message.</p>
 
-          <form id="modernContactForm" class="needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label visually-hidden" for="m-name">Name</label>
-                <input id="m-name" class="form-control form-control-lg" type="text" placeholder="Your name" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label visually-hidden" for="m-email">Email</label>
-                <input id="m-email" class="form-control form-control-lg" type="email" placeholder="Email address" required>
-              </div>
+            <form id="modernContactForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label visually-hidden" for="m-name">Name</label>
+                  <input id="m-name" class="form-control form-control-lg" type="text" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label visually-hidden" for="m-email">Email</label>
+                  <input id="m-email" class="form-control form-control-lg" type="email" placeholder="Email address"
+                    required>
+                </div>
 
-              <div class="col-md-6">
-                <label class="form-label visually-hidden" for="m-phone">Phone</label>
-                <input id="m-phone" class="form-control form-control-lg" type="tel" placeholder="Phone (optional)">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label visually-hidden" for="m-subject">Subject</label>
-                <input id="m-subject" class="form-control form-control-lg" type="text" placeholder="Subject">
-              </div>
+                <div class="col-md-6">
+                  <label class="form-label visually-hidden" for="m-phone">Phone</label>
+                  <input id="m-phone" class="form-control form-control-lg" type="tel" placeholder="Phone (optional)">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label visually-hidden" for="m-subject">Subject</label>
+                  <input id="m-subject" class="form-control form-control-lg" type="text" placeholder="Subject">
+                </div>
 
-              <div class="col-12">
-                <label class="form-label visually-hidden" for="m-message">Message</label>
-                <textarea id="m-message" class="form-control" rows="6" placeholder="Your message" required></textarea>
-              </div>
+                <div class="col-12">
+                  <label class="form-label visually-hidden" for="m-message">Message</label>
+                  <textarea id="m-message" class="form-control" rows="6" placeholder="Your message" required></textarea>
+                </div>
 
-              <div class="col-12 d-grid">
-                <button id="m-send" class="btn btn-lg main-btn" type="submit">Send Message</button>
+                <div class="col-12 d-grid">
+                  <button id="m-send" class="btn btn-lg main-btn" type="submit">Send Message</button>
+                </div>
               </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right column: Private Events + Map (only) -->
+        <div class="col-lg-5">
+          <div class="stack gap-3">
+            <!-- CTA card: Private Events -->
+            <div class="info-card p-3 rounded-3 shadow-sm text-center">
+              <h6 class="fw-bold mb-2">Private Events</h6>
+              <p class="text-muted mb-3 small">Planning a party or event? We’ll help design the perfect menu & space.
+              </p>
+              <a href="#modernContactForm" class="btn btn-outline-primary btn-sm">Enquire now</a>
             </div>
+
+            <!-- Map placeholder -->
+            <div class="map-card overflow-hidden rounded-3 shadow-sm" aria-hidden="true">
+              <img src="assets/img/3d-top-view-map-with-destination-location-point_34645-1177.jpg" alt="map"
+                class="w-100" style="height:390px; object-fit:cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer Section (Alumination) ====== -->
+  <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+    <div class="container px-4 px-lg-5 pb-5">
+      <div class="row gy-5 justify-content-between align-items-start">
+
+        <!-- Brand / About -->
+        <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+          <h3 class="fw-bold mb-3"
+            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+            Alumination
+          </h3>
+          <p class="text-white-50 mb-4">
+            Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+            At Alumination, every meal is a story — crafted with passion and served with pride.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links
+          </h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+            <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening
+            Hours</h6>
+          <ul class="list-unstyled small text-white-50">
+            <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+            <li>Saturday: 1:00 PM – 12:00 AM</li>
+            <li>Sunday: 1:00 PM – 10:00 PM</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-lg-3 animate-fade-up delay-3">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe
+          </h6>
+          <p class="text-white-50 small mb-3">
+            Join our community and receive exclusive news, recipes, and event updates.
+          </p>
+          <form class="d-flex">
+            <input type="email" class="form-control bg-transparent border-light text-white me-2"
+              placeholder="Enter email">
+            <button class="btn fw-bold px-3"
+              style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+              onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              Go
+            </button>
           </form>
         </div>
       </div>
+    </div>
 
-      <!-- Right column: Private Events + Map (only) -->
-      <div class="col-lg-5">
-        <div class="stack gap-3">
-          <!-- CTA card: Private Events -->
-          <div class="info-card p-3 rounded-3 shadow-sm text-center">
-            <h6 class="fw-bold mb-2">Private Events</h6>
-            <p class="text-muted mb-3 small">Planning a party or event? We’ll help design the perfect menu & space.</p>
-            <a href="#modernContactForm" class="btn btn-outline-primary btn-sm">Enquire now</a>
-          </div>
-
-          <!-- Map placeholder -->
-          <div class="map-card overflow-hidden rounded-3 shadow-sm" aria-hidden="true">
-            <img src="assets/img/3d-top-view-map-with-destination-location-point_34645-1177.jpg" alt="map" class="w-100" style="height:390px; object-fit:cover;">
-          </div>
-        </div>
+    <div class="border-top border-light mt-4">
+      <div class="container text-center py-3 small text-white-50">
+        © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span
+          style="color: var(--primary-color);">Alumination Team</span>.
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- minimal JS for submit UX + appear animations (tiny) -->
-<script>
-  // small appear-on-scroll for subtle entrance
-  (function(){
-    const obs = new IntersectionObserver((entries, observer) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in-view');       
-          observer.unobserve(e.target);
-        }
-      });
-    }, {threshold: 0.12});
-    document.querySelectorAll('.glass, .info-card, .map-card, .contact-modern .container > .row').forEach(el => obs.observe(el));
-  })();
-
-  // simple UX for form submit (simulate)
-  document.getElementById('modernContactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const btn = document.getElementById('m-send');
-    btn.disabled = true;
-    btn.innerText = 'Sending...';
-    setTimeout(() => { btn.disabled=false; btn.innerText='Send Message'; alert('Thanks — we received your message.'); this.reset(); }, 1000);
-  });
-</script>
-
-
-
-<!-- ====== Footer Section (Alumination) ====== -->
-<footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
-  <div class="container px-4 px-lg-5 pb-5">
-    <div class="row gy-5 justify-content-between align-items-start">
-
-      <!-- Brand / About -->
-      <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
-        <h3 class="fw-bold mb-3" 
-            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
-          Alumination
-        </h3>
-        <p class="text-white-50 mb-4">
-          Immerse yourself in a dining experience where taste, tradition, and atmosphere unite. 
-          At Alumination, every meal is a story — crafted with passion and served with pride.
-        </p>
-        <div class="d-flex gap-3">
-          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
-        <ul class="list-unstyled small">
-          <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
-          <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
-          <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
-          <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
-          <li><a href="#contact" class="footer-link">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Opening Hours -->
-      <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
-        <ul class="list-unstyled small text-white-50">
-          <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
-          <li>Saturday: 1:00 PM – 12:00 AM</li>
-          <li>Sunday: 1:00 PM – 10:00 PM</li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-12 col-lg-3 animate-fade-up delay-3">
-        <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
-        <p class="text-white-50 small mb-3">
-          Join our community and receive exclusive news, recipes, and event updates.
-        </p>
-        <form class="d-flex">
-          <input type="email" class="form-control bg-transparent border-light text-white me-2" placeholder="Enter email">
-          <button class="btn fw-bold px-3" 
-                  style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
-                  onmouseover="this.style.transform='scale(1.1)'"
-                  onmouseout="this.style.transform='scale(1)'">
-            Go
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="border-top border-light mt-4">
-    <div class="container text-center py-3 small text-white-50">
-      © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span style="color: var(--primary-color);">Alumination Team</span>.
-    </div>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  
-<!-- Navbar Hover/Active Script -->
-<script>
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
-    link.addEventListener('mouseleave', () => {
-      if (!link.classList.contains('active')) link.style.color = 'white';
-    });
-  });
-</script>
+
 </html>
