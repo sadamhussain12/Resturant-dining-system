@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dining at Alumination</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="text-white">
+    <!-- ===== Transparent Modern Navbar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
+        <div class="container-fluid px-5">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-uppercase fw-semibold">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Button -->
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="#" class="btn fw-bold text-white px-4 py-2" style="
+           border: 2px solid var(--primary-color); 
+           border-radius: 50px; 
+           transition: all 0.3s;
+         " onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
+                    onmouseout="this.style.background='transparent'; this.style.color='white';">
+                    ORDER BY PHONE
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="menu-hero d-flex align-items-center justify-content-center text-center text-white mb-4"
+            style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.738)), url('assets/img/pexels-elevate-1267320.jpg') center/cover no-repeat; height:56vh;">
+            <div class="container position-relative py-5">
+                <h1 class="display-5 fw-bold mb-2" style="letter-spacing:0.5px;">Our Menu</h1>
+                <p class="lead mb-0">Seasonal dishes, crafted with care — discover what’s cooking at Alumination.</p>
+            </div>
+        </section>
+
+
+        <!-- ===== SIDEBAR + CONTENT ===== -->
+        <section class="pb-5">
+            <div class="container">
+                <div class="row gx-4">
+                    <!-- Sidebar -->
+                    <aside class="col-lg-3">
+                        <div class="position-sticky" style="top:50px;">
+                                                    <!-- ===== Categories Sidebar ===== -->
+                            <div class="mb-4 p-3 rounded-4 shadow-sm category-box">
+                                <h6 class="fw-bold mb-3 text-white">Categories</h6>
+                                <div class="list-group category-sidebar" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <button
+                                        class="list-group-item list-group-item-action active d-flex align-items-center"
+                                        id="cat-starters" data-bs-toggle="pill" data-bs-target="#p-starters"
+                                        type="button" role="tab">
+                                        <i class="fas fa-utensils me-2"></i> Starters
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-smallplates" data-bs-toggle="pill" data-bs-target="#p-smallplates"
+                                        type="button" role="tab">
+                                        <i class="fas fa-pepper-hot me-2"></i> Small Plates
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-salads" data-bs-toggle="pill" data-bs-target="#p-salads" type="button"
+                                        role="tab">
+                                        <i class="fas fa-seedling me-2"></i> Salads
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-mains" data-bs-toggle="pill" data-bs-target="#p-mains" type="button"
+                                        role="tab">
+                                        <i class="fas fa-drumstick-bite me-2"></i> Main Course
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-seafood" data-bs-toggle="pill" data-bs-target="#p-seafood" type="button"
+                                        role="tab">
+                                        <i class="fas fa-fish me-2"></i> Seafood
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-veg" data-bs-toggle="pill" data-bs-target="#p-veg" type="button"
+                                        role="tab">
+                                        <i class="fas fa-carrot me-2"></i> Vegetarian
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-desserts" data-bs-toggle="pill" data-bs-target="#p-desserts"
+                                        type="button" role="tab">
+                                        <i class="fas fa-ice-cream me-2"></i> Desserts
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-beverages" data-bs-toggle="pill" data-bs-target="#p-beverages"
+                                        type="button" role="tab">
+                                        <i class="fas fa-cocktail me-2"></i> Beverages
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-specials" data-bs-toggle="pill" data-bs-target="#p-specials"
+                                        type="button" role="tab">
+                                        <i class="fas fa-star me-2"></i> Chef's Specials
+                                    </button>
+                                    <button class="list-group-item list-group-item-action d-flex align-items-center"
+                                        id="cat-combos" data-bs-toggle="pill" data-bs-target="#p-combos" type="button"
+                                        role="tab">
+                                        <i class="fas fa-layer-group me-2"></i> Combos & Sets
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+
+                    <!-- Content column -->
+                    <div class="col-lg-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+
+                            <!-- Reusable dish-card pattern used across panes -->
+                            <!-- Starters -->
+                            <div class="tab-pane fade show active" id="p-starters" role="tabpanel">
+                                <div class="row g-4 mb-4" id="list-starters">
+
+                                    <!-- Charred Octopus -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/pexels-chevanon-323682.jpg" alt="Charred Octopus"
+                                                    class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Charred Octopus</h6>
+                                                    <span class="fw-semibold text-dark">£12</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Smoky paprika, lemon aioli</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Roasted Beet Salad -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/GDDeliveroo-04.jpg" alt="Roasted Beet Salad"
+                                                    class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Roasted Beet Salad</h6>
+                                                    <span class="fw-semibold text-dark">£9</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Goat cheese, candied walnuts</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Crispy Calamari -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/GDDeliveroo-08.jpg" alt="Crispy Calamari"
+                                                    class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Crispy Calamari</h6>
+                                                    <span class="fw-semibold text-dark">£11</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Tarragon aioli</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Burrata with Heirloom Tomatoes -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/GDDeliveroo-04.jpg"
+                                                    alt="Burrata with Heirloom Tomatoes"
+                                                    class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Burrata with Heirloom Tomatoes</h6>
+                                                    <span class="fw-semibold text-dark">£10</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Basil oil, balsamic glaze</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Smoked Salmon Tartine -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/GDDeliveroo-14.jpg"
+                                                    alt="Smoked Salmon Tartine" class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Smoked Salmon Tartine</h6>
+                                                    <span class="fw-semibold text-dark">£13</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Avocado, dill crème fraîche</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Truffle Mushroom Soup -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/GDDeliveroo-08.jpg"
+                                                    alt="Truffle Mushroom Soup" class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Truffle Mushroom Soup</h6>
+                                                    <span class="fw-semibold text-dark">£8</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Creamy porcini, truffle oil</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- New Row -->
+
+                                    <!-- Duck Liver Parfait -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/pexels-chevanon-323682.jpg"
+                                                    alt="Duck Liver Parfait" class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Duck Liver Parfait</h6>
+                                                    <span class="fw-semibold text-dark">£14</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Toasted brioche, onion chutney</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Garlic Prawns -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/pexels-elevate-1267320.jpg" alt="Garlic Prawns"
+                                                    class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Garlic Prawns</h6>
+                                                    <span class="fw-semibold text-dark">£15</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Chilli butter, lemon drizzle</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- Grilled Halloumi -->
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/pexels-chevanon-323682.jpg"
+                                                    alt="Grilled Halloumi" class="card-img-top object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                                    <h6 class="mb-0">Grilled Halloumi</h6>
+                                                    <span class="fw-semibold text-dark">£9</span>
+                                                </div>
+                                                <p class="small text-muted mb-0">Honey glaze, pomegranate</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Small Plates -->
+                            <div class="tab-pane fade" id="p-smallplates" role="tabpanel">
+                                <div class="row g-4 mb-4" id="list-smallplates">
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/small1.jpg" alt="Truffle Fries"
+                                                    class="object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="mb-1">Truffle Fries</h6>
+                                                <p class="small text-muted mb-2">Parmesan, parsley</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fw-bold">£6</div>
+                                                    <div class="ms-auto"><button
+                                                            class="btn btn-sm btn-outline-primary">Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/small2.jpg" alt="Beet Hummus" class="object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="mb-1">Beet Hummus</h6>
+                                                <p class="small text-muted mb-2">Warm flatbread</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fw-bold">£7</div>
+                                                    <div class="ms-auto"><button
+                                                            class="btn btn-sm btn-outline-primary">Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Salads -->
+                            <div class="tab-pane fade" id="p-salads" role="tabpanel">
+                                <div class="row g-4 mb-4" id="list-salads">
+                                    <div class="col-md-6 dish-item">
+                                        <div class="card p-3 rounded-4 shadow-sm h-100">
+                                            <h6 class="mb-1">Autumn Greens</h6>
+                                            <p class="small text-muted mb-2">Roasted squash, pepitas</p>
+                                            <div class="fw-bold">£10</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 dish-item">
+                                        <div class="card p-3 rounded-4 shadow-sm h-100">
+                                            <h6 class="mb-1">Caesar</h6>
+                                            <p class="small text-muted mb-2">Anchovy dressing</p>
+                                            <div class="fw-bold">£9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mains, Seafood, Veg, Desserts, Beverages, Specials, Combos -->
+                            <!-- (use the same dish-item card structure for each pane as above) -->
+                            <!-- Example Main Course pane (kept minimal here; add items as needed) -->
+                            <div class="tab-pane fade" id="p-mains" role="tabpanel">
+                                <div class="row g-4 mb-4" id="list-mains">
+                                    <div class="col-md-6 col-lg-4 dish-item">
+                                        <article
+                                            class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                                            <div class="ratio ratio-4x3">
+                                                <img src="assets/img/mains1.jpg" alt="Seared Seabass"
+                                                    class="object-cover">
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="mb-1">Seared Seabass</h6>
+                                                <p class="small text-muted mb-2">Saffron velouté</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fw-bold">£20</div>
+                                                    <div class="ms-auto"><button
+                                                            class="btn btn-sm btn-outline-primary">Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- add more mains -->
+                                </div>
+                            </div>
+
+                            <!-- (other panes omitted for brevity — reuse pattern) -->
+
+                        </div> <!-- /.tab-content -->
+                    </div> <!-- /.col-lg-9 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESERVATION CTA (kept — polished) ===== -->
+        <section class="py-4">
+            <div class="container">
+                <div class="reservation-cta d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+                    style="background: linear-gradient(90deg, rgba(214,139,53,0.08), rgba(214,139,53,0.03)); border-radius:1rem; padding:1.25rem;">
+                    <div>
+                        <h5 class="fw-bold mb-1">Book a table at Alumination</h5>
+                        <p class="small text-muted mb-0">Private events and regular reservations — we can arrange
+                            tailored menus.</p>
+                    </div>
+                    <div class="text-md-end">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Styles (place in a CSS file or inside a <style> tag in head) -->
+        <style>
+            .dish-card {
+                transition: transform .18s ease, box-shadow .18s ease;
+            }
+
+            .dish-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            }
+
+            .object-cover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .ratio .card-img-top {
+                object-fit: cover;
+            }
+
+            /* Black Sidebar Container */
+            .category-box {
+                background-color: #000;
+                /* keeps black background */
+                min-height: 650px;
+                /* increased height */
+                padding: 2rem 1rem;
+                /* more breathing space */
+            }
+
+            /* Sidebar Buttons */
+            .category-sidebar .list-group-item {
+                background: transparent;
+                color: #f8f9fa;
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 6px;
+                transition: all 0.3s ease;
+            }
+
+            .category-sidebar .list-group-item:hover {
+                background-color: rgba(255, 255, 255, 0.08);
+                color: var(--primary-color);
+            }
+
+            /* Active Category */
+            .category-sidebar .list-group-item.active {
+                background-color: var(--primary-color);
+                color: #fff;
+                font-weight: 600;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+            }
+
+            /* Icons */
+            .category-sidebar .list-group-item i {
+                width: 18px;
+                text-align: center;
+                color: inherit;
+            }
+
+            /* Make text readable */
+            .category-box h6 {
+                color: #f8f9fa;
+            }
+
+
+            .menu-hero h1 {
+                color: #fff;
+                text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            }
+
+            @media (max-width: 991px) {
+                .position-sticky {
+                    position: static !important;
+                    top: auto !important;
+                }
+            }
+        </style>
+
+        <!-- Minimal JS: search filter, quick price filters, clear button, reset on tab change -->
+        <script>
+            // Helper: find visible active pane
+            function getActivePane() {
+                return document.querySelector('.tab-pane.show.active') || document.querySelector('.tab-pane.active');
+            }
+
+            // search within visible tab items (title or description)
+            const searchInput = document.getElementById('menu-search');
+            const searchClear = document.getElementById('menu-search-clear');
+            function applySearch() {
+                const q = (searchInput.value || '').trim().toLowerCase();
+                const activePane = getActivePane();
+                if (!activePane) return;
+                activePane.querySelectorAll('.dish-item, .card.p-3, .d-flex.p-3').forEach(item => {
+                    const text = (item.innerText || '').toLowerCase();
+                    item.style.display = q === '' || text.includes(q) ? '' : 'none';
+                });
+            }
+            searchInput && searchInput.addEventListener('input', applySearch);
+            searchClear && searchClear.addEventListener('click', function () { searchInput.value = ''; applySearch(); });
+
+            // price filter buttons
+            document.querySelectorAll('[data-filter]').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const f = btn.getAttribute('data-filter');
+                    const activePane = getActivePane();
+                    if (!activePane) return;
+                    activePane.querySelectorAll('.dish-item, .card.p-3, .d-flex.p-3').forEach(item => {
+                        const priceEl = item.querySelector('.fw-bold');
+                        if (!priceEl) { item.style.display = ''; return; }
+                        const priceText = priceEl.innerText.replace('£', '').trim();
+                        const price = parseFloat(priceText) || 0;
+                        let ok = true;
+                        if (f === 'under-10') ok = price < 10;
+                        if (f === '10-20') ok = price >= 10 && price <= 20;
+                        if (f === '20plus') ok = price > 20;
+                        if (f === 'all') ok = true;
+                        item.style.display = ok ? '' : 'none';
+                    });
+                });
+            });
+
+            // reset search when tabs change (and show all items)
+            document.querySelectorAll('.category-sidebar [data-bs-toggle="pill"]').forEach(btn => {
+                btn.addEventListener('shown.bs.tab', function () {
+                    searchInput.value = '';
+                    // show all in new pane
+                    const activePane = getActivePane();
+                    if (!activePane) return;
+                    activePane.querySelectorAll('.dish-item, .card.p-3, .d-flex.p-3').forEach(i => i.style.display = '');
+                });
+            });
+        </script>
+        <!-- ====== Footer Section (Alumination) ====== -->
+        <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+            <div class="container px-4 px-lg-5 pb-5">
+                <div class="row gy-5 justify-content-between align-items-start">
+
+                    <!-- Brand / About -->
+                    <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+                        <h3 class="fw-bold mb-3"
+                            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+                            Alumination
+                        </h3>
+                        <p class="text-white-50 mb-4">
+                            Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+                            At Alumination, every meal is a story — crafted with passion and served with pride.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+                        <h6 class="fw-bold text-uppercase mb-3"
+                            style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+                            <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+                            <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+                            <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+                        <h6 class="fw-bold text-uppercase mb-3"
+                            style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
+                        <ul class="list-unstyled small text-white-50">
+                            <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+                            <li>Saturday: 1:00 PM – 12:00 AM</li>
+                            <li>Sunday: 1:00 PM – 10:00 PM</li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-lg-3 animate-fade-up delay-3">
+                        <h6 class="fw-bold text-uppercase mb-3"
+                            style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
+                        <p class="text-white-50 small mb-3">
+                            Join our community and receive exclusive news, recipes, and event updates.
+                        </p>
+                        <form class="d-flex">
+                            <input type="email" class="form-control bg-transparent border-light text-white me-2"
+                                placeholder="Enter email">
+                            <button class="btn fw-bold px-3"
+                                style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                                Go
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-light mt-4">
+                <div class="container text-center py-3 small text-white-50">
+                    © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed
+                    by <span style="color: var(--primary-color);">Alumination Team</span>.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Navbar Hover/Active Script -->
+<script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
+        link.addEventListener('mouseleave', () => {
+            if (!link.classList.contains('active')) link.style.color = 'white';
+        });
+    });
+</script>
+
+</html>
