@@ -19,7 +19,18 @@
     rel="stylesheet">
 
 </head>
+<style>
+  .floating-tomato {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 150px;
+  z-index: 2;
+  transition: transform 0.2s ease-out;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+}
 
+</style>
 <body>
   <!-- ===== Transparent Modern Navbar ===== -->
   <!-- Navbar -->
@@ -28,7 +39,7 @@
 
       <!-- Logo (Left) -->
       <a class="navbar-brand" href="#">
-        <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
+        <img src="assets/img/logo2.png" alt="Logo" height="60">
       </a>
 
       <!-- Mobile Toggle -->
@@ -66,7 +77,7 @@
       <!-- Right Button -->
       <div class="d-none d-lg-flex align-items-center">
         <a href="#" class="btn fw-bold main-btn px-4 py-2"
-          style="border: 2px solid var(--primary-color); border-radius: 50px; transition: all 0.3s;">
+          style="border: 2px solid var(--primary-color); transition: all 0.3s;">
           ORDER BY PHONE
         </a>
       </div>
@@ -74,35 +85,45 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <header class="d-flex align-items-center justify-content-end"
-    style="background: url('assets/img/bg.jpg') center/cover no-repeat; min-height: 100vh; position: relative;">
+<header class="d-flex align-items-center justify-content-end"
+  style="background: url('assets/img/bg2.jpg') center/cover no-repeat; min-height: 100vh; position: relative; overflow: hidden;">
 
-    <!-- Optional overlay -->
-    <div style="position: absolute; inset: 0;"></div>
+  <!-- Optional overlay -->
+  <div style="position: absolute; inset: 0;"></div>
 
-    <!-- Right-side content -->
-    <div class="container position-relative px-3 px-lg-5 hero-content"
-      style="max-width: 600px; margin-right: 5%; z-index: 1;">
+  <!-- Moving Tomato -->
+  <img src="assets/img/tomato.png" alt="Tomato" class="floating-tomato">
 
-      <!-- Large heading -->
-      <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
-        style="font-family: 'Antonio', sans-serif; color: #000;">
-        Dining at<br>Alumination
-      </h1>
+  <!-- Right-side content -->
+  <div class="container position-relative px-3 px-lg-5 hero-content"
+    style="max-width: 600px; margin-right: 10%; z-index: 1;">
+    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
+      style="font-family: 'Antonio', sans-serif; color: #000; font-size: 100px;">
+      Dining at<br>Alumination
+    </h1>
 
-      <!-- Small heading (mobile) -->
-      <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
-        style="font-family: 'Antonio', sans-serif; color: #000;">
-        Dining at Alumination
-      </h1>
+    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
+      style="font-family: 'Antonio', sans-serif; color: #000;">
+      Dining at Alumination
+    </h1>
 
-      <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
-        Discover and enjoy our delicious and authentic food
-      </p>
+    <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
+      Discover and enjoy our delicious and authentic food
+    </p>
 
-      <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
-    </div>
-  </header>
+    <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
+  </div>
+</header>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const tomato = document.querySelector('.floating-tomato');
+    const scrollY = window.scrollY;
+    tomato.style.transform = `translateY(${scrollY * 0.2}px)`; // moves slightly with scroll
+  });
+</script>
+
+
   <!-- Welcome To Alumination Section -->
   <section id="welcome" class="py-5 bg-light text-dark">
     <div class="container py-5">
@@ -210,7 +231,6 @@
           </div>
         </div>
 
-
       </div>
   </section>
   <!-- Takeaway Special Section (Modern UK Style) -->
@@ -234,7 +254,7 @@
 
         <!-- Right Side - Text -->
         <div class="col-12 col-md-6 ps-md-5 text-center text-md-start">
-          <h2 class="fw-bold text-uppercase mb-3" style="font-size: clamp(1.8rem, 4vw, 2.6rem); color: #222;">
+          <h2 class="fw-bold text-uppercase mb-3" style="font-family: 'Antonio', sans-serif; color: #000; font-size: 60px;">
             Enjoy Free Home Delivery<br>
             <span style="color: var(--primary-color);">Within 5 Miles</span>
           </h2>
@@ -244,7 +264,7 @@
             absolutely free on all orders over <strong>£20</strong>. Fast, friendly, and always on time.
           </p>
 
-          <a href="#" class="btn btn-lg main-btn rounded-pill px-4 py-2" style="transition: all 0.3s ease;">
+          <a href="#" class="btn btn-lg main-btn px-4 py-2" style="transition: all 0.3s ease;">
             Order Now →
           </a>
         </div>
