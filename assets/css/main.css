@@ -370,8 +370,12 @@
       }
     }
 
+    footer {
+      padding-top: 10rem !important;
+    }
+
     .footer-link {
-      color: #bbb;
+      color: #9b9b9b;
       text-decoration: none;
       transition: color 0.3s, transform 0.3s;
     }
@@ -379,6 +383,18 @@
     .footer-link:hover {
       color: var(--primary-color);
       transform: translateX(4px);
+    }
+
+    .social-link {
+      color: var(--primary-color) !important;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      color: var(--primary-color) !important;
+      opacity: 0.8;
+      transform: translateY(-2px);
     }
 
     /* Animation Styles */

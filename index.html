@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dining at Alumination</title>
+  <title>Dining at Cuisine Resturant</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,18 +19,7 @@
     rel="stylesheet">
 
 </head>
-<style>
-  .floating-tomato {
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-  width: 150px;
-  z-index: 2;
-  transition: transform 0.2s ease-out;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-}
 
-</style>
 <body>
   <!-- ===== Transparent Modern Navbar ===== -->
   <!-- Navbar -->
@@ -39,7 +28,7 @@
 
       <!-- Logo (Left) -->
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo2.png" alt="Logo" height="60">
+        <img src="assets/img/Asset 3.png" alt="Logo" height="60">
       </a>
 
       <!-- Mobile Toggle -->
@@ -78,7 +67,7 @@
       <div class="d-none d-lg-flex align-items-center">
         <a href="#" class="btn fw-bold main-btn px-4 py-2"
           style="border: 2px solid var(--primary-color); transition: all 0.3s;">
-          ORDER BY PHONE
+          Order by Phone
         </a>
       </div>
 
@@ -92,19 +81,19 @@
   <div style="position: absolute; inset: 0;"></div>
 
   <!-- Moving Tomato -->
-  <img src="assets/img/tomato.png" alt="Tomato" class="floating-tomato">
+  <img src="assets/img/tomato.png" alt="Tomato" class="floating-tomato d-none d-md-block">
 
   <!-- Right-side content -->
   <div class="container position-relative px-3 px-lg-5 hero-content"
-    style="max-width: 600px; margin-right: 10%; z-index: 1;">
+    style="max-width: 650px; margin-right: 10%; z-index: 1;">
     <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
-      style="font-family: 'Antonio', sans-serif; color: #000; font-size: 100px;">
-      Dining at<br>Alumination
+      style="font-family: 'Antonio', sans-serif; color: #000; font-size: 80px;">
+      Dining at<br>Cuisine Restaurant
     </h1>
 
     <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
       style="font-family: 'Antonio', sans-serif; color: #000;">
-      Dining at Alumination
+      Dining at<br>Cuisine Restaurant
     </h1>
 
     <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
@@ -116,15 +105,73 @@
 </header>
 
 <script>
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     const tomato = document.querySelector('.floating-tomato');
-    const scrollY = window.scrollY;
-    tomato.style.transform = `translateY(${scrollY * 0.2}px)`; // moves slightly with scroll
+    if (window.innerWidth >= 768 && tomato) { // only apply effect on tablets and larger
+      const scrollY = window.scrollY;
+      tomato.style.transform = `translateY(${scrollY * 0.2}px)`;
+    }
   });
 </script>
 
+<style>
+  .floating-tomato {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    width: 150px;
+    z-index: 2;
+    transition: transform 0.2s ease-out;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+  }
 
-  <!-- Welcome To Alumination Section -->
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    header .hero-content {
+      margin-right: 5%;
+      text-align: right;
+    }
+
+    header .hero-content h1 {
+      font-size: 2.2rem !important;
+    }
+
+    header .hero-content p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .floating-tomato {
+      display: none !important;
+    }
+
+    header {
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    header .hero-content {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header .hero-content h1 {
+      font-size: 1.8rem !important;
+    }
+
+    header .hero-content p {
+      font-size: 0.95rem;
+    }
+
+    .main-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+</style>
+
+  <!-- Welcome To Cuisine Resturant Section -->
   <section id="welcome" class="py-5 bg-light text-dark">
     <div class="container py-5">
       <div class="row align-items-center g-5">
@@ -132,22 +179,21 @@
         <!-- Left Content -->
         <div class="col-lg-6">
           <div class="border-start border-3 ps-4" style="border-color: var(--primary-color);">
-            <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+            <p class="fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
               Welcome To
             </p>
 
             <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif; font-size: 2.8rem;">
-              Alumination
+              Cuisine Resturant
             </h2>
 
             <p class="lead mb-4" style="font-family: 'Poppins', sans-serif; color:#555;">
-              Discover the art of refined living at Alumination — where timeless elegance meets
+              Discover the art of refined living at Cuisine Resturant — where timeless elegance meets
               modern innovation. Each space we design embodies craftsmanship, creativity, and a
               touch of brilliance, making every experience truly exceptional.
             </p>
 
-            <a href="#projects" class="btn main-btn rounded-0 px-4 py-2 text-uppercase"
-              style="font-size: 0.9rem; letter-spacing: 1px;">
+            <a href="#projects" class="btn main-btn px-4 py-2" style="font-size: 0.9rem; letter-spacing: 1px;">
               Discover More
             </a>
           </div>
@@ -170,7 +216,7 @@
   <section id="featured-menu" class="py-5 bg-white text-dark">
     <div class="container px-4 px-lg-5">
       <div class="text-center mb-5">
-        <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+        <p class="fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
           Signature Dishes
         </p>
         <h2 class="display-6 fw-bold" style="font-family: 'Antonio', sans-serif;">
@@ -192,7 +238,7 @@
               <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Louisiana Chicken Burger</h5>
               <p class="small mb-3">Crispy fried chicken layered with lettuce, pickles, and creamy mayo in a toasted
                 brioche bun.</p>
-              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+              <a href="#" class="btn main-btn btn-sm fw-semibold px-3">Order Now</a>
             </div>
           </div>
         </div>
@@ -209,7 +255,7 @@
               <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Creamy Tuscan Pasta</h5>
               <p class="small mb-3">Freshly cooked pasta tossed in a rich, creamy sauce with sun-dried tomatoes and baby
                 spinach.</p>
-              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+              <a href="#" class="btn main-btn btn-sm fw-semibold px-3">Order Now</a>
             </div>
           </div>
         </div>
@@ -226,7 +272,7 @@
               <h5 class="fw-bold mb-2" style="font-family:'Playfair Display', serif;">Buttermilk Fried Chicken</h5>
               <p class="small mb-3">Golden, crispy chicken marinated in buttermilk and herbs — juicy inside, perfectly
                 crunchy outside.</p>
-              <a href="#" class="btn main-btn btn-sm fw-semibold rounded-pill px-3">Order Now</a>
+              <a href="#" class="btn main-btn btn-sm fw-semibold px-3">Order Now</a>
             </div>
           </div>
         </div>
@@ -254,7 +300,7 @@
 
         <!-- Right Side - Text -->
         <div class="col-12 col-md-6 ps-md-5 text-center text-md-start">
-          <h2 class="fw-bold text-uppercase mb-3" style="font-family: 'Antonio', sans-serif; color: #000; font-size: 60px;">
+          <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif; color: #000; font-size: 60px;">
             Enjoy Free Home Delivery<br>
             <span style="color: var(--primary-color);">Within 5 Miles</span>
           </h2>
@@ -277,7 +323,7 @@
   <section id="discover" class="py-5 bg-white text-dark">
     <div class="container px-4 px-lg-5">
       <div class="text-center mb-5">
-        <p class="text-uppercase fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
+        <p class="fw-semibold mb-1" style="color: var(--primary-color); letter-spacing: 2px;">
           Discover
         </p>
         <h2 class="display-6 fw-bold" style="font-family: 'Antonio', sans-serif;">
@@ -285,7 +331,7 @@
         </h2>
         <div class="mx-auto mt-3" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
         <p class="mx-auto mt-2" style="max-width:900px;">
-          Experience Alumination dining at its finest — where exquisite flavours meet timeless elegance and warm
+          Experience Cuisine Resturant dining at its finest — where exquisite flavours meet timeless elegance and warm
           hospitality.
         </p>
       </div>
@@ -395,18 +441,17 @@
     <div class="container px-3 px-lg-5 text-center">
 
       <!-- Heading -->
-      <p class="text-uppercase mb-2 fw-semibold"
-        style="letter-spacing: .08em; font-size: 1.1rem; color: var(--primary-color);">
+      <p class="mb-2 fw-semibold" style="letter-spacing: .08em; font-size: 1.1rem; color: var(--primary-color);">
         Dining
       </p>
-      <h2 class="fw-bold text-uppercase mb-3"
+      <h2 class="fw-bold mb-3"
         style="font-family: 'Antonio', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: 1px;">
         Book a Table
       </h2>
       <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
       <p class="lead mx-auto mb-3" style="max-width: 700px; font-size: 1rem;">
         Whether you’re joining us for a casual meal, an elegant evening, or a private gathering,
-        Alumination offers the perfect setting to dine, relax, and celebrate great taste.
+        Cuisine Resturant offers the perfect setting to dine, relax, and celebrate great taste.
       </p>
 
       <!-- Cards Grid -->
@@ -421,7 +466,7 @@
               <h5 class="fw-bold mb-2" style="font-family:'Antonio', sans-serif; letter-spacing: .5px;">Lunch</h5>
               <p class="small mb-4">A relaxed midday dining experience with fresh, seasonal dishes and signature
                 flavours.</p>
-              <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Reserve</a>
+              <a href="#" class="btn main-btn px-4">Reserve</a>
             </div>
           </div>
         </div>
@@ -434,7 +479,7 @@
             <div class="card-body p-4">
               <h5 class="fw-bold mb-2" style="font-family:'Antonio', sans-serif; letter-spacing: .5px;">Dinner</h5>
               <p class="small mb-4">Join us for an evening of vibrant flavours, fine ambiance, and warm hospitality.</p>
-              <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Reserve</a>
+              <a href="#" class="btn main-btn px-4">Reserve</a>
             </div>
           </div>
         </div>
@@ -449,7 +494,7 @@
               </h5>
               <p class="small mb-4">Host your intimate gatherings or special celebrations in our private dining space.
               </p>
-              <a href="#" class="btn main-btn text-dark fw-semibold rounded-pill px-4">Enquire</a>
+              <a href="#" class="btn main-btn px-4">Enquire</a>
             </div>
           </div>
         </div>
@@ -464,10 +509,10 @@
       <!-- Section Heading -->
       <div class="text-center mb-5">
         <p class="mb-1 fw-semibold" style="color: var(--primary-color);">Our Stories</p>
-        <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif;">From the Heart of Alumination</h2>
+        <h2 class="fw-bold mb-3" style="font-family: 'Antonio', sans-serif;">From the Heart of Cuisine Resturant</h2>
         <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
         <p class="mx-auto" style="max-width: 700px; font-size: 1rem;">
-          Explore the world of Alumination Restaurant — where fine dining meets timeless elegance.
+          Explore the world of Cuisine Resturant Restaurant — where fine dining meets timeless elegance.
           Discover the passion, artistry, and inspiration behind every experience we create.
         </p>
       </div>
@@ -490,7 +535,7 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Crafting Flavors with Elegance</h5>
               <p class="card-text text-muted small">
-                At Alumination, every dish tells a story — blending refined technique with authentic flavor to create a
+                At Cuisine Resturant, every dish tells a story — blending refined technique with authentic flavor to create a
                 truly unforgettable dining experience.
               </p>
             </div>
@@ -517,7 +562,7 @@
               <h5 class="card-title fw-bold">Signature Creations You Must Try</h5>
               <p class="card-text text-muted small">
                 From our chef’s favorites to seasonal delicacies, these are the dishes that define the soul of
-                Alumination Restaurant — exquisite, bold, and full of character.
+                Cuisine Resturant Restaurant — exquisite, bold, and full of character.
               </p>
             </div>
             <div class="card-footer bg-transparent border-0 text-muted small">
@@ -542,7 +587,7 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Inside the Art of Fine Dining</h5>
               <p class="card-text text-muted small">
-                Step behind the scenes and see how Alumination’s culinary team turns ingredients into experiences —
+                Step behind the scenes and see how Cuisine Resturant’s culinary team turns ingredients into experiences —
                 where every detail glows with perfection.
               </p>
             </div>
@@ -567,13 +612,13 @@
 
         <!-- LEFT SIDE CONTENT -->
         <div class="col-12 col-lg-6 text-center text-lg-start">
-          <h1 class="fw-bold display-5 text-uppercase mb-3"
+          <h1 class="fw-bold display-5 mb-3"
             style="letter-spacing: 2px; color: #ffffff; font-family: 'Antonio', sans-serif;">
             Let’s Connect
           </h1>
           <div class="mb-4" style="width: 90px; height: 3px; background-color: var(--primary-color);"></div>
           <p class="lead text-white-50" style="max-width: 500px; line-height: 1.8;">
-            Whether it’s an intimate dinner, a private event, or a simple inquiry — the Alumination team is here to make
+            Whether it’s an intimate dinner, a private event, or a simple inquiry — the Cuisine Resturant team is here to make
             your experience exceptional.
             Share your thoughts below, and we’ll reach out soon.
           </p>
@@ -588,42 +633,38 @@
               border: 1px solid rgba(255,255,255,0.3);
             ">
 
-            <h4 class="fw-semibold mb-4 text-white text-center">Get in Touch with Alumination</h4>
+            <h4 class="fw-semibold mb-4 text-white text-center">Get in Touch with Cuisine Resturant</h4>
 
             <form>
               <!-- Name & Contact Row -->
               <div class="row mb-3">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="name" class="form-label text-white-50">Name</label>
-                  <input type="text" class="form-control bg-transparent text-white border-light rounded-3" id="name"
-                    placeholder="Your Name">
+                  <input type="text" class="form-control bg-transparent text-white rounded-3"
+                    style="border: 1px solid rgba(255,255,255,0.3);" id="name" placeholder="Your Name">
                 </div>
                 <div class="col-md-6">
-                  <label for="contact" class="form-label text-white-50">Phone</label>
-                  <input type="tel" class="form-control bg-transparent text-white border-light rounded-3" id="contact"
-                    placeholder="+92 300 1234567">
+                  <input type="tel" class="form-control bg-transparent text-white rounded-3"
+                    style="border: 1px solid rgba(255,255,255,0.3);" id="contact" placeholder="+92 300 1234567">
                 </div>
               </div>
 
               <!-- Email -->
               <div class="mb-3">
-                <label for="email" class="form-label text-white-50">Email</label>
-                <input type="email" class="form-control bg-transparent text-white border-light rounded-3" id="email"
-                  placeholder="example@email.com">
+                <input type="email" class="form-control bg-transparent text-white rounded-3"
+                  style="border: 1px solid rgba(255,255,255,0.3);" id="email" placeholder="example@email.com">
               </div>
 
               <!-- Message -->
               <div class="mb-4">
-                <label for="message" class="form-label text-white-50">Message</label>
-                <textarea class="form-control bg-transparent text-white border-light rounded-3" id="message" rows="4"
+                <textarea class="form-control bg-transparent text-white rounded-3"
+                  style="border: 1px solid rgba(255,255,255,0.3);" id="message" rows="4"
                   placeholder="How can we assist you?"></textarea>
               </div>
 
               <!-- Send Button -->
               <div class="text-center">
-                <button type="submit" class="btn main-btn fw-bold px-5 py-2"
-                  style="transition: all 0.3s; border-radius: 30px;" onmouseover="this.style.transform='scale(1.05)'"
-                  onmouseout="this.style.transform='scale(1)'">
+                <button type="submit" class="btn main-btn fw-bold px-5 py-2" style="transition: all 0.3s;"
+                  onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                   Send Message
                 </button>
               </div>
@@ -642,7 +683,7 @@
       <div class="mb-5">
         <p class="fw-semibold mb-1" style="color: var(--primary-color);">Our Happy Guests</p>
         <h2 class="fw-bold" style="font-family: 'Antonio', sans-serif;">
-          What People Say About Alumination
+          What People Say About Cuisine Resturant
         </h2>
         <div class="mx-auto mt-3 mb-2" style="width: 80px; height: 2px; background-color: var(--primary-color);"></div>
         <p class="text-muted mx-auto" style="max-width: 700px; font-size: 1rem;">
@@ -662,7 +703,7 @@
                 <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
               </div>
               <p class="fst-italic text-muted mb-4">
-                “Alumination has a magical atmosphere — the lighting, the aroma, and the taste are all top-tier. A
+                “Cuisine Resturant has a magical atmosphere — the lighting, the aroma, and the taste are all top-tier. A
                 must-visit dining spot!”
               </p>
               <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Sarah Malik</h5>
@@ -679,8 +720,8 @@
                 <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
               </div>
               <p class="fst-italic text-muted mb-4">
-                “The staff is so welcoming, and every dish looks like art. Alumination is my go-to place for
-                celebrations.”
+                “The staff is so welcoming, and every dish looks like art. Cuisine Resturant is my go-to place for
+                celebrations. A must-visit dining spot!”
               </p>
               <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Ahmed Raza</h5>
               <p class="text-secondary small">Customer</p>
@@ -696,7 +737,7 @@
                 <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
               </div>
               <p class="fst-italic text-muted mb-4">
-                “Every visit feels special — elegant design, authentic flavors, and truly warm service. Alumination
+                “Every visit feels special — elegant design, authentic flavors, and truly warm service. Cuisine Resturant
                 never disappoints.”
               </p>
               <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Fatima Khan</h5>
@@ -709,7 +750,7 @@
     </div>
   </section>
 
-  <!-- ====== Footer Section (Alumination) ====== -->
+  <!-- ====== Footer Section (Cuisine Resturant) ====== -->
   <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
     <div class="container px-4 px-lg-5 pb-5">
       <div class="row gy-5 justify-content-between align-items-start">
@@ -718,13 +759,13 @@
         <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
           <h3 class="fw-bold mb-3"
             style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
-            Alumination
+            Cuisine Resturant
           </h3>
           <p class="text-white-50 mb-4">
             Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
-            At Alumination, every meal is a story — crafted with passion and served with pride.
+            At Cuisine Resturant, every meal is a story — crafted with passion and served with pride.
           </p>
-          <div class="d-flex gap-3">
+          <div class="d-flex gap-3" style="color: var(--primary-color);">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -779,8 +820,8 @@
     <!-- Bottom Bar -->
     <div class="border-top border-light mt-4">
       <div class="container text-center py-3 small text-white-50">
-        © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed by <span
-          style="color: var(--primary-color);">Alumination Team</span>.
+        © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved. Designed by <span
+          style="color: var(--primary-color);">Cuisine Resturant Team</span>.
       </div>
     </div>
   </footer>
