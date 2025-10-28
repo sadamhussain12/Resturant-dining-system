@@ -19,12 +19,13 @@
 
 <body class="text-white">
     <!-- ===== Transparent Modern Navbar ===== -->
-    <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-3" style="z-index: 1000;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
         <div class="container-fluid px-5">
 
-            <!-- Logo -->
+            <!-- Logo (Left) -->
             <a class="navbar-brand" href="#">
-                <img src="assets/img/Alumination_AACE_Final_Logo-300x274.png" alt="Logo" height="60">
+                <img src="assets/img/Asset 3.png" alt="Logo" height="60">
             </a>
 
             <!-- Mobile Toggle -->
@@ -33,39 +34,37 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
+            <!-- Menu (Center, fixed while scrolling) -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav text-uppercase fw-semibold">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" href="index.html" style="transition: color 0.3s;">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#menu" style="transition: color 0.3s;">Menu</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#reservation" style="transition: color 0.3s;">Reservation</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#blog" style="transition: color 0.3s;">Blog</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="about-us.html" style="transition: color 0.3s;">About</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="contact-us.html" style="transition: color 0.3s;">Contact</a>
-                    </li>
-                </ul>
+                <div class="fixed-center-menu">
+                    <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link  active" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#reservation">Reservation</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Right Button -->
             <div class="d-none d-lg-flex align-items-center">
-                <a href="#" class="btn fw-bold text-white px-4 py-2" style="
-           border: 2px solid var(--primary-color); 
-           border-radius: 50px; 
-           transition: all 0.3s;
-         " onmouseover="this.style.background='var(--primary-color)'; this.style.color='black';"
-                    onmouseout="this.style.background='transparent'; this.style.color='white';">
-                    ORDER BY PHONE
+                <a href="#" class="btn fw-bold main-btn px-4 py-2"
+                    style="border: 2px solid var(--primary-color); transition: all 0.3s;">
+                    Order by Phone
                 </a>
             </div>
 
@@ -89,7 +88,7 @@
                     <!-- Sidebar -->
                     <aside class="col-lg-3">
                         <div class="position-sticky" style="top:50px;">
-                                                    <!-- ===== Categories Sidebar ===== -->
+                            <!-- ===== Categories Sidebar ===== -->
                             <div class="mb-4 p-3 rounded-4 shadow-sm category-box">
                                 <h6 class="fw-bold mb-3 text-white">Categories</h6>
                                 <div class="list-group category-sidebar" id="v-pills-tab" role="tablist"
@@ -174,6 +173,13 @@
                                                     <span class="fw-semibold text-dark">£12</span>
                                                 </div>
                                                 <p class="small text-muted mb-0">Smoky paprika, lemon aioli</p>
+
+                                                <!-- Hidden full description -->
+                                                <p class="d-none full-desc">
+                                                    Tender charred octopus served with smoky paprika and creamy lemon
+                                                    aioli — a signature starter combining
+                                                    Mediterranean spice with subtle citrus notes.
+                                                </p>
                                             </div>
                                         </article>
                                     </div>
@@ -192,6 +198,13 @@
                                                     <span class="fw-semibold text-dark">£9</span>
                                                 </div>
                                                 <p class="small text-muted mb-0">Goat cheese, candied walnuts</p>
+
+                                                <!-- Hidden full description -->
+                                                <p class="d-none full-desc">
+                                                    A vibrant salad of oven-roasted beets, tangy goat cheese, and sweet
+                                                    candied walnuts — finished with a light
+                                                    balsamic reduction.
+                                                </p>
                                             </div>
                                         </article>
                                     </div>
@@ -210,6 +223,13 @@
                                                     <span class="fw-semibold text-dark">£11</span>
                                                 </div>
                                                 <p class="small text-muted mb-0">Tarragon aioli</p>
+
+                                                <!-- Hidden full description -->
+                                                <p class="d-none full-desc">
+                                                    Lightly breaded calamari fried to golden perfection, served with
+                                                    house-made tarragon aioli and a squeeze of
+                                                    lemon for freshness.
+                                                </p>
                                             </div>
                                         </article>
                                     </div>
@@ -238,8 +258,8 @@
                                         <article
                                             class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                                             <div class="ratio ratio-4x3">
-                                                <img src="assets/img/GDDeliveroo-14.jpg"
-                                                    alt="Smoked Salmon Tartine" class="card-img-top object-cover">
+                                                <img src="assets/img/GDDeliveroo-14.jpg" alt="Smoked Salmon Tartine"
+                                                    class="card-img-top object-cover">
                                             </div>
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between align-items-center mb-1">
@@ -256,8 +276,8 @@
                                         <article
                                             class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                                             <div class="ratio ratio-4x3">
-                                                <img src="assets/img/GDDeliveroo-08.jpg"
-                                                    alt="Truffle Mushroom Soup" class="card-img-top object-cover">
+                                                <img src="assets/img/GDDeliveroo-08.jpg" alt="Truffle Mushroom Soup"
+                                                    class="card-img-top object-cover">
                                             </div>
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between align-items-center mb-1">
@@ -312,8 +332,8 @@
                                         <article
                                             class="card dish-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                                             <div class="ratio ratio-4x3">
-                                                <img src="assets/img/pexels-chevanon-323682.jpg"
-                                                    alt="Grilled Halloumi" class="card-img-top object-cover">
+                                                <img src="assets/img/pexels-chevanon-323682.jpg" alt="Grilled Halloumi"
+                                                    class="card-img-top object-cover">
                                             </div>
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between align-items-center mb-1">
@@ -433,14 +453,14 @@
         <section class="py-4">
             <div class="container">
                 <div class="reservation-cta d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
-                    style="background: linear-gradient(90deg, rgba(214,139,53,0.08), rgba(214,139,53,0.03)); border-radius:1rem; padding:1.25rem;">
+                    style="background: linear-gradient(90deg, rgba(250, 133, 0, 0.664), rgba(214,139,53,0.03)); border-radius:1rem; padding:1.25rem;">
                     <div>
                         <h5 class="fw-bold mb-1">Book a table at Alumination</h5>
                         <p class="small text-muted mb-0">Private events and regular reservations — we can arrange
                             tailored menus.</p>
                     </div>
                     <div class="text-md-end">
-                        <a href="contact.html" class="btn btn-primary btn-lg">Reserve Now</a>
+                        <a href="contact.html" class="btn main-btn btn-lg">Reserve Now</a>
                     </div>
                 </div>
             </div>
@@ -580,7 +600,7 @@
                 });
             });
         </script>
-        <!-- ====== Footer Section (Alumination) ====== -->
+        <!-- ====== Footer Section (Cuisine Resturant) ====== -->
         <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
             <div class="container px-4 px-lg-5 pb-5">
                 <div class="row gy-5 justify-content-between align-items-start">
@@ -589,13 +609,13 @@
                     <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
                         <h3 class="fw-bold mb-3"
                             style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
-                            Alumination
+                            Cuisine Resturant
                         </h3>
                         <p class="text-white-50 mb-4">
                             Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
-                            At Alumination, every meal is a story — crafted with passion and served with pride.
+                            At Cuisine Resturant, every meal is a story — crafted with passion and served with pride.
                         </p>
-                        <div class="d-flex gap-3">
+                        <div class="d-flex gap-3" style="color: var(--primary-color);">
                             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -606,7 +626,8 @@
                     <!-- Quick Links -->
                     <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
                         <h6 class="fw-bold text-uppercase mb-3"
-                            style="color: var(--primary-color); letter-spacing: 1px;">Quick Links</h6>
+                            style="color: var(--primary-color); letter-spacing: 1px;">Quick Links
+                        </h6>
                         <ul class="list-unstyled small">
                             <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
                             <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
@@ -619,7 +640,8 @@
                     <!-- Opening Hours -->
                     <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
                         <h6 class="fw-bold text-uppercase mb-3"
-                            style="color: var(--primary-color); letter-spacing: 1px;">Opening Hours</h6>
+                            style="color: var(--primary-color); letter-spacing: 1px;">Opening
+                            Hours</h6>
                         <ul class="list-unstyled small text-white-50">
                             <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
                             <li>Saturday: 1:00 PM – 12:00 AM</li>
@@ -630,7 +652,8 @@
                     <!-- Newsletter -->
                     <div class="col-12 col-lg-3 animate-fade-up delay-3">
                         <h6 class="fw-bold text-uppercase mb-3"
-                            style="color: var(--primary-color); letter-spacing: 1px;">Subscribe</h6>
+                            style="color: var(--primary-color); letter-spacing: 1px;">Subscribe
+                        </h6>
                         <p class="text-white-50 small mb-3">
                             Join our community and receive exclusive news, recipes, and event updates.
                         </p>
@@ -648,26 +671,100 @@
                 </div>
             </div>
 
+            <!-- Bottom Bar -->
             <div class="border-top border-light mt-4">
                 <div class="container text-center py-3 small text-white-50">
-                    © 2025 <span style="color: var(--primary-color);">Alumination</span>. All Rights Reserved. Designed
-                    by <span style="color: var(--primary-color);">Alumination Team</span>.
+                    © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved.
+                    Designed by <span style="color: var(--primary-color);">Cuisine Resturant Team</span>.
                 </div>
             </div>
         </footer>
+
+        <!-- Dish Detail Modal -->
+        <div class="modal fade" id="dishModal" tabindex="-1" aria-labelledby="dishModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content border-0 rounded-4 shadow-lg">
+                    <div class="modal-body p-4">
+                        <div class="row g-4 align-items-center">
+                            <!-- Dish Image -->
+                            <div class="col-md-6">
+                                <img id="modalDishImg" src="" alt="Dish Image" class="img-fluid rounded-3 w-100">
+                            </div>
+
+                            <!-- Dish Details -->
+                            <div class="col-md-6">
+                                <h4 id="modalDishName" class="fw-bold mb-2 text-dark"></h4>
+                                <p id="modalDishDesc" class="text-muted mb-2"></p>
+                                <h5 id="modalDishPrice" class="fw-semibold text-dark mb-3"></h5>
+
+                                <!-- Quantity Selector -->
+                                <div class="d-flex align-items-center mb-4">
+                                    <button class="btn btn-outline-secondary btn-sm" id="qtyMinus">−</button>
+                                    <input type="text" id="dishQty" class="form-control mx-2 text-center"
+                                        style="width: 60px;" value="1" readonly>
+                                    <button class="btn btn-outline-secondary btn-sm" id="qtyPlus">+</button>
+                                </div>
+
+                                <!-- Add to Cart -->
+                                <button class="btn main-btn w-100 " id="addToCartBtn">
+                                    <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            document.querySelectorAll('.dish-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const img = item.querySelector('img').src;
+                    const name = item.querySelector('h6').textContent;
+                    const price = item.querySelector('span').textContent;
+                    const shortDesc = item.querySelector('p.small').textContent;
+                    const fullDesc = item.querySelector('.full-desc')?.textContent || shortDesc;
+
+                    // Fill modal
+                    document.getElementById('modalDishImg').src = img;
+                    document.getElementById('modalDishName').textContent = name;
+                    document.getElementById('modalDishDesc').textContent = fullDesc;
+                    document.getElementById('modalDishPrice').textContent = price;
+                    document.getElementById('dishQty').value = 1;
+
+                    new bootstrap.Modal(document.getElementById('dishModal')).show();
+                });
+            });
+
+            // Quantity controls
+            document.getElementById('qtyPlus').addEventListener('click', () => {
+                let qty = parseInt(document.getElementById('dishQty').value);
+                document.getElementById('dishQty').value = qty + 1;
+            });
+
+            document.getElementById('qtyMinus').addEventListener('click', () => {
+                let qty = parseInt(document.getElementById('dishQty').value);
+                if (qty > 1) document.getElementById('dishQty').value = qty - 1;
+            });
+
+            // Add to Cart
+            document.getElementById('addToCartBtn').addEventListener('click', () => {
+                const name = document.getElementById('modalDishName').textContent;
+                const qty = document.getElementById('dishQty').value;
+                alert(`${qty} × ${name} added to cart.`);
+            });
+        </script>
+
+
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-<!-- Navbar Hover/Active Script -->
-<script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-        link.addEventListener('mouseenter', () => link.style.color = 'var(--primary-color)');
-        link.addEventListener('mouseleave', () => {
-            if (!link.classList.contains('active')) link.style.color = 'white';
-        });
-    });
-</script>
 
 </html>

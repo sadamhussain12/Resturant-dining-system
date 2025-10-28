@@ -45,7 +45,7 @@
               <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#menu">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#reservation">Reservation</a>
@@ -74,102 +74,106 @@
     </div>
   </nav>
   <!-- Hero Section -->
-<header class="d-flex align-items-center justify-content-end"
-  style="background: url('assets/img/bg2.jpg') center/cover no-repeat; min-height: 100vh; position: relative; overflow: hidden;">
+  <header class="d-flex align-items-center justify-content-end"
+    style="background: url('assets/img/bg2.jpg') center/cover no-repeat; min-height: 100vh; position: relative; overflow: hidden;">
 
-  <!-- Optional overlay -->
-  <div style="position: absolute; inset: 0;"></div>
+    <!-- Optional overlay -->
+    <div style="position: absolute; inset: 0;"></div>
 
-  <!-- Moving Tomato -->
-  <img src="assets/img/tomato.png" alt="Tomato" class="floating-tomato d-none d-md-block">
+    <!-- Moving Tomato -->
+    <img src="assets/img/tomato.png" alt="Tomato" class="floating-tomato d-none d-md-block">
 
-  <!-- Right-side content -->
-  <div class="container position-relative px-3 px-lg-5 hero-content"
-    style="max-width: 650px; margin-right: 10%; z-index: 1;">
-    <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
-      style="font-family: 'Antonio', sans-serif; color: #000; font-size: 80px;">
-      Dining at<br>Cuisine Restaurant
-    </h1>
+    <!-- Right-side content -->
+    <div class="container position-relative px-3 px-lg-5 hero-content"
+      style="max-width: 750px; margin-right: 2%; z-index: 1;">
 
-    <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
-      style="font-family: 'Antonio', sans-serif; color: #000;">
-      Dining at<br>Cuisine Restaurant
-    </h1>
+      <!-- Desktop Heading -->
+      <h1 class="display-1 fw-bold text-uppercase d-none d-lg-block"
+        style="font-family: 'Antonio', sans-serif; color: #000; font-size: 80px; white-space: nowrap;">
+        Dining at <br>Cuisine Restaurant
+      </h1>
 
-    <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
-      Discover and enjoy our delicious and authentic food
-    </p>
+      <!-- Mobile Heading -->
+      <h1 class="display-4 fw-bold text-uppercase d-block d-lg-none"
+        style="font-family: 'Antonio', sans-serif; color: #000;">
+        Dining at<br>Cuisine Restaurant
+      </h1>
 
-    <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
-  </div>
-</header>
+      <p class="lead fw-semibold mt-3" style="font-family: 'Poppins', sans-serif; color: #000;">
+        Discover and enjoy our delicious and authentic food
+      </p>
 
-<script>
-  window.addEventListener('scroll', function () {
-    const tomato = document.querySelector('.floating-tomato');
-    if (window.innerWidth >= 768 && tomato) { // only apply effect on tablets and larger
-      const scrollY = window.scrollY;
-      tomato.style.transform = `translateY(${scrollY * 0.2}px)`;
-    }
-  });
-</script>
+      <a href="#welcome" class="btn main-btn btn-lg mt-4">Book A Table</a>
+    </div>
 
-<style>
-  .floating-tomato {
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-    width: 150px;
-    z-index: 2;
-    transition: transform 0.2s ease-out;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-  }
+  </header>
 
-  /* Responsive adjustments */
-  @media (max-width: 991px) {
-    header .hero-content {
-      margin-right: 5%;
-      text-align: right;
-    }
+  <script>
+    window.addEventListener('scroll', function () {
+      const tomato = document.querySelector('.floating-tomato');
+      if (window.innerWidth >= 768 && tomato) { // only apply effect on tablets and larger
+        const scrollY = window.scrollY;
+        tomato.style.transform = `translateY(${scrollY * 0.2}px)`;
+      }
+    });
+  </script>
 
-    header .hero-content h1 {
-      font-size: 2.2rem !important;
-    }
-
-    header .hero-content p {
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 767px) {
+  <style>
     .floating-tomato {
-      display: none !important;
+      position: absolute;
+      bottom: 30px;
+      right: 50px;
+      width: 150px;
+      z-index: 2;
+      transition: transform 0.2s ease-out;
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
     }
 
-    header {
-      justify-content: center !important;
-      text-align: center !important;
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      header .hero-content {
+        margin-right: 5%;
+        text-align: right;
+      }
+
+      header .hero-content h1 {
+        font-size: 2.2rem !important;
+      }
+
+      header .hero-content p {
+        font-size: 1rem;
+      }
     }
 
-    header .hero-content {
-      margin: 0 auto;
-      text-align: center;
-    }
+    @media (max-width: 767px) {
+      .floating-tomato {
+        display: none !important;
+      }
 
-    header .hero-content h1 {
-      font-size: 1.8rem !important;
-    }
+      header {
+        justify-content: center !important;
+        text-align: center !important;
+      }
 
-    header .hero-content p {
-      font-size: 0.95rem;
-    }
+      header .hero-content {
+        margin: 0 auto;
+        text-align: center;
+      }
 
-    .main-btn {
-      font-size: 0.9rem;
-      padding: 10px 20px;
+      header .hero-content h1 {
+        font-size: 1.8rem !important;
+      }
+
+      header .hero-content p {
+        font-size: 0.95rem;
+      }
+
+      .main-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
     }
-  }
-</style>
+  </style>
 
   <!-- Welcome To Cuisine Resturant Section -->
   <section id="welcome" class="py-5 bg-light text-dark">
@@ -535,7 +539,8 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Crafting Flavors with Elegance</h5>
               <p class="card-text text-muted small">
-                At Cuisine Resturant, every dish tells a story — blending refined technique with authentic flavor to create a
+                At Cuisine Resturant, every dish tells a story — blending refined technique with authentic flavor to
+                create a
                 truly unforgettable dining experience.
               </p>
             </div>
@@ -587,7 +592,8 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">Inside the Art of Fine Dining</h5>
               <p class="card-text text-muted small">
-                Step behind the scenes and see how Cuisine Resturant’s culinary team turns ingredients into experiences —
+                Step behind the scenes and see how Cuisine Resturant’s culinary team turns ingredients into experiences
+                —
                 where every detail glows with perfection.
               </p>
             </div>
@@ -618,7 +624,8 @@
           </h1>
           <div class="mb-4" style="width: 90px; height: 3px; background-color: var(--primary-color);"></div>
           <p class="lead text-white-50" style="max-width: 500px; line-height: 1.8;">
-            Whether it’s an intimate dinner, a private event, or a simple inquiry — the Cuisine Resturant team is here to make
+            Whether it’s an intimate dinner, a private event, or a simple inquiry — the Cuisine Resturant team is here
+            to make
             your experience exceptional.
             Share your thoughts below, and we’ll reach out soon.
           </p>
@@ -737,7 +744,8 @@
                 <i class="fas fa-quote-left fa-2x" style="color: var(--primary-color);"></i>
               </div>
               <p class="fst-italic text-muted mb-4">
-                “Every visit feels special — elegant design, authentic flavors, and truly warm service. Cuisine Resturant
+                “Every visit feels special — elegant design, authentic flavors, and truly warm service. Cuisine
+                Resturant
                 never disappoints.”
               </p>
               <h5 class="fw-bold mb-0" style="color: var(--primary-color);">Fatima Khan</h5>
@@ -820,8 +828,8 @@
     <!-- Bottom Bar -->
     <div class="border-top border-light mt-4">
       <div class="container text-center py-3 small text-white-50">
-        © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved. Designed by <span
-          style="color: var(--primary-color);">Cuisine Resturant Team</span>.
+        © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved. Designed by
+        <span style="color: var(--primary-color);">Cuisine Resturant Team</span>.
       </div>
     </div>
   </footer>
