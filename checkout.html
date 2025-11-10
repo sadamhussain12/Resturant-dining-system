@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dining at Cuisine Resturant</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
+        <div class="container-fluid px-5">
+
+            <!-- Logo (Left) -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Asset 3.png" alt="Logo" height="60">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu (Center, fixed while scrolling) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="fixed-center-menu">
+                    <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#reservation">Reservation</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Button -->
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="#" class="btn fw-bold main-btn px-4 py-2"
+                    style="border: 2px solid var(--primary-color); transition: all 0.3s;">
+                    Order by Phone
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="menu-hero d-flex align-items-center justify-content-center text-center text-white mb-4"
+        style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.738)), url('assets/img/pexels-elevate-1267320.jpg') center/cover no-repeat; height:56vh;">
+        <div class="container position-relative py-5">
+            <h1 class="display-5 fw-bold mb-2" style="font-family: 'Antonio', sans-serif; color: var(--primary-color);">
+                Checkout
+            </h1>
+            <p class="lead mb-0">Please provide your details to complete your order.</p>
+        </div>
+    </section>
+
+    <!-- ===== CHECKOUT SECTION ===== -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-5">
+                <!-- Billing Form -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow rounded-4 p-4">
+                        <h5 class="fw-bold mb-3">Billing Details</h5>
+
+                        <form id="checkoutForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small text-muted mb-1">First Name</label>
+                                    <input type="text" class="form-control rounded-3" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-muted mb-1">Last Name</label>
+                                    <input type="text" class="form-control rounded-3" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-muted mb-1">Email Address</label>
+                                    <input type="email" class="form-control rounded-3" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-muted mb-1">Phone Number</label>
+                                    <input type="tel" class="form-control rounded-3" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-muted mb-1">Address</label>
+                                    <input type="text" class="form-control rounded-3"
+                                        placeholder="Street, House No, etc." required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-muted mb-1">City</label>
+                                    <input type="text" class="form-control rounded-3" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small text-muted mb-1">Postal Code</label>
+                                    <input type="text" class="form-control rounded-3" required>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h5 class="fw-bold mb-3">Payment Method</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="payment" id="payCard" checked>
+                                <label class="form-check-label" for="payCard">Credit / Debit Card</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="payCash">
+                                <label class="form-check-label" for="payCash">Cash on Delivery</label>
+                            </div>
+
+                            <!-- Card Details -->
+                            <div id="cardDetails">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label small text-muted mb-1">Card Number</label>
+                                        <input type="text" class="form-control rounded-3"
+                                            placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted mb-1">Expiry Date</label>
+                                        <input type="text" class="form-control rounded-3" placeholder="MM/YY">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted mb-1">CVV</label>
+                                        <input type="text" class="form-control rounded-3" placeholder="123">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <button type="submit" class="btn main-btn w-100 fw-bold py-2">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow rounded-4 p-4">
+                        <h5 class="fw-bold mb-3">Order Summary</h5>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <strong id="subtotal">£50</strong>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span>Tax (10%)</span>
+                                <strong id="tax">£5</strong>
+                            </li>
+                            <hr>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Total</span>
+                                <strong id="total" class="fs-5">£55</strong>
+                            </li>
+                        </ul>
+
+                        <p class="small text-muted">
+                            By placing your order, you agree to our <a href="#">Terms</a> & <a href="#">Privacy
+                                Policy</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === JS: Toggle Payment Method === -->
+    <script>
+        const payCard = document.getElementById('payCard');
+        const payCash = document.getElementById('payCash');
+        const cardDetails = document.getElementById('cardDetails');
+
+        payCash.addEventListener('change', () => {
+            cardDetails.style.display = 'none';
+        });
+        payCard.addEventListener('change', () => {
+            cardDetails.style.display = 'block';
+        });
+
+        document.getElementById('checkoutForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('✅ Your order has been placed successfully!');
+            window.location.href = 'index.html'; // redirect home or to thank-you page
+        });
+    </script>
+
+    <script>
+        // Read totals from localStorage
+        const subtotal = localStorage.getItem('cartSubtotal') || '0';
+        const tax = localStorage.getItem('cartTax') || '0';
+        const total = localStorage.getItem('cartTotal') || '0';
+
+        // Update checkout summary values
+        document.getElementById('subtotal').innerText = `£${parseFloat(subtotal).toFixed(2)}`;
+        document.getElementById('tax').innerText = `£${parseFloat(tax).toFixed(2)}`;
+        document.getElementById('total').innerText = `£${parseFloat(total).toFixed(2)}`;
+    </script>
+
+
+    <!-- ====== Footer Section (Cuisine Resturant) ====== -->
+    <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+        <div class="container px-4 px-lg-5 pb-5">
+            <div class="row gy-5 justify-content-between align-items-start">
+
+                <!-- Brand / About -->
+                <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+                    <h3 class="fw-bold mb-3"
+                        style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+                        Cuisine Resturant
+                    </h3>
+                    <p class="text-white-50 mb-4">
+                        Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+                        At Cuisine Resturant, every meal is a story — crafted with passion and served with pride.
+                    </p>
+                    <div class="d-flex gap-3" style="color: var(--primary-color);">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Quick Links
+                    </h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+                        <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+                        <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+                        <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Opening
+                        Hours</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+                        <li>Saturday: 1:00 PM – 12:00 AM</li>
+                        <li>Sunday: 1:00 PM – 10:00 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-3 animate-fade-up delay-3">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Subscribe
+                    </h6>
+                    <p class="text-white-50 small mb-3">
+                        Join our community and receive exclusive news, recipes, and event updates.
+                    </p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control bg-transparent border-light text-white me-2"
+                            placeholder="Enter email">
+                        <button class="btn fw-bold px-3"
+                            style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            Go
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-top border-light mt-4">
+            <div class="container text-center py-3 small text-white-50">
+                © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved.
+                Designed by
+                <span style="color: var(--primary-color);">Cuisine Resturant Team</span>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
