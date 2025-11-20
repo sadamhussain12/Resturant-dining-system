@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dining at Cuisine Resturant</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+<style>
+  /* Same height for all images + cover cropping */
+  .blog-img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  /* Hover zoom */
+  .blog-card:hover .blog-img {
+    transform: scale(1.1);
+  }
+
+  /* Overlay hidden by default */
+  .blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Show overlay on hover */
+  .blog-card:hover .blog-overlay {
+    opacity: 1;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
+    <div class="container-fluid px-5">
+
+      <!-- Logo (Left) -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Asset 3.png" alt="Logo" height="60">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu (Center, fixed while scrolling) -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="fixed-center-menu">
+          <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Button -->
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="#" class="btn fw-bold main-btn px-4 py-2"
+          style="border: 2px solid var(--primary-color); transition: all 0.3s;">
+          Order by Phone
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- About Us Hero Section -->
+  <section class="d-flex align-items-center position-relative"
+    style="background: url('assets/img/about_us.jpg') center/cover no-repeat; height: 60vh;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <h1 class="display-4 fw-bold mb-3"
+            style="font-family: 'Antonio', sans-serif; color: var(--primary-color); animation: fadeInDown 1s;">
+            Our Blog
+          </h1>
+          <p class="lead fw-semibold mt-3"
+            style="font-family: 'Poppins', sans-serif; color: #000; animation: fadeInUp 1.2s;">
+            Read the latest news, recipes, events, and chef specials.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Blog 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/pexels-manuel-aldana-321951004-13893923.jpg" class="card-img-top blog-img"
+                alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="Chef’s Special New Menu" data-image="pexels-manuel-aldana-321951004-13893923.jpg"
+                  data-desc="Discover our new seasonal dishes thoughtfully crafted by our head chef.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Chef’s Special New Menu</h5>
+              <p class="text-muted small">
+                Discover our new seasonal dishes thoughtfully crafted by our head chef.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/pexels-chan-walrus-958545-768x432.jpg" class="card-img-top blog-img"
+                alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="5 Tips for a Perfect Dinner Party" data-image="pexels-chan-walrus-958545-768x432.jpg"
+                  data-desc="Make your next gathering special with these simple hosting ideas.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">5 Tips for a Perfect Dinner Party</h5>
+              <p class="text-muted small">
+                Make your next gathering special with these simple hosting ideas.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/royals.png" class="card-img-top blog-img" alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="Behind the Scenes in Our Kitchen" data-image="royals.png"
+                  data-desc="A look at how we prepare your favorite dishes with passion.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Behind the Scenes in Our Kitchen</h5>
+              <p class="text-muted small">
+                A look at how we prepare your favorite dishes with passion.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/Chocolate Fondant.jpg" class="card-img-top blog-img" alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="Top 10 Drinks to Try" data-image="Chocolate Fondant.jpg"
+                  data-desc="Refreshing beverages perfect for summer evenings.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Top 10 Drinks to Try</h5>
+              <p class="text-muted small">Refreshing beverages perfect for summer evenings.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/Classic Caesar.webp" class="card-img-top blog-img" alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="Upcoming Live Music Night" data-image="Classic Caesar.webp"
+                  data-desc="Join us for an evening with live performance and gourmet dining.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Upcoming Live Music Night</h5>
+              <p class="text-muted small">Join us for an evening with live performance and gourmet dining.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 shadow rounded-4 overflow-hidden h-100 blog-card">
+
+            <div class="position-relative overflow-hidden">
+              <img src="assets/img/Eton Mess.jpg" class="card-img-top blog-img" alt="Blog Image">
+
+              <div class="blog-overlay d-flex align-items-center justify-content-center">
+                <a href="single_blog.html" class="btn main-btn fw-bold px-4 py-2 readmore-btn"
+                  data-title="Healthy Eating Ideas" data-image="Eton Mess.jpg"
+                  data-desc="Explore nutritious and delicious meals on our updated menu.">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-2">Healthy Eating Ideas</h5>
+              <p class="text-muted small">Explore nutritious and delicious meals on our updated menu.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ====== Footer Section (Cuisine Resturant) ====== -->
+  <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+    <div class="container px-4 px-lg-5 pb-5">
+      <div class="row gy-5 justify-content-between align-items-start">
+
+        <!-- Brand / About -->
+        <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+          <h3 class="fw-bold mb-3"
+            style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+            Cuisine Resturant
+          </h3>
+          <p class="text-white-50 mb-4">
+            Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+            At Cuisine Resturant, every meal is a story — crafted with passion and served with pride.
+          </p>
+          <div class="d-flex gap-3" style="color: var(--primary-color);">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Quick Links
+          </h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+            <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Opening
+            Hours</h6>
+          <ul class="list-unstyled small text-white-50">
+            <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+            <li>Saturday: 1:00 PM – 12:00 AM</li>
+            <li>Sunday: 1:00 PM – 10:00 PM</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-lg-3 animate-fade-up delay-3">
+          <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">Subscribe
+          </h6>
+          <p class="text-white-50 small mb-3">
+            Join our community and receive exclusive news, recipes, and event updates.
+          </p>
+          <form class="d-flex">
+            <input type="email" class="form-control bg-transparent border-light text-white me-2"
+              placeholder="Enter email">
+            <button class="btn fw-bold px-3"
+              style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+              onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              Go
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-top border-light mt-4">
+      <div class="container text-center py-3 small text-white-50">
+        © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved. Designed by
+        <span style="color: var(--primary-color);">Cuisine Resturant Team</span>.
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".readmore-btn").forEach(btn => {
+      btn.addEventListener("click", function (e) {
+        const title = this.dataset.title;
+        const image = this.dataset.image;
+        const desc = this.dataset.description;
+
+        localStorage.setItem("blog_title", title);
+        localStorage.setItem("blog_image", image);
+        localStorage.setItem("blog_desc", desc);
+      });
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

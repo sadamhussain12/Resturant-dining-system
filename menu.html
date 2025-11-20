@@ -45,7 +45,7 @@
                             <a class="nav-link  active" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#reservation">Reservation</a>
+                            <a class="nav-link" href="reservation.html">Reservation</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="blog.html">Blog</a>
@@ -1802,45 +1802,45 @@
                 if (qty > 1) document.getElementById('dishQty').value = qty - 1;
             });
 
-           
+
         </script>
-<script>
-let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        <script>
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-addToCartBtn.addEventListener('click', () => {
-  const dishName = document.getElementById('modalDishName').innerText;
-  const dishPriceText = document.getElementById('modalDishPrice').innerText.replace('£', '').trim();
-  const dishPrice = parseFloat(dishPriceText);
-  const dishImg = document.getElementById('modalDishImg').src;
-  const qty = parseInt(document.getElementById('dishQty').value);
+            addToCartBtn.addEventListener('click', () => {
+                const dishName = document.getElementById('modalDishName').innerText;
+                const dishPriceText = document.getElementById('modalDishPrice').innerText.replace('£', '').trim();
+                const dishPrice = parseFloat(dishPriceText);
+                const dishImg = document.getElementById('modalDishImg').src;
+                const qty = parseInt(document.getElementById('dishQty').value);
 
-  // Check if item already exists in cart
-  const existing = cartItems.find(item => item.name === dishName);
-  if (existing) {
-    existing.qty += qty;
-  } else {
-    cartItems.push({ name: dishName, price: dishPrice, qty: qty, img: dishImg });
-  }
+                // Check if item already exists in cart
+                const existing = cartItems.find(item => item.name === dishName);
+                if (existing) {
+                    existing.qty += qty;
+                } else {
+                    cartItems.push({ name: dishName, price: dishPrice, qty: qty, img: dishImg });
+                }
 
-  // Save updated cart to localStorage
-  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                // Save updated cart to localStorage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-  // Update floating cart count
-  const totalQty = cartItems.reduce((sum, item) => sum + item.qty, 0);
-  document.getElementById('cartCount').textContent = totalQty;
+                // Update floating cart count
+                const totalQty = cartItems.reduce((sum, item) => sum + item.qty, 0);
+                document.getElementById('cartCount').textContent = totalQty;
 
-  // Close modal
-  const modal = bootstrap.Modal.getInstance(document.getElementById('dishModal'));
-  modal.hide();
+                // Close modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('dishModal'));
+                modal.hide();
 
-  // Optional toast message
-  const toast = document.createElement('div');
-  toast.className = 'position-fixed bottom-0 end-0 m-3 bg-success text-white px-3 py-2 rounded-3 shadow';
-  toast.innerText = `${qty} × ${dishName} added to cart`;
-  document.body.appendChild(toast);
-  setTimeout(() => toast.remove(), 1500);
-});
-</script>
+                // Optional toast message
+                const toast = document.createElement('div');
+                toast.className = 'position-fixed bottom-0 end-0 m-3 bg-success text-white px-3 py-2 rounded-3 shadow';
+                toast.innerText = `${qty} × ${dishName} added to cart`;
+                document.body.appendChild(toast);
+                setTimeout(() => toast.remove(), 1500);
+            });
+        </script>
 
 
         <!-- Floating Cart Button -->

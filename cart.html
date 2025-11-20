@@ -45,7 +45,7 @@
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#reservation">Reservation</a>
+                            <a class="nav-link" href="reservation.html">Reservation</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="blog.html">Blog</a>
@@ -295,22 +295,22 @@
     </footer>
 
     <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const cartTable = document.getElementById('cartItems');
-  const items = JSON.parse(localStorage.getItem('cartItems')) || [];
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartTable = document.getElementById('cartItems');
+            const items = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-  cartTable.innerHTML = ''; // clear any placeholder rows
+            cartTable.innerHTML = ''; // clear any placeholder rows
 
-  if (items.length === 0) {
-    cartTable.innerHTML = `<tr><td colspan="4" class="text-center text-muted py-4">Your cart is empty.</td></tr>`;
-  } else {
-    let subtotal = 0;
+            if (items.length === 0) {
+                cartTable.innerHTML = `<tr><td colspan="4" class="text-center text-muted py-4">Your cart is empty.</td></tr>`;
+            } else {
+                let subtotal = 0;
 
-    items.forEach(item => {
-      const total = item.price * item.qty;
-      subtotal += total;
+                items.forEach(item => {
+                    const total = item.price * item.qty;
+                    subtotal += total;
 
-      const row = `
+                    const row = `
         <tr>
           <td>
             <div class="d-flex align-items-center">
@@ -324,18 +324,18 @@ document.addEventListener('DOMContentLoaded', () => {
           <td class="text-center">${item.qty}</td>
           <td class="text-end fw-semibold">£${total.toFixed(2)}</td>
         </tr>`;
-      cartTable.insertAdjacentHTML('beforeend', row);
-    });
+                    cartTable.insertAdjacentHTML('beforeend', row);
+                });
 
-    // update summary
-    const tax = subtotal * 0.1;
-    const total = subtotal + tax;
-    document.getElementById('subtotal').innerText = `£${subtotal.toFixed(2)}`;
-    document.getElementById('tax').innerText = `£${tax.toFixed(2)}`;
-    document.getElementById('total').innerText = `£${total.toFixed(2)}`;
-  }
-});
-</script>
+                // update summary
+                const tax = subtotal * 0.1;
+                const total = subtotal + tax;
+                document.getElementById('subtotal').innerText = `£${subtotal.toFixed(2)}`;
+                document.getElementById('tax').innerText = `£${tax.toFixed(2)}`;
+                document.getElementById('total').innerText = `£${total.toFixed(2)}`;
+            }
+        });
+    </script>
 
 
     <!-- Bootstrap JS -->

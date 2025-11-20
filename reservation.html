@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dining at Cuisine Resturant</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg position-absolute w-100 py-3" style="z-index: 1000;">
+        <div class="container-fluid px-5">
+
+            <!-- Logo (Left) -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Asset 3.png" alt="Logo" height="60">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu (Center, fixed while scrolling) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="fixed-center-menu">
+                    <ul class="navbar-nav text-uppercase fw-semibold mb-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Button -->
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="#" class="btn fw-bold main-btn px-4 py-2"
+                    style="border: 2px solid var(--primary-color); transition: all 0.3s;">
+                    Order by Phone
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- About Us Hero Section -->
+    <section class="d-flex align-items-center position-relative"
+        style="background: url('assets/img/table.jpg') center/cover no-repeat; height: 60vh;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8">
+                    <h1 class="display-4 fw-bold mb-3"
+                        style="font-family: 'Antonio', sans-serif; color: var(--primary-color); animation: fadeInDown 1s;">
+                        Table Reservation
+                    </h1>
+                    <p class="lead fw-semibold mt-3"
+                        style="font-family: 'Poppins', sans-serif; color: #ffffff; animation: fadeInUp 1.2s;">
+                        Reserve a table and tell us the purpose so we can prepare accordingly.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== RESERVATION SECTION ===== -->
+    <section class="py-5">
+        <div class="container">
+
+
+
+            <div class="row g-5">
+                <!-- Reservation Form -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow rounded-4 p-4">
+                        <h5 class="fw-bold mb-3">Book a Table</h5>
+
+                        <form id="reservationForm" class="row g-3">
+
+                            <!-- Basic Fields (Name, Email, Phone, Guests) -->
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small mb-1">Full Name</label>
+                                <input type="text" class="form-control rounded-3" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small mb-1">Email Address</label>
+                                <input type="email" class="form-control rounded-3" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small mb-1">Phone Number</label>
+                                <input type="tel" class="form-control rounded-3" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label text-muted small mb-1">Number of Guests</label>
+                                <select class="form-select rounded-3" required>
+                                    <option disabled selected>Select</option>
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5 Guests</option>
+                                    <option>6+ Guests</option>
+                                </select>
+                            </div>
+
+                            <!-- Reservation Type -->
+                            <div class="col-12">
+                                <label class="form-label text-muted small mb-1">Reservation Type</label>
+                                <select id="reservationType" class="form-select rounded-3" required>
+                                    <option selected disabled>Select type</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="dawat">Dawat</option>
+                                    <option value="party">Party / Event</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="normal">Normal Dining</option>
+                                </select>
+                            </div>
+
+                            <!-- ===== Dynamic Options (Hidden unless selected) ===== -->
+
+                            <!-- Birthday Section -->
+                            <div id="birthdayOptions" class="col-12 d-none">
+                                <h6 class="fw-bold mt-3">Birthday Arrangement Options</h6>
+
+                                <label class="form-label small text-muted mb-1 mt-2">Decor Theme</label>
+                                <select class="form-select rounded-3">
+                                    <option>Balloon Decor</option>
+                                    <option>LED Theme</option>
+                                    <option>Cartoon Theme</option>
+                                    <option>Elegant Gold Theme</option>
+                                </select>
+
+                                <label class="form-label small text-muted mb-1 mt-3">Cake Requirement</label>
+                                <input type="text" class="form-control rounded-3"
+                                    placeholder="Cake flavor or bring your own">
+                            </div>
+
+                            <!-- Dawat Section -->
+                            <div id="dawatOptions" class="col-12 d-none">
+                                <h6 class="fw-bold mt-3">Dawat Arrangements</h6>
+
+                                <label class="form-label small text-muted mb-1 mt-2">Serving Style</label>
+                                <select class="form-select rounded-3">
+                                    <option>Buffet</option>
+                                    <option>Table Service</option>
+                                    <option>Family Style</option>
+                                </select>
+
+                                <label class="form-label small text-muted mb-1 mt-3">Number of Dishes</label>
+                                <input type="number" class="form-control rounded-3" placeholder="e.g., 5">
+                            </div>
+
+                            <!-- Party Section -->
+                            <div id="partyOptions" class="col-12 d-none">
+                                <h6 class="fw-bold mt-3">Party / Event Options</h6>
+
+                                <label class="form-label small text-muted mb-1 mt-2">Music / DJ</label>
+                                <select class="form-select rounded-3">
+                                    <option>No Music</option>
+                                    <option>Background Music</option>
+                                    <option>DJ Setup</option>
+                                </select>
+
+                                <label class="form-label small text-muted mb-1 mt-3">Decoration Requirements</label>
+                                <textarea class="form-control rounded-3" rows="2"
+                                    placeholder="Mention any custom decor"></textarea>
+                            </div>
+
+                            <!-- Anniversary Section -->
+                            <div id="anniversaryOptions" class="col-12 d-none">
+                                <h6 class="fw-bold mt-3">Anniversary Special</h6>
+
+                                <label class="form-label small text-muted mb-1 mt-2">Candlelight Arrangement</label>
+                                <select class="form-select rounded-3">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+
+                                <label class="form-label small text-muted mb-1 mt-3">Flowers / Bouquet</label>
+                                <select class="form-select rounded-3">
+                                    <option>Red Roses</option>
+                                    <option>Mixed Flowers</option>
+                                    <option>No Flowers</option>
+                                </select>
+                            </div>
+
+                            <!-- Date & Time -->
+                            <div class="col-md-6 mt-4">
+                                <label class="form-label text-muted small mb-1">Reservation Date</label>
+                                <input type="date" class="form-control rounded-3" required>
+                            </div>
+
+                            <div class="col-md-6 mt-4">
+                                <label class="form-label text-muted small mb-1">Reservation Time</label>
+                                <input type="time" class="form-control rounded-3" required>
+                            </div>
+
+                            <!-- Special Requests -->
+                            <div class="col-12">
+                                <label class="form-label text-muted small mb-1">Additional Notes (Optional)</label>
+                                <textarea class="form-control rounded-3" rows="3"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                                <button type="submit" class="btn main-btn w-100 fw-bold py-2">Submit
+                                    Reservation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Reservation Sidebar -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow rounded-4 overflow-hidden">
+                        <img src="assets/img/reservation.jpg" class="img-fluid w-100" alt="Reservation Image">
+                    </div>
+
+                    <div class="mt-4 px-2">
+                        <h5 class="fw-bold mb-2">Opening Hours</h5>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1">Mon – Fri: <strong>12 PM – 11 PM</strong></li>
+                            <li class="mb-1">Sat – Sun: <strong>10 AM – 12 AM</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JS: Dynamic Sections ===== -->
+    <script>
+        document.getElementById('reservationType').addEventListener('change', function () {
+            const value = this.value;
+
+            // Hide all
+            document.getElementById('birthdayOptions').classList.add('d-none');
+            document.getElementById('dawatOptions').classList.add('d-none');
+            document.getElementById('partyOptions').classList.add('d-none');
+            document.getElementById('anniversaryOptions').classList.add('d-none');
+
+            // Show selected
+            if (value === 'birthday') document.getElementById('birthdayOptions').classList.remove('d-none');
+            if (value === 'dawat') document.getElementById('dawatOptions').classList.remove('d-none');
+            if (value === 'party') document.getElementById('partyOptions').classList.remove('d-none');
+            if (value === 'anniversary') document.getElementById('anniversaryOptions').classList.remove('d-none');
+        });
+
+        // Submit Message
+        document.getElementById('reservationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert("🎉 Your reservation has been submitted successfully!");
+        });
+    </script>
+
+
+    <!-- ====== Footer Section (Cuisine Resturant) ====== -->
+    <footer class="text-white pt-5 position-relative overflow-hidden" style="background-color: #000;">
+        <div class="container px-4 px-lg-5 pb-5">
+            <div class="row gy-5 justify-content-between align-items-start">
+
+                <!-- Brand / About -->
+                <div class="col-12 col-md-6 col-lg-4 animate-fade-up">
+                    <h3 class="fw-bold mb-3"
+                        style="color: var(--primary-color); font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+                        Cuisine Resturant
+                    </h3>
+                    <p class="text-white-50 mb-4">
+                        Immerse yourself in a dining experience where taste, tradition, and atmosphere unite.
+                        At Cuisine Resturant, every meal is a story — crafted with passion and served with pride.
+                    </p>
+                    <div class="d-flex gap-3" style="color: var(--primary-color);">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2 animate-fade-up delay-1">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Quick Links
+                    </h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#about" class="footer-link">About</a></li>
+                        <li class="mb-2"><a href="#menu" class="footer-link">Menu</a></li>
+                        <li class="mb-2"><a href="#gallery" class="footer-link">Gallery</a></li>
+                        <li class="mb-2"><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-6 col-md-3 col-lg-3 animate-fade-up delay-2">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Opening
+                        Hours</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>Mon - Fri: 12:00 PM – 11:00 PM</li>
+                        <li>Saturday: 1:00 PM – 12:00 AM</li>
+                        <li>Sunday: 1:00 PM – 10:00 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-3 animate-fade-up delay-3">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color: var(--primary-color); letter-spacing: 1px;">
+                        Subscribe
+                    </h6>
+                    <p class="text-white-50 small mb-3">
+                        Join our community and receive exclusive news, recipes, and event updates.
+                    </p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control bg-transparent border-light text-white me-2"
+                            placeholder="Enter email">
+                        <button class="btn fw-bold px-3"
+                            style="background-color: var(--primary-color); color: #000; transition: transform 0.3s;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            Go
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-top border-light mt-4">
+            <div class="container text-center py-3 small text-white-50">
+                © 2025 <span style="color: var(--primary-color);">Cuisine Resturant</span>. All Rights Reserved.
+                Designed by
+                <span style="color: var(--primary-color);">Cuisine Resturant Team</span>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
